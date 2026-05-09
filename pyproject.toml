@@ -1,0 +1,7 @@
+[project]
+name = "policy-assist-ai"
+version = "0.1.0"
+description = "PolicyAssist AI is a safety-first insurance customer support agent that helps policyholders understand coverage, claims, exclusions, and policy procedures using AI-powered retrieval, tool usage, and conversational memory."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
