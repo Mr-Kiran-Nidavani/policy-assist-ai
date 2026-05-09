@@ -15,17 +15,18 @@
 7. [Project Architecture](#project-architecture)
 8. [Project Structure](#project-structure)
 9. [Folder Responsibilities](#folder-responsibilities)
-10. [Setting Up the Project Using uv](#setting-up-the-project-using-uv)
-11. [How the System Works](#how-the-system-works)
-12. [Sample User Interactions](#sample-user-interactions)
-13. [Prompt Engineering](#prompt-engineering)
-14. [Evaluation Metrics](#evaluation-metrics)
-15. [Failure Analysis](#failure-analysis)
-16. [Deployment Readiness](#deployment-readiness)
-17. [Known Limitations](#known-limitations)
-18. [Future Improvements](#future-improvements)
-19. [Capstone Deliverables](#capstone-deliverables)
-20. [Disclaimer](#disclaimer)
+10. [Documentation Structure](#documentation-structure)
+11. [Setting Up the Project Using uv](#setting-up-the-project-using-uv)
+12. [How the System Works](#how-the-system-works)
+13. [Sample User Interactions](#sample-user-interactions)
+14. [Prompt Engineering](#prompt-engineering)
+15. [Evaluation Metrics](#evaluation-metrics)
+16. [Failure Analysis](#failure-analysis)
+17. [Deployment Readiness](#deployment-readiness)
+18. [Known Limitations](#known-limitations)
+19. [Future Improvements](#future-improvements)
+20. [Capstone Deliverables](#capstone-deliverables)
+21. [Disclaimer](#disclaimer)
 
 ---
 
@@ -198,17 +199,26 @@ policyassist-ai/
 │   ├── claims_docs/
 │   └── embeddings/
 │
-├── tests/
-│
-├── logs/
-│
 ├── docs/
 │   ├── problem_framing/
+│   │   └── phase1_problem_framing.md
+│   │
 │   ├── evaluation_reports/
+│   │   └── evaluation_report.md
+│   │
 │   ├── prompt_comparisons/
-│   └── demo_scripts/
+│   │   └── prompt_comparison.md
+│   │
+│   ├── demo_scripts/
+│   │   └── demo_script.md
+│   │
+│   ├── engineering_justification/
+│   │   └── design_decisions.md
+│   │
+│   └── screenshots/
 │
-├── screenshots/
+├── tests/
+├── logs/
 │
 ├── .env
 ├── pyproject.toml
@@ -271,11 +281,83 @@ Stores:
 - vector embeddings
 
 ## `docs/`
-Contains capstone deliverables:
-- problem framing
-- evaluation reports
-- prompt comparison tables
-- engineering justification
+Contains all capstone-related documentation, evaluation evidence, design artifacts, and supporting project materials.
+
+---
+
+# Documentation Structure
+
+## `docs/problem_framing/`
+Contains project problem analysis and business understanding documents.
+
+### Includes:
+- user personas
+- workflow analysis
+- business problems
+- assumptions
+- constraints
+- success criteria
+- failure cases
+- safety requirements
+
+---
+
+## `docs/evaluation_reports/`
+Contains evaluation and testing documentation.
+
+### Includes:
+- response quality analysis
+- hallucination testing
+- failure analysis
+- root cause investigation
+- before vs after improvements
+- evaluation metrics
+
+---
+
+## `docs/prompt_comparisons/`
+Contains prompt engineering experiments and comparisons.
+
+### Includes:
+- prompt variants
+- output comparisons
+- strengths and weaknesses
+- prompt evaluation tables
+- reasoning behind selected prompts
+
+---
+
+## `docs/demo_scripts/`
+Contains guided demo interaction scenarios for project demonstrations.
+
+### Includes:
+- forced interaction scripts
+- expected outputs
+- refusal demonstrations
+- escalation examples
+- safety behaviour examples
+
+---
+
+## `docs/engineering_justification/`
+Contains architecture and design decision documentation.
+
+### Includes:
+- framework selection reasoning
+- architecture decisions
+- tradeoff analysis
+- deployment assumptions
+- safety-first design decisions
+- scalability considerations
+
+---
+
+## `docs/screenshots/`
+Stores screenshots and visual artifacts used for:
+- evaluation evidence
+- deployment proof
+- demo presentation
+- UI walkthroughs
 
 ---
 
