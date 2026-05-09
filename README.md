@@ -200,22 +200,41 @@ policyassist-ai/
 │   └── embeddings/
 │
 ├── docs/
-│   ├── problem_framing/
-│   │   └── phase1_problem_framing.md
+│   ├── phase1/
+│   │   └── problem_framing.md
 │   │
-│   ├── evaluation_reports/
-│   │   └── evaluation_report.md
+│   ├── phase2/
+│   │   ├── baseline_agent.md
+│   │   └── screenshots/
 │   │
-│   ├── prompt_comparisons/
-│   │   └── prompt_comparison.md
+│   ├── phase3/
+│   │   ├── prompt_comparison.md
+│   │   └── screenshots/
 │   │
-│   ├── demo_scripts/
-│   │   └── demo_script.md
+│   ├── phase4/
+│   │   ├── rag_implementation.md
+│   │   └── retrieval_results.md
 │   │
-│   ├── engineering_justification/
-│   │   └── design_decisions.md
+│   ├── phase5/
+│   │   ├── tool_usage.md
+│   │   └── tool_failures.md
 │   │
-│   └── screenshots/
+│   ├── phase6/
+│   │   ├── memory_planning.md
+│   │   └── conversation_examples.md
+│   │
+│   ├── phase7/
+│   │   ├── adaptive_behaviour.md
+│   │   └── feedback_analysis.md
+│   │
+│   ├── phase8/
+│   │   ├── deployment.md
+│   │   └── runtime_logs.md
+│   │
+│   └── phase9/
+│       ├── evaluation_report.md
+│       ├── root_cause_analysis.md
+│       └── final_metrics.md
 │
 ├── tests/
 ├── logs/
@@ -281,83 +300,118 @@ Stores:
 - vector embeddings
 
 ## `docs/`
-Contains all capstone-related documentation, evaluation evidence, design artifacts, and supporting project materials.
+Contains all capstone-related documentation, phase artifacts, evaluation evidence, and engineering reports.
 
 ---
 
 # Documentation Structure
 
-## `docs/problem_framing/`
-Contains project problem analysis and business understanding documents.
+## `docs/phase1/`
+Contains problem framing and business understanding documentation.
 
 ### Includes:
+- problem definition
 - user personas
 - workflow analysis
-- business problems
 - assumptions
 - constraints
 - success criteria
-- failure cases
+- edge cases
 - safety requirements
 
 ---
 
-## `docs/evaluation_reports/`
-Contains evaluation and testing documentation.
+## `docs/phase2/`
+Contains baseline agent implementation documentation.
 
 ### Includes:
-- response quality analysis
-- hallucination testing
-- failure analysis
-- root cause investigation
-- before vs after improvements
-- evaluation metrics
+- rule-based agent behaviour
+- baseline limitations
+- sample outputs
+- screenshots
+- observations
 
 ---
 
-## `docs/prompt_comparisons/`
-Contains prompt engineering experiments and comparisons.
+## `docs/phase3/`
+Contains LLM integration and prompt engineering experiments.
 
 ### Includes:
 - prompt variants
-- output comparisons
-- strengths and weaknesses
-- prompt evaluation tables
-- reasoning behind selected prompts
+- prompt comparison tables
+- output analysis
+- reasoning improvements
+- screenshots
 
 ---
 
-## `docs/demo_scripts/`
-Contains guided demo interaction scenarios for project demonstrations.
+## `docs/phase4/`
+Contains retrieval and semantic search implementation details.
 
 ### Includes:
-- forced interaction scripts
-- expected outputs
-- refusal demonstrations
-- escalation examples
-- safety behaviour examples
+- document preparation
+- chunking strategy
+- embeddings workflow
+- retrieval testing
+- response comparisons
 
 ---
 
-## `docs/engineering_justification/`
-Contains architecture and design decision documentation.
+## `docs/phase5/`
+Contains tool usage and tool routing documentation.
 
 ### Includes:
-- framework selection reasoning
-- architecture decisions
-- tradeoff analysis
-- deployment assumptions
-- safety-first design decisions
-- scalability considerations
+- tool descriptions
+- tool selection logic
+- incorrect tool usage examples
+- safeguard implementation
+- failure handling
 
 ---
 
-## `docs/screenshots/`
-Stores screenshots and visual artifacts used for:
-- evaluation evidence
-- deployment proof
-- demo presentation
-- UI walkthroughs
+## `docs/phase6/`
+Contains planning and memory management documentation.
+
+### Includes:
+- memory handling strategy
+- conversation examples
+- context retention logic
+- multi-turn reasoning examples
+
+---
+
+## `docs/phase7/`
+Contains adaptive behaviour and feedback analysis.
+
+### Includes:
+- feedback collection
+- behavioural adaptation
+- before vs after comparisons
+- response improvement analysis
+
+---
+
+## `docs/phase8/`
+Contains deployment and operational readiness documentation.
+
+### Includes:
+- deployment setup
+- runtime assumptions
+- latency logs
+- failure handling
+- monitoring evidence
+
+---
+
+## `docs/phase9/`
+Contains evaluation and engineering review documentation.
+
+### Includes:
+- evaluation metrics
+- failure analysis
+- root cause investigation
+- safety review
+- future improvement roadmap
 
 ---
 
