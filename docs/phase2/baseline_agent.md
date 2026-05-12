@@ -285,6 +285,11 @@ Unsupported or unrelated queries are handled using fallback responses requesting
 
 ![Unknown Queries](screenshots/unknown_queries.png)
 
+
+# Ambiguous Queries
+
+![Unknown Queries](screenshots/ambiguous_queries.png)
+
 ---
 
 # Key Limitations of the Baseline System
