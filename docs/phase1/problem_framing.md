@@ -5,23 +5,66 @@
 
 ## Project Description
 
-PolicyAssist AI is a safety-first insurance customer support agent designed to help existing policyholders understand insurance coverage, claims procedures, exclusions, deductibles, and policy-related queries using AI-powered retrieval, conversational reasoning, and contextual memory.
+PolicyAssist AI is a safety-first lightweight orchestrated multi-agent insurance support and controlled operations assistant designed to help existing policyholders understand insurance coverage, claims procedures, exclusions, deductibles, waiting periods, and operational workflows using AI-powered retrieval, conversational reasoning, contextual memory, and controlled tool usage.
 
-The system operates as a decision-support assistant and does not perform transactional actions such as approving claims, modifying policies, or processing payments.
+The system combines:
+- retrieval-augmented generation (RAG)
+- multi-agent orchestration
+- operational tools
+- conversational memory
+- safety validation
+- escalation handling
+
+to provide enterprise-style insurance customer support assistance.
+
+PolicyAssist AI supports:
+- policy clarification
+- claims guidance
+- low-risk operational assistance
+- customer profile updates
+- policy-related workflows
+- safe refusal handling
+
+The architecture follows a modular multi-agent workflow with dedicated responsibilities for:
+- intent routing
+- policy information support
+- claims assistance
+- operational request handling
+- safety validation and escalation review
 
 ---
 
 # Problem Statement
 
-Insurance customers often struggle to understand policy coverage, claims procedures, exclusions, and waiting periods due to complex policy documents and delayed customer support responses.
+Insurance customers often struggle to understand:
+- policy coverage
+- claims procedures
+- waiting periods
+- deductibles
+- exclusions
+- operational workflows
+- policy update procedures
 
-Customer support teams frequently handle repetitive queries that require manual document searches and policy interpretation, resulting in:
-- delayed response times
+due to:
+- complex policy wording
+- insurance terminology
+- delayed support responses
 - inconsistent support quality
+
+Insurance support teams frequently handle repetitive customer requests that require:
+- manual document searches
+- operational verification
+- repeated policy explanations
+- escalation handling
+
+This results in:
+- delayed response times
 - increased operational workload
+- inconsistent customer experiences
+- operational inefficiencies
 - customer frustration
 
-PolicyAssist AI aims to improve customer support efficiency by providing safe, explainable, and retrieval-grounded insurance support assistance while preventing unsafe or unauthorized actions.
+PolicyAssist AI aims to improve insurance support efficiency by providing safe, explainable, retrieval-grounded, and operationally controlled assistance while enforcing strict guardrails for high-risk actions.
 
 ---
 
@@ -29,13 +72,16 @@ PolicyAssist AI aims to improve customer support efficiency by providing safe, e
 
 ## Existing Insurance Policyholder
 
-The primary user is an existing insurance customer seeking support regarding:
+The primary user is an existing insurance customer seeking assistance regarding:
 - policy coverage
 - claims guidance
+- waiting periods
 - exclusions
 - deductibles
-- waiting periods
-- claim documentation requirements
+- claim documentation
+- customer profile updates
+- driver and vehicle additions
+- operational policy workflows
 
 ---
 
@@ -45,26 +91,26 @@ The primary user is an existing insurance customer seeking support regarding:
 |---|---|
 | User Type | Existing policyholder |
 | Technical Expertise | Low to Medium |
-| Primary Goal | Fast and accurate policy clarification |
-| Pain Points | Complex policy language and long support wait times |
-| Expectations | Clear, trustworthy, explainable responses |
+| Primary Goal | Fast and accurate insurance support |
+| Pain Points | Complex policy wording and delayed support |
+| Expectations | Safe, explainable, and trustworthy responses |
 
 ---
 
 # Current Workflow (Without AI)
 
 ```text
-Customer submits support query
+Customer submits support request
         ↓
-Human support agent reviews query
+Human support agent reviews request
         ↓
-Agent searches policy documents manually
+Agent manually searches policy documents
         ↓
-Agent interprets clauses and procedures
+Agent verifies operational permissions
         ↓
-Customer receives response
+Agent explains policy or processes request
         ↓
-Escalation if issue remains unresolved
+Escalation occurs if request is high-risk
 ```
 
 ---
@@ -73,34 +119,81 @@ Escalation if issue remains unresolved
 
 | Problem | Impact |
 |---|---|
-| Manual policy search | Slow support responses |
-| Repetitive customer queries | Increased operational workload |
-| Inconsistent interpretations | Reduced customer trust |
-| Complex insurance terminology | Customer confusion |
-| High support ticket volume | Agent overload |
+| Manual document searches | Slow response times |
+| Repetitive customer requests | Increased operational workload |
+| Inconsistent policy explanations | Reduced customer trust |
+| Complex policy terminology | Customer confusion |
+| High support ticket volume | Support agent overload |
+| Operational verification delays | Poor customer experience |
+
+---
+
+# Multi-Agent System Architecture
+
+PolicyAssist AI follows a lightweight orchestrated multi-agent architecture.
+
+The system contains multiple domain-specific agents with dedicated responsibilities.
+
+| Agent | Responsibility |
+|---|---|
+| Intent Router Agent | Detects user intent and routes workflows |
+| Policy Information Agent | Handles policy explanations using retrieval workflows |
+| Claim Support Agent | Handles claims guidance and claim-related support |
+| Policy Update Agent | Handles approved low-risk operational requests |
+| General Query Agent | Handles greetings and unsupported requests |
+| Safety Review Agent | Validates outputs and enforces safety policies |
 
 ---
 
 # AI Agent Role
 
 PolicyAssist AI is designed to:
-- answer insurance policy-related support queries
+- answer insurance policy-related questions
 - retrieve relevant policy clauses
 - explain policy coverage in simplified language
 - guide customers through claims procedures
-- provide escalation guidance when necessary
+- assist with approved low-risk customer operations
+- provide escalation guidance when required
+- validate responses before returning them to customers
 
 ---
 
-# Agent Limitations
+# Supported Operations
 
-The AI agent will NOT:
-- approve or reject claims
-- modify policy information
-- process payments
-- provide legal guarantees
-- fabricate policy information
-- make financial decisions on behalf of customers
+The system supports approved low-risk customer service operations.
+
+## Allowed Operations
+
+| Operation | Status |
+|---|---|
+| Policy coverage explanation | ✅ Supported |
+| Claims guidance | ✅ Supported |
+| Claim status lookup | ✅ Supported |
+| Update email address | ✅ Supported |
+| Update phone number | ✅ Supported |
+| Update mailing address | ✅ Supported |
+| Add new vehicle | ✅ Supported |
+| Add new driver | ✅ Supported |
+| Download policy documents | ✅ Supported |
+
+---
+
+# Restricted Operations
+
+The system enforces strict restrictions on high-risk actions.
+
+## Restricted Operations
+
+| Operation | Status |
+|---|---|
+| Claim approval or rejection | ❌ Restricted |
+| Reduce insurance premium | ❌ Restricted |
+| Modify coverage limits | ❌ Restricted |
+| Backdate policy | ❌ Restricted |
+| Change policy effective date | ❌ Restricted |
+| Waive deductibles | ❌ Restricted |
+| Cancel policy | ❌ Restricted |
+| Legal or financial guarantees | ❌ Restricted |
 
 ---
 
@@ -110,8 +203,9 @@ The AI agent will NOT:
 
 The system accepts:
 - customer support questions
+- operational requests
 - policy-related queries
-- claim-related questions
+- claims-related questions
 - conversation history
 - retrieved policy documents
 
@@ -122,10 +216,11 @@ The system accepts:
 The system provides:
 - policy explanations
 - claims guidance
-- clause summaries
+- operational assistance
 - escalation recommendations
 - safe refusal responses
 - uncertainty-aware responses
+- contextual follow-up responses
 
 ---
 
@@ -135,11 +230,12 @@ The system provides:
 
 | Constraint | Description |
 |---|---|
-| Non-transactional system | Cannot modify claims or policies |
+| Restricted operational scope | High-risk actions are blocked |
 | Retrieval dependency | Responses depend on available documents |
 | Safety-first design | Unsafe requests must be refused |
-| Limited domain scope | Insurance support only |
+| Limited domain scope | Insurance workflows only |
 | No legal advice | Informational assistance only |
+| Simulated backend operations | No real insurance backend integration |
 
 ---
 
@@ -147,35 +243,40 @@ The system provides:
 
 | Assumption | Description |
 |---|---|
-| Policy documents are accurate | Retrieval source is trusted |
+| Policy documents are accurate | Retrieval sources are trusted |
 | Customer communicates in English | Initial version supports English only |
-| Backend tools are simulated | Mock tools used for demonstrations |
-| Internet access is optional | Retrieval can function locally |
+| Backend tools are simulated | Operations are demonstration-only |
+| Internet access is optional | Retrieval may function locally |
 
 ---
 
 # Example User Questions
 
-## Coverage Questions
+## Policy Coverage Questions
 - “Does my policy cover knee replacement surgery?”
 - “What is the waiting period for maternity coverage?”
+- “Is cataract surgery included in my plan?”
 
 ---
 
 ## Claims Questions
-- “What documents are required for hospitalization claims?”
+- “What documents are required for reimbursement claims?”
 - “Why was my claim rejected?”
+- “What is the current status of my claim?”
 
 ---
 
-## Deductible Questions
-- “How much deductible do I need to pay?”
+## Operational Requests
+- “Update my email address.”
+- “Add a new driver to my policy.”
+- “Add a vehicle to my insurance plan.”
 
 ---
 
-## Unsafe Requests
+## Restricted Requests
+- “Reduce my insurance premium.”
+- “Change my policy effective date.”
 - “Approve my insurance claim immediately.”
-- “Add my spouse to the policy.”
 
 ---
 
@@ -187,7 +288,8 @@ The system provides:
 |---|---|
 | Accurate retrieval | Correct policy clauses retrieved |
 | Helpful responses | Clear and understandable guidance |
-| Safe refusal handling | Unsafe requests are rejected |
+| Safe operational handling | Approved operations handled safely |
+| Proper refusal handling | Restricted requests rejected |
 | Proper escalation | High-risk queries escalated |
 | Multi-turn understanding | Context maintained during conversations |
 
@@ -201,6 +303,7 @@ The system provides:
 | Hallucination rate | Low |
 | Response consistency | Stable |
 | Tool routing accuracy | Correct |
+| Safety validation accuracy | High |
 | Failure handling | Graceful |
 
 ---
@@ -210,9 +313,10 @@ The system provides:
 | Goal | Indicator |
 |---|---|
 | Faster support | Reduced response delays |
-| Better clarity | Simplified explanations |
-| Higher trust | Grounded responses |
+| Better clarity | Simplified policy explanations |
+| Higher trust | Grounded and explainable responses |
 | Better escalation | Proper human handoff |
+| Improved usability | Easier operational assistance |
 
 ---
 
@@ -222,8 +326,8 @@ The system provides:
 |---|---|
 | Hallucinated policy coverage | Customer misinformation |
 | Missing retrieval context | Incomplete answers |
-| Ambiguous customer queries | Incorrect interpretation |
-| Unsafe tool usage | Unauthorized operations |
+| Unsafe operational approval | Unauthorized action |
+| Incorrect tool routing | Workflow failure |
 | Long conversations | Context loss |
 
 ---
@@ -235,7 +339,7 @@ The system provides:
 | Missing policy information | Ask clarifying questions |
 | Unsupported request | Refuse safely |
 | Unknown coverage details | Express uncertainty |
-| Angry customer interactions | Escalate politely |
+| High-risk operational request | Escalate or refuse |
 | Conflicting policy clauses | Recommend human review |
 
 ---
@@ -246,10 +350,11 @@ The system provides:
 
 The system must refuse:
 - claim approvals
-- policy modifications
+- premium reductions
+- high-risk policy modifications
 - payment processing
 - legal guarantees
-- unauthorized actions
+- unauthorized operations
 
 ---
 
@@ -257,10 +362,11 @@ The system must refuse:
 
 The system must escalate:
 - disputed claims
-- legal complaints
 - fraud-related concerns
-- unclear policy conflicts
+- policy conflicts
+- legal complaints
 - unresolved customer dissatisfaction
+- operational requests requiring human approval
 
 ---
 
@@ -270,6 +376,7 @@ The system must:
 - avoid guessing
 - explain uncertainty clearly
 - avoid fabricated policy information
+- avoid unsupported operational claims
 
 ---
 
@@ -287,13 +394,22 @@ The system must:
 ```text
 Customer Query
       ↓
-PolicyAssist AI
+Intent Router Agent
       ↓
-Retrieve Relevant Policy Information
-      ↓
-Generate Safe & Grounded Response
-      ↓
-Escalate if Necessary
+──────────────────────────────────────────────
+│                │                │
+↓                ↓                ↓
+Policy Info      Claim            Policy
+Agent            Support          Update
+                 Agent            Agent
+│
+└────────────────────┬───────────────────────┘
+                     ↓
+            General Query Agent
+                     ↓
+            Safety Review Agent
+                     ↓
+             Final Safe Response
 ```
 
 ---
@@ -303,21 +419,24 @@ Escalate if Necessary
 PolicyAssist AI aims to:
 - reduce repetitive customer support workload
 - improve response consistency
-- shorten support response times
+- shorten customer response times
 - improve customer understanding of policies
+- streamline low-risk operational assistance
+- improve escalation workflows
 - provide scalable insurance support assistance
 
 ---
 
 # Conclusion
 
-PolicyAssist AI is designed as a safe, explainable, and retrieval-grounded insurance customer support assistant focused on improving policy clarification workflows while maintaining strict operational and safety boundaries.
+PolicyAssist AI is designed as a safe, explainable, retrieval-grounded, and operationally controlled lightweight orchestrated multi-agent insurance support assistant focused on improving customer support workflows while maintaining strict operational and safety boundaries.
 
 The system prioritizes:
 - grounded responses
-- customer safety
+- operational safety
 - explainability
 - escalation awareness
 - responsible AI behaviour
+- controlled operational assistance
 
 ---

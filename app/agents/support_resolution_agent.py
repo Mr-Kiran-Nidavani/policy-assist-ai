@@ -16,8 +16,9 @@ DEDUCTIBLE_RESPONSE = (
 )
 
 UNSAFE_RESPONSE = (
-    "I cannot approve claims, modify policies, or process payments directly. "
-    "Please contact an authorized insurance representative for assistance."
+    "I'm unable to assist with this request because it involves restricted or "
+    "unauthorized operations. Please contact an authorized insurance representative "
+    "or support specialist for further assistance."
 )
 
 UNKNOWN_RESPONSE = (

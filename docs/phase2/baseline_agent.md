@@ -1,52 +1,76 @@
-# Baseline Agent — Phase 2
+# Baseline Multi-Agent Agent — Phase 2
 
 # Overview
 
-This phase focuses on building the first working version of PolicyAssist AI using a simple rule-based architecture.
+This phase focuses on building the first working baseline version of PolicyAssist AI using a lightweight orchestrated multi-agent architecture.
 
-The objective of this baseline agent is to:
-- accept customer support queries
-- identify basic insurance-related intents
-- return predefined responses
-- enforce safety refusals for restricted operations
+The objective of this implementation is to:
+- support insurance customer interactions
+- classify customer requests
+- route workflows to domain-specific agents
+- enforce operational safety boundaries
+- demonstrate baseline workflow orchestration
 
 This implementation intentionally avoids advanced AI capabilities such as:
 - large language models (LLMs)
 - retrieval-augmented generation (RAG)
-- embeddings
-- memory
-- tool calling
-- reasoning systems
+- semantic embeddings
+- vector databases
+- conversational memory
+- tool execution
+- adaptive reasoning
 
-The baseline system serves as the foundation for demonstrating iterative improvements in later phases.
+The baseline system establishes the architectural foundation for future intelligent capabilities introduced in later phases.
 
 ---
 
 # Objectives of Phase 2
 
 The goals of this phase were to:
-- create a working Python CLI agent
-- support basic user interaction
-- implement simple intent detection
-- enforce safety-first refusal handling
-- identify baseline limitations
-- establish a comparison foundation for future phases
+- create a Python-based multi-agent CLI application
+- implement intent-based workflow routing
+- separate responsibilities into domain-specific agents
+- enforce restricted operation handling
+- demonstrate baseline workflow orchestration
+- identify architectural and reasoning limitations
 
 ---
 
-# Baseline Architecture
+# Baseline Multi-Agent Architecture
 
 ```text
-User Input
-    ↓
-Safety Validation
-    ↓
-Intent Detection
-    ↓
-Static Response Selection
-    ↓
-CLI Response Output
+Customer Query
+      ↓
+Intent Router Agent
+      ↓
+──────────────────────────────────────────────
+│                │                │
+↓                ↓                ↓
+Policy Info      Claim            Policy
+Agent            Support          Update
+                 Agent            Agent
+│
+└────────────────────┬───────────────────────┘
+                     ↓
+            General Query Agent
+                     ↓
+            Safety Review Agent
+                     ↓
+             Final Safe Response
 ```
+
+---
+
+# Multi-Agent Responsibilities
+
+| Agent | Responsibility |
+|---|---|
+| Intent Router Agent | Detects intent and routes workflows |
+| Policy Information Agent | Handles coverage and policy questions |
+| Claim Support Agent | Handles claims guidance workflows |
+| Policy Update Agent | Handles approved low-risk update requests |
+| General Query Agent | Handles greetings and unsupported requests |
+| Safety Review Agent | Validates responses and restricted operations |
 
 ---
 
@@ -54,11 +78,12 @@ CLI Response Output
 
 | Component | Description |
 |---|---|
-| CLI Interface | Accepts user questions through terminal input |
-| Intent Detection | Detects queries using keyword matching |
-| Static Responses | Returns predefined template responses |
-| Safety Validation | Refuses unsafe requests |
-| Unknown Query Handling | Handles unsupported or unrelated queries |
+| CLI Interface | Accepts customer support queries |
+| Intent Routing | Detects workflow category using rule-based logic |
+| Multi-Agent Workflow | Routes requests to dedicated domain agents |
+| Safety Validation | Blocks restricted operations |
+| Operational Support | Handles low-risk update requests |
+| Unknown Query Handling | Handles unsupported requests gracefully |
 
 ---
 
@@ -68,9 +93,14 @@ CLI Response Output
 app/
 │
 ├── main.py
-├── intents.py
-├── responses.py
-└── safety.py
+│
+├── agents/
+│   ├── intent_router_agent.py
+│   ├── policy_information_agent.py
+│   ├── claim_support_agent.py
+│   ├── policy_update_agent.py
+│   ├── general_query_agent.py
+│   └── safety_review_agent.py
 ```
 
 ---
@@ -78,134 +108,215 @@ app/
 # File Responsibilities
 
 ## `main.py`
-Main CLI application responsible for:
-- user interaction
-- workflow orchestration
-- safety validation
-- response generation
+
+Main orchestration workflow responsible for:
+- routing requests
+- coordinating agent execution
+- applying safety review
+- returning final responses
 
 ---
 
-## `intents.py`
-Implements simple keyword-based intent detection.
+## `intent_router_agent.py`
 
-Supported intents:
-- coverage queries
-- claim queries
-- deductible queries
-- unknown queries
+Responsible for:
+- intent detection
+- workflow classification
+- restricted operation identification
 
----
-
-## `responses.py`
-Contains predefined static response templates used by the baseline agent.
+This implementation uses:
+- rule-based keyword matching
+- simple workflow routing logic
 
 ---
 
-## `safety.py`
-Implements unsafe request detection using keyword matching.
+## `policy_information_agent.py`
 
-Restricted operations include:
-- claim approvals
-- policy modifications
-- payment processing
+Handles:
+- policy coverage questions
+- deductible explanations
+- waiting period clarification
+- exclusion guidance
+
+This agent will later evolve into:
+- a RAG-enabled retrieval agent
 
 ---
 
-# Supported Intents
+## `claim_support_agent.py`
 
-| Intent | Example Query |
+Handles:
+- claims guidance
+- reimbursement support
+- rejection explanations
+- claims-related workflows
+
+Future phases will add:
+- retrieval support
+- claim tools
+- contextual reasoning
+
+---
+
+## `policy_update_agent.py`
+
+Handles approved low-risk customer operations:
+- email updates
+- phone updates
+- address updates
+- add vehicle requests
+- add driver requests
+
+Current implementation uses:
+- simulated operational responses
+
+---
+
+## `general_query_agent.py`
+
+Handles:
+- greetings
+- help requests
+- unsupported questions
+- fallback responses
+
+---
+
+## `safety_review_agent.py`
+
+Responsible for:
+- restricted operation refusal
+- response validation
+- centralized safety enforcement
+
+---
+
+# Supported Workflow Types
+
+| Workflow | Example Query |
 |---|---|
-| `coverage_query` | “Does my policy cover surgery?” |
-| `claim_query` | “How do I submit a claim?” |
-| `deductible_query` | “What deductible applies?” |
-| `unsafe_request` | “Approve my claim” |
-| `unknown` | “What is the weather today?” |
+| Policy Information | “Does my policy cover cataract surgery?” |
+| Claim Support | “What documents are required for reimbursement claims?” |
+| Policy Updates | “Update my email address.” |
+| Restricted Requests | “Reduce my insurance premium.” |
+| General Queries | “Hello” |
+| Unknown Queries | “What is the weather today?” |
 
 ---
 
-# Sample Successful Queries
+# Policy Information Queries
 
-The baseline agent successfully handles simple keyword-based insurance support queries.
+The baseline system supports:
+- policy coverage explanations
+- waiting period clarification
+- deductible explanations
+- exclusion guidance
 
-## Examples
-- coverage-related questions
-- claims-related questions
-- deductible-related questions
+## Screenshot Evidence
 
-![Successful Queries](screenshots/successful_queries.png)
+![Policy Information Queries](screenshots/policy_information_queries.png)
 
 ---
 
-# Safety Refusal Handling
+# Claim Support Queries
 
-The baseline agent includes basic safety enforcement for restricted operations.
+The baseline system supports:
+- reimbursement guidance
+- claims documentation assistance
+- claim rejection explanations
+- hospitalization guidance
 
-The system refuses requests involving:
+## Screenshot Evidence
+
+![Claim Support Queries](screenshots/claim_support_queries.png)
+
+---
+
+# Policy Update Requests
+
+The baseline system supports approved low-risk operations such as:
+- updating email address
+- updating phone number
+- updating address
+- adding vehicles
+- adding drivers
+
+These operations are simulated in the baseline implementation.
+
+## Screenshot Evidence
+
+![Policy Update Requests](screenshots/policy_update_requests.png)
+
+---
+
+# Restricted Operations
+
+The baseline system refuses high-risk operations such as:
+- premium reduction requests
+- policy effective date changes
 - claim approvals
-- policy modifications
-- payment processing
+- deductible waivers
+- policy cancellation requests
 
-## Example Unsafe Requests
-- “Approve my insurance claim.”
-- “Modify my policy details.”
+## Screenshot Evidence
 
-![Refusal Cases](screenshots/refusal_cases.png)
+![Restricted Operations](screenshots/restricted_operations.png)
+
+---
+
+# General Queries
+
+The baseline system supports:
+- greetings
+- help requests
+- simple conversational interactions
+
+## Screenshot Evidence
+
+![General Queries](screenshots/general_queries.png)
 
 ---
 
 # Unknown Query Handling
 
-If the system cannot identify a supported intent, it returns a fallback response requesting clarification.
+Unsupported or unrelated queries are handled using fallback responses requesting clarification.
 
-## Example Unsupported Queries
-- weather-related questions
-- unrelated general knowledge questions
+## Screenshot Evidence
 
 ![Unknown Queries](screenshots/unknown_queries.png)
 
 ---
 
-# Baseline Failure Examples
-
-The baseline system struggles with:
-- multi-part questions
-- contextual understanding
-- reasoning
-- complex insurance scenarios
-
-Examples include:
-- policy comparisons
-- waiting period interpretation
-- contextual claim discussions
-
-![Baseline Failures](screenshots/baseline_failures.png)
-
----
-
-# Key Limitations of the Baseline Agent
+# Key Limitations of the Baseline System
 
 | Limitation | Impact |
 |---|---|
-| Keyword-based intent detection | Poor understanding of natural language |
-| Static responses | Generic and repetitive outputs |
+| Rule-based routing | Poor semantic understanding |
+| Keyword dependency | Fragile query detection |
+| Static responses | Generic customer responses |
 | No retrieval system | Cannot reference policy documents |
-| No memory | Cannot maintain conversation context |
-| No reasoning capability | Fails on complex queries |
-| No personalization | Same response for all users |
-| No semantic understanding | Sensitive to wording variations |
+| No memory | No multi-turn context handling |
+| No tool execution | Operations are simulated only |
+| No reasoning capability | Weak handling of complex workflows |
+| No personalization | Same responses for all customers |
 
 ---
 
 # Why This Baseline Is Insufficient
 
-Although the baseline agent demonstrates basic workflow functionality, it is not suitable for real-world insurance support environments because:
+Although the baseline architecture demonstrates:
+- workflow orchestration
+- domain separation
+- safety enforcement
+- modular design
+
+it is still insufficient for real-world insurance operations because:
 - responses are generic
-- no policy grounding exists
-- contextual understanding is absent
-- complex customer queries are poorly handled
-- no document retrieval capability exists
-- no adaptive behaviour is present
+- no retrieval grounding exists
+- no semantic understanding exists
+- no conversational memory exists
+- operations are simulated only
+- no intelligent reasoning capability exists
 
 These limitations motivate the improvements introduced in later phases.
 
@@ -214,42 +325,61 @@ These limitations motivate the improvements introduced in later phases.
 # Observations
 
 ## Successful Behaviour
-- correctly handles simple keyword-based queries
-- refuses restricted operations
-- supports basic CLI interactions
+
+The baseline system successfully demonstrates:
+- modular multi-agent orchestration
+- domain-based workflow routing
+- restricted operation refusal
+- low-risk operational assistance
+- CLI-based workflow interaction
 
 ---
 
 ## Weak Behaviour
-- struggles with paraphrased questions
-- cannot understand customer intent deeply
-- cannot explain policy-specific coverage
-- cannot answer contextual follow-up questions
+
+The baseline system struggles with:
+- paraphrased customer requests
+- ambiguous workflows
+- contextual understanding
+- complex policy interpretation
+- long multi-turn conversations
 
 ---
 
 # Future Improvements Planned
 
-Future phases will introduce:
+Future phases will progressively evolve the baseline system into an enterprise-grade intelligent insurance support platform.
+
+Planned improvements include:
 - LLM integration
 - prompt engineering
 - retrieval-augmented generation (RAG)
 - semantic search
-- tool usage
+- operational tool execution
 - conversational memory
 - adaptive behaviour
 - deployment readiness
+- evaluation frameworks
 
 ---
 
 # Conclusion
 
-Phase 2 successfully established a working baseline insurance support agent with:
-- simple intent detection
-- predefined responses
-- safety refusal handling
-- CLI-based interaction
+Phase 2 successfully established a lightweight orchestrated multi-agent baseline architecture for PolicyAssist AI.
 
-The implementation intentionally remains limited in intelligence and reasoning capability to provide a measurable comparison point for future enhancements.
+The implementation demonstrates:
+- modular workflow orchestration
+- domain-based agent separation
+- safety-first operational boundaries
+- restricted operation enforcement
+- low-risk operational support
+
+while intentionally preserving:
+- weak reasoning
+- static responses
+- rule-based routing
+- retrieval limitations
+
+to provide a measurable foundation for future intelligent enhancements.
 
 ---

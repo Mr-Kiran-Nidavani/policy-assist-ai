@@ -1,6 +1,6 @@
 # PolicyAssist AI
 
-## Intelligent Insurance Policy Support & Claims Guidance Agent
+## Intelligent Insurance Support & Controlled Operations Assistant
 
 ---
 
@@ -10,126 +10,235 @@
 2. [Problem Statement](#problem-statement)
 3. [Key Objectives](#key-objectives)
 4. [Core Features](#core-features)
-5. [Safety Constraints](#safety-constraints)
-6. [Technology Stack](#technology-stack)
-7. [Project Architecture](#project-architecture)
-8. [Project Structure](#project-structure)
-9. [Folder Responsibilities](#folder-responsibilities)
-10. [Documentation Structure](#documentation-structure)
-11. [Setting Up the Project Using uv](#setting-up-the-project-using-uv)
-12. [How the System Works](#how-the-system-works)
-13. [Sample User Interactions](#sample-user-interactions)
-14. [Prompt Engineering](#prompt-engineering)
-15. [Evaluation Metrics](#evaluation-metrics)
-16. [Failure Analysis](#failure-analysis)
-17. [Deployment Readiness](#deployment-readiness)
-18. [Known Limitations](#known-limitations)
-19. [Future Improvements](#future-improvements)
-20. [Capstone Deliverables](#capstone-deliverables)
-21. [Disclaimer](#disclaimer)
+5. [Supported Operations](#supported-operations)
+6. [Restricted Operations](#restricted-operations)
+7. [Safety Constraints](#safety-constraints)
+8. [Technology Stack](#technology-stack)
+9. [Multi-Agent Architecture](#multi-agent-architecture)
+10. [Project Structure](#project-structure)
+11. [Folder Responsibilities](#folder-responsibilities)
+12. [Documentation Structure](#documentation-structure)
+13. [Setting Up the Project Using uv](#setting-up-the-project-using-uv)
+14. [How the System Works](#how-the-system-works)
+15. [Sample User Interactions](#sample-user-interactions)
+16. [Prompt Engineering](#prompt-engineering)
+17. [Evaluation Metrics](#evaluation-metrics)
+18. [Failure Analysis](#failure-analysis)
+19. [Deployment Readiness](#deployment-readiness)
+20. [Known Limitations](#known-limitations)
+21. [Future Improvements](#future-improvements)
+22. [Capstone Deliverables](#capstone-deliverables)
+23. [Disclaimer](#disclaimer)
 
 ---
 
 # Project Overview
 
-PolicyAssist AI is a safety-first insurance customer support agent designed to help existing policyholders understand insurance coverage, claims procedures, exclusions, deductibles, and policy-related questions using AI-powered retrieval, conversational reasoning, tool usage, and contextual memory.
+PolicyAssist AI is a safety-first lightweight orchestrated multi-agent insurance support and controlled operations assistant designed to help existing policyholders understand insurance coverage, claims procedures, exclusions, deductibles, waiting periods, and operational workflows using AI-powered retrieval, conversational reasoning, contextual memory, and controlled tool usage.
 
-The system is designed as a decision-support assistant and does not perform transactional operations such as approving claims, modifying policies, or processing customer requests directly.
+The system combines:
+- retrieval-augmented generation (RAG)
+- multi-agent orchestration
+- operational tools
+- conversational memory
+- safety validation
+- escalation handling
+- adaptive behaviour
 
-This project was developed as part of an Industry Capstone focused on designing, building, evaluating, and justifying a production-style AI agent for real-world customer support workflows.
+to provide enterprise-style insurance customer support assistance.
+
+PolicyAssist AI supports:
+- policy clarification
+- claims guidance
+- low-risk operational assistance
+- customer profile updates
+- policy-related workflows
+- safe refusal handling
+
+This project was developed as part of an Industry Capstone focused on designing, building, evaluating, and justifying a production-style AI agent for real-world operational workflows.
 
 ---
 
 # Problem Statement
 
-Insurance customer support teams spend significant time handling repetitive customer queries related to:
-- policy coverage
-- claim procedures
-- exclusions
-- waiting periods
+Insurance customer support teams spend significant time handling repetitive customer requests related to:
+- policy coverage clarification
+- claims guidance
 - deductible explanations
-- required documentation
-- renewal and premium information
+- waiting periods
+- customer profile updates
+- driver and vehicle additions
+- operational support workflows
+- policy documentation requests
 
 Traditional support systems often:
-- require manual document searches
-- provide inconsistent answers
-- increase response time
-- overload human support agents
+- rely on manual policy searches
+- provide inconsistent responses
+- increase operational workload
+- delay customer resolution
+- require multiple escalations
 
-PolicyAssist AI aims to improve customer support efficiency by providing accurate, grounded, and explainable responses using retrieval-augmented generation (RAG), tool usage, and safety-first AI workflows.
+Customers frequently struggle to:
+- understand policy wording
+- interpret exclusions and waiting periods
+- determine operational eligibility
+- understand claim procedures
+- identify which requests are permitted
+
+PolicyAssist AI aims to improve support efficiency and customer experience through safe, explainable, retrieval-grounded, and operationally controlled assistance while enforcing strict guardrails for high-risk actions.
 
 ---
 
 # Key Objectives
 
-- Improve customer support response quality
+- Improve insurance customer support efficiency
 - Reduce repetitive support workload
-- Provide grounded responses using policy documents
-- Prevent hallucinated insurance information
-- Enforce safety and escalation policies
-- Demonstrate enterprise-style AI agent architecture
+- Provide grounded policy explanations
+- Enable safe low-risk operational assistance
+- Prevent unsafe or unauthorized operations
+- Reduce hallucinated insurance information
+- Demonstrate enterprise-style multi-agent architecture
+- Implement explainable AI safety workflows
 
 ---
 
 # Core Features
 
-## Customer Support Assistance
+## Insurance Support Assistance
 - Policy coverage explanation
 - Claims guidance
 - Deductible clarification
 - Waiting period explanation
+- Exclusion interpretation
 - FAQ handling
+
+---
 
 ## Retrieval-Augmented Generation (RAG)
 - Semantic document retrieval
 - Policy document grounding
-- FAQ and claims handbook retrieval
-- Context-aware responses
+- FAQ retrieval
+- Claims handbook retrieval
+- Context-aware response generation
+
+---
+
+## Controlled Operational Assistance
+- Email updates
+- Phone number updates
+- Address updates
+- Add driver requests
+- Add vehicle requests
+- Policy document retrieval
+
+---
 
 ## Tool Usage
 - Policy lookup tool
 - Claim status tool
-- Network hospital lookup
+- Customer profile tool
+- Add vehicle tool
+- Add driver tool
 - Escalation tool
 
+---
+
+## Multi-Agent Workflow
+- Intent Router Agent
+- Policy Information Agent
+- Claim Support Agent
+- Policy Update Agent
+- General Query Agent
+- Safety Review Agent
+
+---
+
 ## Memory & Context Handling
-- Multi-turn conversation support
+- Multi-turn conversations
 - Session memory
-- Context retention during customer interactions
+- Context retention
+- Follow-up query handling
+
+---
 
 ## Adaptive Behaviour
 - Feedback-aware response improvement
-- Adjustable explanation style
-- Behaviour refinement using interaction feedback
+- Adjustable explanation styles
+- Behaviour refinement using user interactions
+
+---
 
 ## Safety-First Design
-- Refuses unauthorized operations
-- Avoids fabricated policy information
-- Escalates ambiguous/high-risk cases
-- Prevents sensitive data storage in logs
+- Restricted operation refusal
+- Escalation workflows
+- Hallucination reduction
+- Safety review validation
+- Privacy-safe logging
+
+---
+
+# Supported Operations
+
+PolicyAssist AI supports approved low-risk customer operations.
+
+## Allowed Operations
+
+| Operation | Status |
+|---|---|
+| Policy coverage explanation | ✅ Supported |
+| Claims guidance | ✅ Supported |
+| Claim status lookup | ✅ Supported |
+| Update email address | ✅ Supported |
+| Update phone number | ✅ Supported |
+| Update mailing address | ✅ Supported |
+| Add new vehicle | ✅ Supported |
+| Add new driver | ✅ Supported |
+| Download policy documents | ✅ Supported |
+| FAQ assistance | ✅ Supported |
+
+---
+
+# Restricted Operations
+
+The system enforces strict restrictions on high-risk operations.
+
+## Restricted Operations
+
+| Operation | Status |
+|---|---|
+| Claim approval or rejection | ❌ Restricted |
+| Reduce insurance premium | ❌ Restricted |
+| Modify coverage limits | ❌ Restricted |
+| Backdate policy | ❌ Restricted |
+| Change policy effective date | ❌ Restricted |
+| Waive deductibles | ❌ Restricted |
+| Cancel policy | ❌ Restricted |
+| Legal or financial guarantees | ❌ Restricted |
 
 ---
 
 # Safety Constraints
 
-PolicyAssist AI is designed as a non-transactional customer support assistant.
+PolicyAssist AI follows a strict safety-first operational design.
 
-The system will:
-- explain policies
-- guide claim procedures
-- summarize retrieved information
-- recommend escalation when necessary
+The system:
+- explains policies safely
+- supports approved low-risk operations
+- validates unsafe requests
+- escalates ambiguous or high-risk cases
+- prevents unauthorized modifications
+- avoids hallucinated policy information
 
-The system will NOT:
-- approve or reject claims
-- modify policy details
-- process payments
+The system does NOT:
+- approve claims
+- perform high-risk policy modifications
+- make financial decisions
 - guarantee claim outcomes
-- provide legal or financial advice
+- provide legal advice
 
 Example refusal:
-> “I cannot approve claims or modify policy information directly. Please contact a licensed insurance representative or claims specialist.”
+
+> “I’m unable to assist with this request because it involves restricted or unauthorized operations. Please contact an authorized insurance representative or support specialist for further assistance.”
 
 ---
 
@@ -138,39 +247,55 @@ Example refusal:
 | Component | Technology |
 |---|---|
 | Programming Language | Python |
-| LLM Framework | LangChain |
+| AI Framework | LangChain |
+| LLM Provider | OpenAI API |
 | Vector Database | ChromaDB |
 | Embeddings | OpenAI Embeddings |
-| LLM Provider | OpenAI API |
 | Frontend | Streamlit |
 | Environment Management | uv |
 | Logging | Python Logging |
-| Document Processing | LangChain Loaders |
+| Document Processing | LangChain Document Loaders |
 
 ---
 
-# Project Architecture
+# Multi-Agent Architecture
+
+PolicyAssist AI follows a lightweight orchestrated multi-agent workflow.
+
+## Agent Responsibilities
+
+| Agent | Responsibility |
+|---|---|
+| Intent Router Agent | Detects user intent and routes workflows |
+| Policy Information Agent | Handles policy explanations using RAG |
+| Claim Support Agent | Handles claims guidance and claims workflows |
+| Policy Update Agent | Handles approved low-risk operational requests |
+| General Query Agent | Handles greetings and unsupported queries |
+| Safety Review Agent | Validates outputs and enforces safety rules |
+
+---
+
+# Multi-Agent Workflow
 
 ```text
-User Query
-   ↓
-Safety Guardrails
-   ↓
-Intent Detection
-   ↓
-Retriever (RAG)
-   ↓
-Tool Router
-   ├── Policy Lookup Tool
-   ├── Claim Status Tool
-   ├── Hospital Lookup Tool
-   └── Escalation Tool
-   ↓
-LLM Response Generator
-   ↓
-Conversation Memory
-   ↓
-Safe Final Response
+Customer Query
+      ↓
+Intent Router Agent
+      ↓
+──────────────────────────────────────────────
+│                │                │
+↓                ↓                ↓
+Policy Info      Claim            Policy
+Agent            Support          Update
+                 Agent            Agent
+│
+└────────────────────┬───────────────────────┘
+                     ↓
+            General Query Agent
+                     ↓
+            Safety Review Agent
+                     ↓
+             Final Safe Response
 ```
 
 ---
@@ -183,9 +308,25 @@ policyassist-ai/
 ├── app/
 │   ├── main.py
 │   ├── config.py
-│   ├── prompts/
+│   │
 │   ├── agents/
+│   │   ├── intent_router_agent.py
+│   │   ├── policy_information_agent.py
+│   │   ├── claim_support_agent.py
+│   │   ├── policy_update_agent.py
+│   │   ├── general_query_agent.py
+│   │   └── safety_review_agent.py
+│   │
 │   ├── tools/
+│   │   ├── policy_lookup_tool.py
+│   │   ├── claim_status_tool.py
+│   │   ├── update_email_tool.py
+│   │   ├── update_phone_tool.py
+│   │   ├── add_vehicle_tool.py
+│   │   ├── add_driver_tool.py
+│   │   └── escalation_tool.py
+│   │
+│   ├── prompts/
 │   ├── retriever/
 │   ├── memory/
 │   ├── safety/
@@ -197,6 +338,7 @@ policyassist-ai/
 │   ├── policies/
 │   ├── faqs/
 │   ├── claims_docs/
+│   ├── customer_profiles/
 │   └── embeddings/
 │
 ├── docs/
@@ -250,176 +392,99 @@ policyassist-ai/
 
 # Folder Responsibilities
 
-## `app/`
-Contains the core application logic.
-
 ## `agents/`
-Handles agent orchestration and response workflows.
+Contains modular multi-agent workflows:
+- routing
+- policy information handling
+- claims support
+- operational assistance
+- safety validation
 
-## `prompts/`
-Stores prompt templates and prompt strategy variations.
+---
 
 ## `tools/`
-Contains custom tools such as:
+Contains operational and retrieval tools:
 - policy lookup
-- claim status
-- escalation routing
+- claim status lookup
+- customer updates
+- escalation workflows
+
+---
 
 ## `retriever/`
 Handles:
 - embeddings
-- semantic search
-- vector retrieval
+- semantic retrieval
+- vector search
 - document chunking
+
+---
 
 ## `memory/`
 Manages:
-- conversation history
-- contextual memory
-- session retention
+- session history
+- conversation context
+- follow-up memory
+
+---
 
 ## `safety/`
 Implements:
 - refusal logic
 - escalation rules
-- safety filters
 - hallucination prevention
+- operational validation
+
+---
 
 ## `evaluation/`
 Contains:
-- evaluation scripts
-- test cases
-- metrics
-- benchmark comparisons
+- benchmark tests
+- prompt comparisons
+- failure analysis
+- consistency evaluation
+
+---
 
 ## `data/`
 Stores:
-- insurance policy documents
+- policy documents
 - FAQs
-- claim manuals
-- vector embeddings
+- claims documentation
+- customer datasets
+- embeddings
+
+---
 
 ## `docs/`
-Contains all capstone-related documentation, phase artifacts, evaluation evidence, and engineering reports.
+Contains:
+- phase artifacts
+- engineering documentation
+- screenshots
+- evaluation reports
+- deployment evidence
 
 ---
 
 # Documentation Structure
 
-## `docs/phase1/`
-Contains problem framing and business understanding documentation.
-
-### Includes:
-- problem definition
-- user personas
-- workflow analysis
-- assumptions
-- constraints
-- success criteria
-- edge cases
-- safety requirements
-
----
-
-## `docs/phase2/`
-Contains baseline agent implementation documentation.
-
-### Includes:
-- rule-based agent behaviour
-- baseline limitations
-- sample outputs
-- screenshots
-- observations
-
----
-
-## `docs/phase3/`
-Contains LLM integration and prompt engineering experiments.
-
-### Includes:
-- prompt variants
-- prompt comparison tables
-- output analysis
-- reasoning improvements
-- screenshots
-
----
-
-## `docs/phase4/`
-Contains retrieval and semantic search implementation details.
-
-### Includes:
-- document preparation
-- chunking strategy
-- embeddings workflow
-- retrieval testing
-- response comparisons
-
----
-
-## `docs/phase5/`
-Contains tool usage and tool routing documentation.
-
-### Includes:
-- tool descriptions
-- tool selection logic
-- incorrect tool usage examples
-- safeguard implementation
-- failure handling
-
----
-
-## `docs/phase6/`
-Contains planning and memory management documentation.
-
-### Includes:
-- memory handling strategy
-- conversation examples
-- context retention logic
-- multi-turn reasoning examples
-
----
-
-## `docs/phase7/`
-Contains adaptive behaviour and feedback analysis.
-
-### Includes:
-- feedback collection
-- behavioural adaptation
-- before vs after comparisons
-- response improvement analysis
-
----
-
-## `docs/phase8/`
-Contains deployment and operational readiness documentation.
-
-### Includes:
-- deployment setup
-- runtime assumptions
-- latency logs
-- failure handling
-- monitoring evidence
-
----
-
-## `docs/phase9/`
-Contains evaluation and engineering review documentation.
-
-### Includes:
-- evaluation metrics
-- failure analysis
-- root cause investigation
-- safety review
-- future improvement roadmap
+| Folder | Purpose |
+|---|---|
+| `phase1/` | Problem framing and business analysis |
+| `phase2/` | Baseline rule-based agent |
+| `phase3/` | LLM integration and prompt engineering |
+| `phase4/` | RAG and semantic retrieval |
+| `phase5/` | Tool usage and operational workflows |
+| `phase6/` | Memory and planning |
+| `phase7/` | Adaptive behaviour |
+| `phase8/` | Deployment readiness |
+| `phase9/` | Evaluation and engineering review |
 
 ---
 
 # Setting Up the Project Using uv
 
 ## 1. Install uv
-
-Install uv using the official installation instructions for your operating system.
 
 Verify installation:
 
@@ -429,7 +494,7 @@ uv --version
 
 ---
 
-## 2. Clone the Repository
+## 2. Clone Repository
 
 ```bash
 git clone <repository-url>
@@ -444,7 +509,9 @@ cd policyassist-ai
 uv venv
 ```
 
-Activate the environment:
+---
+
+## 4. Activate Environment
 
 ### Windows
 ```bash
@@ -458,7 +525,7 @@ source .venv/bin/activate
 
 ---
 
-## 4. Install Dependencies
+## 5. Install Dependencies
 
 ```bash
 uv sync
@@ -466,144 +533,135 @@ uv sync
 
 ---
 
-## 5. Configure Environment Variables
+## 6. Configure Environment Variables
 
-Create a `.env` file and configure:
+Create `.env` file with:
 - OpenAI API key
 - model configuration
+- embedding model
 - logging configuration
-
-Example variables:
-- `OPENAI_API_KEY`
-- `MODEL_NAME`
-- `EMBEDDING_MODEL`
 
 ---
 
-## 6. Start the Application
+## 7. Run Application
+
+CLI version:
 
 ```bash
-streamlit run app/main.py
+python app/main.py
+```
+
+Streamlit version:
+
+```bash
+streamlit run streamlit_app.py
 ```
 
 ---
 
 # How the System Works
 
-## Step 1 — User Query
-The customer submits a support question.
-
-Example:
-> “Does my health insurance cover knee replacement surgery?”
+## Step 1 — Customer Query
+The user submits a support question or operational request.
 
 ---
 
-## Step 2 — Safety Validation
-The system checks:
-- unsafe requests
-- policy modification attempts
-- transactional operations
-- restricted actions
+## Step 2 — Intent Routing
+The Intent Router Agent classifies:
+- policy support queries
+- claims queries
+- operational requests
+- restricted requests
+- general questions
 
 ---
 
-## Step 3 — Retrieval
-Relevant documents are retrieved from:
-- policy PDFs
-- FAQ datasets
-- claims documentation
+## Step 3 — Agent Selection
+The query is routed to the appropriate domain-specific agent.
 
 ---
 
-## Step 4 — Tool Selection
-The agent determines whether tools are required.
-
-Possible tools:
-- policy lookup
-- claim status lookup
-- escalation routing
+## Step 4 — Retrieval & Tool Usage
+The selected agent:
+- retrieves policy information
+- uses operational tools if required
+- gathers contextual information
 
 ---
 
 ## Step 5 — Response Generation
-The LLM generates a grounded response using:
+The system generates grounded responses using:
 - retrieved documents
 - tool outputs
-- conversation context
-- safety policies
+- conversation memory
+- prompt strategies
 
 ---
 
-## Step 6 — Memory Handling
-Conversation context is retained for multi-turn support interactions.
+## Step 6 — Safety Review
+The Safety Review Agent validates:
+- restricted operations
+- hallucination risks
+- escalation requirements
+- safety compliance
 
 ---
 
 ## Step 7 — Final Safe Response
-The system returns:
-- grounded explanation
-- uncertainty handling
-- escalation guidance if needed
+The validated response is returned to the customer.
 
 ---
 
 # Sample User Interactions
 
-## Example 1 — Coverage Query
+## Example 1 — Policy Coverage Query
 
 ### User Input
 > “Does my policy cover cataract surgery?”
 
 ### Agent Response
-> “Based on the retrieved policy section, cataract surgery is covered after the 24-month waiting period under the surgical treatment benefits section. Coverage may depend on policy terms and claim review.”
+> “Based on the retrieved policy section, cataract surgery is covered after the 24-month waiting period under surgical treatment benefits.”
 
 ---
 
-## Example 2 — Unsafe Request
+## Example 2 — Claim Support Query
 
 ### User Input
-> “Approve my insurance claim immediately.”
+> “What documents are required for reimbursement claims?”
 
 ### Agent Response
-> “I cannot approve or modify claims directly. I can explain the claims review process or escalate your request to a human claims specialist.”
+> “Hospital bills, discharge summaries, identity proof, and physician reports are typically required for reimbursement claims.”
 
 ---
 
-## Example 3 — Missing Information
+## Example 3 — Allowed Operational Request
 
 ### User Input
-> “Will my treatment definitely be covered?”
+> “Update my email address.”
 
 ### Agent Response
-> “I cannot guarantee claim outcomes. Coverage depends on policy terms, exclusions, waiting periods, and claim review by the insurance provider.”
+> “Your request to update the email address has been submitted successfully.”
 
 ---
 
-## Example 4 — Escalation
+## Example 4 — Restricted Request
 
 ### User Input
-> “My claim was rejected unfairly.”
+> “Reduce my insurance premium.”
 
 ### Agent Response
-> “I recommend escalating this case to a human claims specialist for detailed review. I can also help explain common claim rejection reasons based on policy documents.”
+> “I’m unable to assist with this request because it involves restricted or unauthorized operations.”
 
 ---
 
 # Prompt Engineering
 
-The project evaluates multiple prompt strategies using the same evaluation dataset.
-
-Prompt variants include:
-- baseline assistant prompt
-- safety-focused prompt
-- retrieval-grounded prompt
-
-Outputs are compared for:
-- hallucination reduction
-- response quality
-- refusal accuracy
-- consistency
-- explainability
+The project evaluates multiple prompt strategies using:
+- structured prompt comparisons
+- safety-focused prompts
+- retrieval-grounded prompts
+- evaluation datasets
+- before vs after analysis
 
 ---
 
@@ -615,6 +673,7 @@ The system is evaluated using:
 - response consistency
 - escalation correctness
 - refusal compliance
+- tool routing accuracy
 - latency measurements
 
 ---
@@ -623,10 +682,10 @@ The system is evaluated using:
 
 The project includes:
 - root cause analysis
-- before vs after comparisons
 - debugging evidence
-- retrieval quality improvements
-- hallucination mitigation strategies
+- retrieval failure analysis
+- hallucination mitigation
+- before vs after improvements
 
 ---
 
@@ -636,7 +695,7 @@ The system includes:
 - modular architecture
 - reproducible setup
 - structured logging
-- latency tracking
+- latency monitoring
 - graceful failure handling
 - environment-based configuration
 
@@ -645,20 +704,20 @@ The system includes:
 # Known Limitations
 
 - Responses depend on retrieval quality
+- Operations are simulated for demonstration purposes
 - Limited to provided policy documents
-- Does not perform real insurance transactions
-- Requires accurate and updated knowledge sources
+- Requires accurate retrieval sources
 - Long conversations may require memory optimization
 
 ---
 
 # Future Improvements
 
-- Multi-language customer support
-- Voice-enabled interactions
+- Multi-language support
+- Voice-enabled workflows
 - Real insurance backend integration
-- Advanced claim workflow automation
-- Human-in-the-loop review system
+- Human-in-the-loop approvals
+- Advanced authorization systems
 - Fine-tuned insurance-domain models
 
 ---
@@ -670,7 +729,7 @@ This project includes:
 - Problem Framing Document
 - Demo Script
 - Evaluation Report
-- Engineering & Product Justification
+- Engineering Justification
 - Prompt Comparison Evidence
 - Safety Enforcement Demonstration
 
@@ -678,6 +737,8 @@ This project includes:
 
 # Disclaimer
 
-PolicyAssist AI is an educational capstone project designed for demonstrating enterprise AI agent engineering workflows. The system does not provide legal, financial, or official insurance advice.
+PolicyAssist AI is an educational capstone project designed to demonstrate enterprise AI agent engineering workflows for insurance customer support and controlled operational assistance.
+
+The system does not provide legal, financial, or official insurance advice.
 
 ---
