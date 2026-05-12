@@ -1,89 +1,38 @@
+from llm.llm_client import LLMClient
+from prompts.router_prompts import INTENT_ROUTER_PROMPT
+
+
+llm_client = LLMClient()
+
+
+VALID_INTENTS = {
+    "policy_information",
+    "claim_support",
+    "policy_update",
+    "restricted_operation",
+    "general_query",
+    "unknown",
+}
+
+
 def detect_intent(user_input: str) -> str:
     """
-    Detects the user intent using simple keyword matching.
-    This is a baseline implementation for Phase 2.
+    Detects user intent using LLM classification.
     """
 
-    user_input = user_input.lower()
-
-    # Restricted operations
-    if (
-        (
-            any(action in user_input for action in [
-                "reduce",
-                "change",
-                "backdate",
-                "waive",
-                "cancel",
-                "approve"
-            ])
-            and
-            any(target in user_input for target in [
-                "premium",
-                "effective date",
-                "deductible",
-                "policy",
-                "coverage",
-                "claim"
-            ])
+    try:
+        prompt = INTENT_ROUTER_PROMPT.format(
+            user_query=user_input
         )
-        or
-        (
-            any(action in user_input for action in [
-                "approve",
-                "reject",
-            ])
-            and "claim" in user_input
-        )
-    ):
-        return "restricted_operation"
-    # Policy information queries
-    elif any(keyword in user_input for keyword in [
-        "coverage",
-        "cover",
-        "included",
-        "benefit",
-        "deductible",
-        "exclusion",
-        "policy",
-    ]):
-        return "policy_information"
 
-    # Claim support queries
-    elif any(keyword in user_input for keyword in [
-        "claim",
-        "reimbursement",
-        "hospitalization"
-    ]):
-        return "claim_support"
+        response = llm_client.ask(prompt)
 
-    # Policy update requests
-    elif (
-        any(action in user_input for action in [
-            "update",
-            "change",
-            "add",
-        ])
-        and
-        any(target in user_input for target in [
-            "email",
-            "phone",
-            "address",
-            "vehicle",
-            "driver",
-        ])
-    ):
-        return "policy_update"
+        intent = response.strip().lower()
 
-    # Greetings and general queries
-    elif any(keyword in user_input for keyword in [
-        "hello",
-        "hi",
-        "help",
-        "thanks",
-    ]):
-        return "general_query"
+        if intent in VALID_INTENTS:
+            return intent
 
-    # Unknown requests
-    else:
+        return "unknown"
+
+    except Exception:
         return "unknown"

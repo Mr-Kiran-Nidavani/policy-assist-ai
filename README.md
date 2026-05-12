@@ -331,7 +331,7 @@ policyassist-ai/
 │   ├── memory/
 │   ├── safety/
 │   ├── evaluation/
-│   ├── logging/
+│   ├── logs/
 │   └── utils/
 │
 ├── data/

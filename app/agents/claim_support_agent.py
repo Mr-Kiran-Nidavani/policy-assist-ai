@@ -1,42 +1,29 @@
+from llm.llm_client import LLMClient
+from prompts.claim_prompts import SAFETY_CLAIM_PROMPT
+
+
+llm_client = LLMClient()
+
+
 def handle_claim_support_query(user_input: str) -> str:
     """
     Handles claim-related support queries using
-    predefined baseline responses.
+    LLM-generated responses with safety-focused prompts.
     """
 
-    user_input = user_input.lower()
-
-    # Claim status queries
-    if "claim status" in user_input or "status" in user_input:
-        return (
-            "Claim status information is currently unavailable in the "
-            "baseline system. Please contact customer support for assistance."
+    try:
+        # Build prompt
+        prompt = SAFETY_CLAIM_PROMPT.format(
+            user_query=user_input
         )
 
-    # Reimbursement-related queries
-    elif "reimbursement" in user_input:
-        return (
-            "Reimbursement claims typically require hospital bills, "
-            "medical reports, discharge summaries, and identity proof."
-        )
+        # Generate response
+        response = llm_client.ask(prompt)
 
-    # Rejected claim queries
-    elif "rejected" in user_input:
-        return (
-            "Claims may be rejected due to exclusions, incomplete documents, "
-            "waiting periods, or policy limitations."
-        )
+        return response
 
-    # Hospitalization claim queries
-    elif "hospitalization" in user_input:
+    except Exception:
         return (
-            "Hospitalization claims usually require admission records, "
-            "discharge summaries, and medical expense documentation."
-        )
-
-    # Generic claims guidance
-    else:
-        return (
-            "I can assist with claim-related guidance, reimbursement "
-            "requirements, and general claims support questions."
+            "I'm unable to process the claims support request at the moment. "
+            "Please try again later or contact customer support."
         )

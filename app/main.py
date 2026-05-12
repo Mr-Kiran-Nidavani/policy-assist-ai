@@ -4,7 +4,9 @@ from agents.claim_support_agent import handle_claim_support_query
 from agents.policy_update_agent import handle_policy_update_request
 from agents.general_query_agent import handle_general_query
 from agents.safety_review_agent import review_response
+from logs.logger import get_logger
 
+logger = get_logger()
 
 def process_user_query(user_input: str) -> str:
     """
@@ -14,7 +16,7 @@ def process_user_query(user_input: str) -> str:
 
     # Step 1 — Detect intent
     intent = detect_intent(user_input)
-
+    logger.info(f"Detected intent: {intent}")
     # Step 2 — Route to appropriate agent
 
     # Policy Information Agent
@@ -38,7 +40,12 @@ def process_user_query(user_input: str) -> str:
         response = handle_general_query(user_input)
 
     # Step 3 — Safety Review
-    safe_response = review_response(intent, response)
+    logger.info("Running safety review agent")
+    safe_response = review_response(
+        user_input=user_input,
+        intent=intent,
+        response=response
+    )
 
     return safe_response
 
@@ -57,6 +64,12 @@ def main():
         if user_input.lower() == "exit":
             print("PolicyAssist AI: Goodbye!")
             break
+
+        if not user_input.strip():
+            print(
+                "\nPolicyAssist AI: Please enter a valid insurance-related question.\n"
+            )
+            continue
 
         response = process_user_query(user_input)
 
