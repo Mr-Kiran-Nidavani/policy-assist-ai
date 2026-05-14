@@ -1,29 +1,31 @@
 from llm.llm_client import LLMClient
-from prompts.policy_prompts import SAFETY_POLICY_PROMPT
-
+from prompts.policy_prompts import RAG_POLICY_PROMPT
+from retriever.retriever import get_retriever
 
 llm_client = LLMClient()
-
+retriever = get_retriever()
 
 def handle_policy_information_query(user_input: str) -> str:
     """
-    Handles policy-related support queries using
-    LLM-generated responses with safety-focused prompts.
+    Handles policy information queries
+    using Retrieval-Augmented Generation (RAG).
     """
 
-    try:
-        # Build prompt
-        prompt = SAFETY_POLICY_PROMPT.format(
-            user_query=user_input
-        )
+    # Retrieve relevant policy chunks
+    retrieved_docs = retriever.invoke(user_input)
+  
+    # Build retrieval context
+    context = "\n\n".join(
+        [doc.page_content for doc in retrieved_docs]
+    )
 
-        # Generate response
-        response = llm_client.ask(prompt)
+    # Build grounded RAG prompt
+    prompt = RAG_POLICY_PROMPT.format(
+        context=context,
+        user_query=user_input
+    )
 
-        return response
+    # Generate grounded response
+    response = llm_client.ask(prompt)
 
-    except Exception as error:
-        return (
-            "I'm unable to process the policy information request at the moment. "
-            "Please try again later or contact customer support."
-        )
+    return response

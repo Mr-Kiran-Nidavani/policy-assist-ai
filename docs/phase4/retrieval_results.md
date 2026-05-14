@@ -1,3 +1,0 @@
-# Retrieval Results
-
-## Response Comparisons

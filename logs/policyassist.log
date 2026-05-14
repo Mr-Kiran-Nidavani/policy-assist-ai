@@ -70,3 +70,130 @@
 2026-05-12 14:16:42 | INFO | Detected intent: claim_support
 2026-05-12 14:16:45 | INFO | Running safety review agent
 2026-05-12 14:16:46 | INFO | Safe response approved
+2026-05-14 11:59:38 | INFO | Detected intent: policy_information
+2026-05-14 11:59:48 | INFO | Running safety review agent
+2026-05-14 11:59:49 | INFO | Safe response approved
+2026-05-14 12:02:59 | INFO | Detected intent: policy_information
+2026-05-14 12:03:04 | INFO | Running safety review agent
+2026-05-14 12:03:05 | INFO | Safe response approved
+2026-05-14 12:41:16 | INFO | Detected intent: policy_information
+2026-05-14 12:44:29 | INFO | Detected intent: policy_information
+2026-05-14 12:44:35 | INFO | Running safety review agent
+2026-05-14 12:44:36 | INFO | Safe response approved
+2026-05-14 12:45:46 | INFO | Detected intent: policy_information
+2026-05-14 12:45:51 | INFO | Running safety review agent
+2026-05-14 12:45:52 | WARNING | Response escalated for human review
+2026-05-14 12:51:52 | INFO | Detected intent: policy_information
+2026-05-14 13:04:50 | INFO | Detected intent: policy_information
+2026-05-14 13:04:55 | INFO | Running safety review agent
+2026-05-14 13:04:56 | INFO | Safe response approved
+2026-05-14 13:08:49 | INFO | Starting vector database build process
+2026-05-14 13:08:49 | INFO | Loaded documents/pages: 3
+2026-05-14 13:08:49 | INFO | Generated text chunks: 17
+2026-05-14 13:08:49 | INFO | Sample chunk preview:
+2026-05-14 13:08:49 | INFO | AUTO INSURANCE POLICY INFORMATION
+
+Section: Collision Coverage
+Collision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object.
+
+Coverage is subject to:
+- deductibles
+- approved claim assessment
+- policy limits
+
+Damage caused by intentional misuse or una
+2026-05-14 13:08:51 | INFO | Embedding model initialized
+2026-05-14 13:08:54 | INFO | Chroma vector database created successfully
+2026-05-14 13:08:54 | INFO | Persisted vector DB path: data/embeddings
+2026-05-14 13:08:54 | INFO | Stored vectors: 17
+2026-05-14 13:10:43 | INFO | Detected intent: policy_information
+2026-05-14 13:10:49 | INFO | Running safety review agent
+2026-05-14 13:10:51 | INFO | Safe response approved
+2026-05-14 13:12:35 | INFO | Detected intent: policy_information
+2026-05-14 13:12:40 | INFO | Running safety review agent
+2026-05-14 13:12:41 | INFO | Safe response approved
+2026-05-14 13:13:07 | INFO | Detected intent: policy_information
+2026-05-14 13:13:11 | INFO | Running safety review agent
+2026-05-14 13:13:13 | WARNING | Response escalated for human review
+2026-05-14 13:13:55 | INFO | Detected intent: policy_information
+2026-05-14 13:14:00 | INFO | Running safety review agent
+2026-05-14 13:14:02 | WARNING | Response escalated for human review
+2026-05-14 13:19:01 | INFO | Detected intent: policy_information
+2026-05-14 13:19:06 | INFO | Running safety review agent
+2026-05-14 13:19:07 | INFO | Safe response approved
+2026-05-14 13:21:43 | INFO | Detected intent: policy_information
+2026-05-14 13:21:48 | INFO | Running safety review agent
+2026-05-14 13:21:50 | WARNING | Restricted operation blocked
+2026-05-14 13:27:47 | INFO | Detected intent: policy_information
+2026-05-14 13:27:50 | INFO | Running safety review agent
+2026-05-14 13:27:51 | INFO | Safe response approved
+2026-05-14 13:28:01 | INFO | Detected intent: claim_support
+2026-05-14 13:28:04 | INFO | Running safety review agent
+2026-05-14 13:28:05 | INFO | Safe response approved
+2026-05-14 13:28:25 | INFO | Detected intent: policy_information
+2026-05-14 13:28:29 | INFO | Running safety review agent
+2026-05-14 13:28:31 | INFO | Safe response approved
+2026-05-14 13:28:43 | INFO | Detected intent: policy_information
+2026-05-14 13:28:47 | INFO | Running safety review agent
+2026-05-14 13:28:49 | INFO | Safe response approved
+2026-05-14 13:29:06 | INFO | Detected intent: policy_update
+2026-05-14 13:29:06 | INFO | Running safety review agent
+2026-05-14 13:29:06 | INFO | Policy update request completed successfully
+2026-05-14 13:29:46 | INFO | Detected intent: restricted_operation
+2026-05-14 13:29:46 | INFO | Running safety review agent
+2026-05-14 13:29:46 | WARNING | Restricted operation blocked
+2026-05-14 13:29:57 | INFO | Detected intent: claim_support
+2026-05-14 13:29:59 | INFO | Running safety review agent
+2026-05-14 13:30:01 | INFO | Safe response approved
+2026-05-14 13:39:44 | INFO | Detected intent: policy_information
+2026-05-14 13:39:50 | INFO | Running safety review agent
+2026-05-14 13:39:51 | INFO | Safe response approved
+2026-05-14 13:40:01 | INFO | Detected intent: policy_information
+2026-05-14 13:40:05 | INFO | Running safety review agent
+2026-05-14 13:40:07 | INFO | Safe response approved
+2026-05-14 13:42:58 | INFO | Detected intent: policy_information
+2026-05-14 13:43:03 | INFO | Running safety review agent
+2026-05-14 13:43:05 | INFO | Safe response approved
+2026-05-14 13:43:15 | INFO | Detected intent: policy_information
+2026-05-14 13:43:19 | INFO | Running safety review agent
+2026-05-14 13:43:21 | INFO | Safe response approved
+2026-05-14 13:44:35 | INFO | Detected intent: policy_information
+2026-05-14 13:44:40 | INFO | Running safety review agent
+2026-05-14 13:44:41 | INFO | Safe response approved
+2026-05-14 13:44:45 | INFO | Detected intent: policy_information
+2026-05-14 13:44:50 | INFO | Running safety review agent
+2026-05-14 13:44:52 | INFO | Safe response approved
+2026-05-14 13:46:13 | INFO | Detected intent: policy_information
+2026-05-14 13:46:18 | INFO | Running safety review agent
+2026-05-14 13:46:19 | INFO | Safe response approved
+2026-05-14 13:46:30 | INFO | Detected intent: policy_information
+2026-05-14 13:46:35 | INFO | Running safety review agent
+2026-05-14 13:46:36 | INFO | Safe response approved
+2026-05-14 13:47:37 | INFO | Detected intent: restricted_operation
+2026-05-14 13:47:37 | INFO | Running safety review agent
+2026-05-14 13:47:37 | WARNING | Restricted operation blocked
+2026-05-14 13:47:41 | INFO | Detected intent: claim_support
+2026-05-14 13:47:45 | INFO | Running safety review agent
+2026-05-14 13:47:46 | INFO | Safe response approved
+2026-05-14 13:47:50 | INFO | Detected intent: restricted_operation
+2026-05-14 13:47:50 | INFO | Running safety review agent
+2026-05-14 13:47:50 | WARNING | Restricted operation blocked
+2026-05-14 13:50:03 | INFO | Starting vector database build process
+2026-05-14 13:50:03 | INFO | Loaded documents/pages: 3
+2026-05-14 13:50:03 | INFO | Generated text chunks: 17
+2026-05-14 13:50:03 | INFO | Sample chunk preview:
+2026-05-14 13:50:03 | INFO | AUTO INSURANCE POLICY INFORMATION
+
+Section: Collision Coverage
+Collision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object.
+
+Coverage is subject to:
+- deductibles
+- approved claim assessment
+- policy limits
+
+Damage caused by intentional misuse or una
+2026-05-14 13:50:03 | INFO | Embedding model initialized
+2026-05-14 13:50:07 | INFO | Chroma vector database created successfully
+2026-05-14 13:50:07 | INFO | Persisted vector DB path: data/embeddings
+2026-05-14 13:50:07 | INFO | Stored vectors: 34
