@@ -24,6 +24,6 @@ def handle_general_query(user_input: str) -> str:
 
     except Exception:
         return (
-            "I’m unable to process the request at the moment. "
+            "I'm unable to process the request at the moment. "
             "Please try again later."
         )

@@ -314,17 +314,15 @@ policyassist-ai/
 │   │   ├── policy_information_agent.py
 │   │   ├── claim_support_agent.py
 │   │   ├── policy_update_agent.py
+|   |   |__customer_policy_agent.py 
 │   │   ├── general_query_agent.py
 │   │   └── safety_review_agent.py
 │   │
 │   ├── tools/
+|   |   |__ utils.py (Holds common functions like retrive policy info or update policy info)
 │   │   ├── policy_lookup_tool.py
-│   │   ├── claim_status_tool.py
 │   │   ├── update_email_tool.py
 │   │   ├── update_phone_tool.py
-│   │   ├── add_vehicle_tool.py
-│   │   ├── add_driver_tool.py
-│   │   └── escalation_tool.py
 │   │
 │   ├── prompts/
 │   ├── retriever/
@@ -354,29 +352,28 @@ policyassist-ai/
 │   │   └── screenshots/
 │   │
 │   ├── phase4/
-│   │   ├── rag_implementation.md
-│   │   └── retrieval_results.md
+│   │   ├── screenshots/
+│   │   └── rag_implementation.md
 │   │
 │   ├── phase5/
-│   │   ├── tool_usage.md
-│   │   └── tool_failures.md
+│   │   ├── screenshots/
+│   │   └── tool_usage.md
 │   │
 │   ├── phase6/
-│   │   ├── memory_planning.md
+│   │   ├── screenshots/
 │   │   └── conversation_examples.md
 │   │
 │   ├── phase7/
-│   │   ├── adaptive_behaviour.md
-│   │   └── feedback_analysis.md
+│   │   ├── screenshots/
+│   │   └── adaptive_behaviour.md
 │   │
 │   ├── phase8/
-│   │   ├── deployment.md
-│   │   └── runtime_logs.md
+│   │   ├── screenshots/
+│   │   └── deployment_readiness.md
 │   │
 │   └── phase9/
-│       ├── evaluation_report.md
-│       ├── root_cause_analysis.md
-│       └── final_metrics.md
+│       ├── screenshots/
+│       ├── evaluation_engineering_review.md
 │
 ├── tests/
 ├── logs/

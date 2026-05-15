@@ -11,6 +11,7 @@ VALID_INTENTS = {
     "policy_update",
     "restricted_operation",
     "general_query",
+    "customer_policy_query",
     "unknown",
 }
 

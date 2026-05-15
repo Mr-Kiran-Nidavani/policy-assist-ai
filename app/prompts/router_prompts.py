@@ -26,8 +26,34 @@ Available Intent Categories:
 5. general_query
 - Greetings, help requests, general insurance assistance
 
-6. unknown
+6. customer_policy_query
+- Questions about the customer's own policy details
+- Queries containing:
+  - my policy
+  - my deductible
+  - my vehicles
+  - my expiry date
+  - my coverage
+  - my account
+- Customer-specific operational lookups
+
+Examples:
+- What is my policy expiry date?
+- What vehicles are insured under my policy?
+- Is my policy active?
+- What is my deductible?
+
+7. unknown
 - Unsupported, unrelated, or unclear requests
+
+
+Example Customer Query and Intent Classification:
+User: What is collision coverage?
+Intent: policy_information
+
+User: What is my collision deductible?
+Intent: customer_policy_query
+
 
 Customer Query:
 {user_query}

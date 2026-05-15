@@ -1,0 +1,285 @@
+[
+  {
+    "customer_id": "C1001",
+    "customer_name": "John Doe",
+    "policy_number": "AUTO-2025-1001",
+    "policy_type": "Auto Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-08-15",
+    "expiry_date": "2026-08-15",
+    "coverage": {
+      "collision_coverage": true,
+      "comprehensive_coverage": true,
+      "liability_coverage": 500000,
+      "roadside_assistance": true
+    },
+    "deductibles": {
+      "collision_deductible": 500,
+      "comprehensive_deductible": 300
+    },
+    "vehicles": [
+      {
+        "make": "Honda",
+        "model": "City",
+        "year": 2022,
+        "registration_number": "KA01AB1234"
+      },
+      {
+        "make": "Hyundai",
+        "model": "Creta",
+        "year": 2023,
+        "registration_number": "KA02CD5678"
+      }
+    ],
+    "drivers": [
+      {
+        "name": "John Doe",
+        "license_number": "DL12345678"
+      }
+    ],
+    "phone_number": "+1-555-1200",
+    "email": "test1@gmail.com",
+    "phone": "9902160387"
+  },
+  {
+    "customer_id": "C1002",
+    "customer_name": "Sarah Smith",
+    "policy_number": "HOME-2025-2001",
+    "policy_type": "Home Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-01-10",
+    "expiry_date": "2027-01-10",
+    "coverage": {
+      "dwelling_coverage": 750000,
+      "fire_damage_coverage": true,
+      "theft_coverage": true,
+      "flood_coverage": false
+    },
+    "deductibles": {
+      "standard_deductible": 1000
+    },
+    "property_details": {
+      "insured_address": "221B Baker Street",
+      "square_feet": 2800,
+      "replacement_cost": 800000
+    },
+    "phone_number": "+1-555-4400",
+    "email": "sarah.smith@example.com"
+  },
+  {
+    "customer_id": "C1003",
+    "customer_name": "Michael Brown",
+    "policy_number": "HEALTH-2025-3001",
+    "policy_type": "Health Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-03-01",
+    "expiry_date": "2026-03-01",
+    "coverage": {
+      "hospitalization_coverage": true,
+      "maternity_coverage": true,
+      "critical_illness_cover": true
+    },
+    "deductibles": {
+      "annual_deductible": 1000
+    },
+    "coverage_limits": {
+      "annual_limit": 1000000
+    },
+    "family_members": [
+      {
+        "name": "Anna Brown",
+        "relationship": "Spouse"
+      }
+    ],
+    "phone_number": "+1-555-7700",
+    "email": "michael.brown@example.com"
+  },
+  {
+    "customer_id": "C1004",
+    "customer_name": "David Wilson",
+    "policy_number": "AUTO-2025-1002",
+    "policy_type": "Auto Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-05-20",
+    "expiry_date": "2026-05-20",
+    "coverage": {
+      "collision_coverage": true,
+      "liability_coverage": 300000
+    },
+    "deductibles": {
+      "collision_deductible": 700
+    },
+    "vehicles": [
+      {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2021,
+        "registration_number": "MH01XY4321"
+      }
+    ],
+    "drivers": [
+      {
+        "name": "David Wilson",
+        "license_number": "DL11112222"
+      }
+    ],
+    "phone_number": "+1-555-8800",
+    "email": "david.wilson@example.com"
+  },
+  {
+    "customer_id": "C1005",
+    "customer_name": "Emma Taylor",
+    "policy_number": "HOME-2025-2002",
+    "policy_type": "Home Insurance",
+    "policy_status": "Expired",
+    "start_date": "2023-06-15",
+    "expiry_date": "2025-06-15",
+    "coverage": {
+      "dwelling_coverage": 650000,
+      "fire_damage_coverage": true,
+      "theft_coverage": true
+    },
+    "deductibles": {
+      "standard_deductible": 1200
+    },
+    "property_details": {
+      "insured_address": "14 Green Avenue",
+      "square_feet": 2400,
+      "replacement_cost": 700000
+    },
+    "phone_number": "+1-555-6600",
+    "email": "emma.taylor@example.com"
+  },
+  {
+    "customer_id": "C1006",
+    "customer_name": "Daniel Harris",
+    "policy_number": "HEALTH-2025-3002",
+    "policy_type": "Health Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-02-01",
+    "expiry_date": "2026-02-01",
+    "coverage": {
+      "hospitalization_coverage": true,
+      "dental_coverage": false,
+      "annual_health_checkup": true
+    },
+    "deductibles": {
+      "annual_deductible": 1500
+    },
+    "coverage_limits": {
+      "annual_limit": 800000
+    },
+    "phone_number": "+1-555-9900",
+    "email": "daniel.harris@example.com"
+  },
+  {
+    "customer_id": "C1007",
+    "customer_name": "Olivia Martin",
+    "policy_number": "AUTO-2025-1003",
+    "policy_type": "Auto Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-04-01",
+    "expiry_date": "2026-04-01",
+    "coverage": {
+      "comprehensive_coverage": true,
+      "roadside_assistance": true
+    },
+    "deductibles": {
+      "comprehensive_deductible": 400
+    },
+    "vehicles": [
+      {
+        "make": "Kia",
+        "model": "Seltos",
+        "year": 2024,
+        "registration_number": "DL09ZZ9999"
+      }
+    ],
+    "drivers": [
+      {
+        "name": "Olivia Martin",
+        "license_number": "DL55556666"
+      }
+    ],
+    "phone_number": "+1-555-4321",
+    "email": "olivia.martin@example.com"
+  },
+  {
+    "customer_id": "C1008",
+    "customer_name": "James Anderson",
+    "policy_number": "HOME-2025-2003",
+    "policy_type": "Home Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-07-10",
+    "expiry_date": "2027-07-10",
+    "coverage": {
+      "dwelling_coverage": 900000,
+      "flood_coverage": true,
+      "temporary_living_expenses": true
+    },
+    "deductibles": {
+      "standard_deductible": 1500
+    },
+    "property_details": {
+      "insured_address": "98 Ocean View",
+      "square_feet": 3500,
+      "replacement_cost": 950000
+    },
+    "phone_number": "+1-555-7777",
+    "email": "james.anderson@example.com"
+  },
+  {
+    "customer_id": "C1009",
+    "customer_name": "Sophia Lee",
+    "policy_number": "HEALTH-2025-3003",
+    "policy_type": "Health Insurance",
+    "policy_status": "Active",
+    "start_date": "2025-09-01",
+    "expiry_date": "2026-09-01",
+    "coverage": {
+      "maternity_coverage": true,
+      "critical_illness_cover": true,
+      "cataract_surgery_coverage": true
+    },
+    "deductibles": {
+      "annual_deductible": 900
+    },
+    "coverage_limits": {
+      "annual_limit": 1200000
+    },
+    "phone_number": "+1-555-1111",
+    "email": "sophia.lee@example.com"
+  },
+  {
+    "customer_id": "C1010",
+    "customer_name": "William Clark",
+    "policy_number": "AUTO-2025-1004",
+    "policy_type": "Auto Insurance",
+    "policy_status": "Cancelled",
+    "start_date": "2024-10-01",
+    "expiry_date": "2025-10-01",
+    "coverage": {
+      "collision_coverage": false,
+      "liability_coverage": 250000
+    },
+    "deductibles": {
+      "collision_deductible": 1000
+    },
+    "vehicles": [
+      {
+        "make": "Ford",
+        "model": "EcoSport",
+        "year": 2020,
+        "registration_number": "TN10AB2020"
+      }
+    ],
+    "drivers": [
+      {
+        "name": "William Clark",
+        "license_number": "DL77778888"
+      }
+    ],
+    "phone_number": "+1-555-3333",
+    "email": "william.clark@example.com"
+  }
+]
