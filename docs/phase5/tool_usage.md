@@ -910,6 +910,115 @@ The system:
 
 ---
 
+## Scenario 3 — Multi-Tool Execution Failure
+
+### Example Query
+
+```text
+Update my phone to 1232123232 and email to test@test.com
+```
+
+---
+
+## Expected Behaviour
+
+The system should:
+
+- execute `update_phone`
+- execute `update_email`
+- generate a final grounded confirmation response
+
+---
+
+## Actual Behaviour
+
+Both tools executed successfully, but the final response generation failed with:
+
+```text
+openai.BadRequestError
+```
+
+The workflow crashed before generating the final customer response.
+
+---
+
+## Root Cause
+
+The assistant tool-call response was incorrectly appended multiple times during tool processing.
+
+Incorrect implementation:
+
+```python
+messages.append(response)
+```
+
+was placed inside:
+
+```python
+for tool_call in response.tool_calls:
+```
+
+This created an invalid OpenAI tool-calling message sequence.
+
+---
+
+## Invalid Message Sequence
+
+```text
+Assistant(tool_calls)
+ToolMessage(1)
+Assistant(tool_calls)
+ToolMessage(2)
+```
+
+OpenAI requires:
+
+```text
+Assistant(tool_calls)
+ToolMessage(1)
+ToolMessage(2)
+```
+
+---
+
+## Fix Applied
+
+The assistant response append operation was moved outside the loop.
+
+### Corrected Logic
+
+```python
+messages.append(response)
+
+for tool_call in response.tool_calls:
+
+    messages.append(
+        ToolMessage(...)
+    )
+```
+
+---
+
+## Importance
+
+This demonstrates:
+
+- real-world tool orchestration debugging
+- multi-tool execution handling
+- OpenAI tool-calling protocol validation
+- enterprise workflow failure analysis
+
+---
+
+## Execution Evidence
+
+Before Fix
+![Execution Proof](screenshots/multi_tool_failure.png)
+
+After Fix
+![Execution Proof](screenshots/multi_tool_success.png)
+---
+
 # 12. Memory & Context Limitations
 
 ## Observed Limitation

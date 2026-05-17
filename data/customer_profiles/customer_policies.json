@@ -38,8 +38,8 @@
       }
     ],
     "phone_number": "+1-555-1200",
-    "email": "test@gmail.com",
-    "phone": "9928787227"
+    "email": "test@g123.com",
+    "phone": "9924154326"
   },
   {
     "customer_id": "C1002",
@@ -64,7 +64,8 @@
       "replacement_cost": 800000
     },
     "phone_number": "+1-555-4400",
-    "email": "sarah.smith@example.com"
+    "email": "sarah.smith@example.com",
+    "phone": "7676545423"
   },
   {
     "customer_id": "C1003",

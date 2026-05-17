@@ -1,5 +1,4 @@
 import json
-
 from langchain_core.messages import HumanMessage, ToolMessage
 from llm.llm_client import LLMClient
 from tools.update_email_tool import update_email
@@ -43,7 +42,7 @@ tool_enabled_llm = llm.bind_tools(tools)
 # Policy Update Agent
 # ---------------------------------------------------
 
-def handle_policy_update_request(user_query: str, customer_id: str) -> str:
+def handle_policy_update_request(user_query: str, customer_id: str, conversation_history:str) -> str:
     """
     Handles customer policy
     update requests using
@@ -66,6 +65,9 @@ support assistant.
 
 Authenticated Customer ID:
 {customer_id}
+
+You can retrive the required information like latest email or phone from history to pass to tool.
+{conversation_history}
 
 Available Tools:
 - update_email
@@ -93,12 +95,13 @@ Customer Query:
 
     logger.info("[AGENT] Policy Update Agent: Processing request")
     response = tool_enabled_llm.invoke(messages)
-
     # ---------------------------------------------------
     # Process Tool Calls
     # ---------------------------------------------------
 
     if response.tool_calls:
+        
+        messages.append(response)
         for tool_call in response.tool_calls:
             tool_name = tool_call["name"]
             tool_args = tool_call["args"]
@@ -132,7 +135,7 @@ Customer Query:
             # Append Tool Result
             # ---------------------------------------------------
 
-            messages.append(response)
+            
 
             messages.append(
                 ToolMessage(

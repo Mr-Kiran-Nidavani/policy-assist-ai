@@ -6,18 +6,43 @@ from agents.general_query_agent import handle_general_query
 from agents.customer_policy_agent import handle_customer_policy_query
 from agents.safety_review_agent import review_response
 from logs.logger import get_logger
+from memory.conversation_memory import (
+    save_user_input,
+    save_ai_response,
+    get_conversation_history,
+    clear_conversation_memory
+)
 
 logger = get_logger()
 
+pending_query = None
 
 def process_user_query(user_input: str) -> str:
     """
     Main orchestration workflow for the baseline
     multi-agent insurance support system.
     """
+    global pending_query
+
+    if user_input.lower() == "reset":
+        clear_conversation_memory()
+        return "Conversation memory cleared successfully."
+
+    save_user_input(user_input)
+    # init conversation history
+    conversation_history = get_conversation_history()
 
     # Step 1 — Detect intent
-    intent = detect_intent(user_input)
+    routing_result = detect_intent(user_input, conversation_history)
+    intent = routing_result.get("intent", "unknown")
+    customer_id = routing_result.get("customer_id")
+    missing_info = routing_result.get("missing_info", "")
+    user_input = routing_result.get("query_to_process", user_input)
+
+    if missing_info:        
+        save_ai_response(missing_info)
+        return missing_info
+    
 
     # Step 2 — Route to appropriate agent
     # Policy Information Agent
@@ -26,8 +51,7 @@ def process_user_query(user_input: str) -> str:
 
     # Customer Policy Query Agent
     elif intent == "customer_policy_query":
-        custId = input("Enter your Customer ID for authentication: ")
-        response = handle_customer_policy_query(user_input, customer_id=custId)
+        response = handle_customer_policy_query(user_input, customer_id=customer_id)
 
     # Claim Support Agent
     elif intent == "claim_support":
@@ -35,8 +59,7 @@ def process_user_query(user_input: str) -> str:
 
     # Policy Update Agent
     elif intent == "policy_update":
-        custId = input("Enter your Customer ID for authentication: ")
-        response = handle_policy_update_request(user_input, customer_id=custId)
+        response = handle_policy_update_request(user_input, customer_id=customer_id, conversation_history=conversation_history)
 
     # Restricted Operations
     elif intent == "restricted_operation":
@@ -49,7 +72,7 @@ def process_user_query(user_input: str) -> str:
     # Step 3 — Safety Review
     safe_response = review_response(user_input, intent, response)
     logger.info(f"[RESPONSE] Final: {safe_response[:80]}...")
-
+    save_ai_response(safe_response)
     return safe_response
 
 
