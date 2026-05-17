@@ -205,7 +205,7 @@ if user_input:
 
     st.session_state.last_query = user_input
     st.session_state.last_response = response["response"]
-    st.session_state.last_query_type = response["intent"]
+    st.session_state.last_query_type = response["intent"] if "intent" in response else None
 
     # Save Assistant Message
     st.session_state.messages.append(
@@ -226,6 +226,7 @@ if (
     "last_query" in st.session_state
     and "last_response" in st.session_state
     and "last_query_type" in st.session_state
+    and st.session_state.last_query_type is not None
 ):
 
     st.markdown("---")

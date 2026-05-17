@@ -1203,3 +1203,106 @@ Here are the key policy exclusions across different coverage types:
 2026-05-17 18:57:10 | INFO | [SAFETY] Status: SAFE - Response approved
 2026-05-17 18:57:10 | INFO | [RESPONSE] Final: [Summary]  
 Common policy exclusions include maternity expenses during the waiti...
+2026-05-17 20:40:43 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 20:40:43 | INFO | [LATENCY] Response generated in 3.21s
+2026-05-17 20:40:48 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 20:40:48 | INFO | Starting customer policy agent
+2026-05-17 20:40:48 | INFO | Customer ID: C1001
+2026-05-17 20:40:49 | INFO | Tool calls detected: 1
+2026-05-17 20:40:49 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 20:40:49 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 20:40:49 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 20:40:49 | INFO | Tool Result Status: SUCCESS
+2026-05-17 20:40:51 | INFO | Customer policy response generated
+2026-05-17 20:40:52 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 20:40:52 | INFO | [RESPONSE] Final: Your policy expiry date is August 15, 2026. If you need any further assistance, ...
+2026-05-17 20:40:52 | INFO | [LATENCY] Response generated in 6.55s
+2026-05-17 20:40:57 | INFO | [LATENCY] Response generated in 0.0s
+2026-05-17 20:52:40 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 20:52:40 | ERROR | Error processing user query: division by zero
+2026-05-17 20:56:56 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 20:56:56 | INFO | [LATENCY] Response generated in 3.34s
+2026-05-17 20:57:02 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 20:57:02 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 20:57:02 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 20:57:04 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-17 20:57:04 | INFO | [TOOL] Email Update: Starting
+2026-05-17 20:57:04 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-17 20:57:04 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-17 20:58:09 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 20:58:09 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 20:58:09 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 20:58:10 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-17 20:58:10 | INFO | [TOOL] Email Update: Starting
+2026-05-17 20:58:10 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-17 20:58:10 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-17 20:58:12 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 20:58:12 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 20:58:12 | INFO | [RESPONSE] Final: The email address "test@test" appears to be invalid. Please provide a valid emai...
+2026-05-17 20:58:12 | INFO | [LATENCY] Response generated in 9.11s
+2026-05-17 20:59:27 | INFO | [LATENCY] Response generated in 0.0s
+2026-05-17 20:59:32 | INFO | [ROUTER] Intent detected: general_query
+2026-05-17 20:59:32 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-17 20:59:33 | INFO | [AGENT] General Query Agent: Response received
+2026-05-17 20:59:35 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 20:59:35 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-17 20:59:35 | INFO | [LATENCY] Response generated in 5.76s
+2026-05-17 21:00:42 | INFO | [ROUTER] Intent detected: general_query
+2026-05-17 21:00:42 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-17 21:00:44 | INFO | [AGENT] General Query Agent: Response received
+2026-05-17 21:00:45 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:00:45 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-17 21:00:45 | INFO | [LATENCY] Response generated in 4.44s
+2026-05-17 21:01:06 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 21:01:06 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 21:01:06 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 21:01:15 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 21:01:15 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 21:01:15 | INFO | [TOOL] Phone Update: Failed - Invalid format
+2026-05-17 21:01:15 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_PHONE
+2026-05-17 21:01:16 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 21:01:16 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 21:01:16 | INFO | [RESPONSE] Final: The phone number you provided appears to be invalid. Please provide a valid phon...
+2026-05-17 21:01:16 | INFO | [LATENCY] Response generated in 13.0s
+2026-05-17 21:02:28 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 21:02:28 | INFO | [LATENCY] Response generated in 1.93s
+2026-05-17 21:02:33 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 21:02:33 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 21:02:33 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 21:02:34 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 21:02:34 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 21:02:34 | WARNING | Customer not found: C4545454
+2026-05-17 21:02:34 | INFO | [AGENT] Policy Update Agent: Tool result - NOT_FOUND
+2026-05-17 21:02:36 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 21:02:36 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 21:02:36 | INFO | [RESPONSE] Final: I was unable to update the phone number as your customer policy record was not f...
+2026-05-17 21:02:36 | INFO | [LATENCY] Response generated in 5.52s
+2026-05-17 21:03:01 | INFO | [ROUTER] Intent detected: general_query
+2026-05-17 21:03:01 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-17 21:03:03 | INFO | [AGENT] General Query Agent: Response received
+2026-05-17 21:03:04 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:03:04 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-17 21:03:04 | INFO | [LATENCY] Response generated in 4.5s
+2026-05-17 21:08:07 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 21:08:07 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 21:08:12 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 21:08:13 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:08:13 | INFO | [RESPONSE] Final: [Summary]  
+The retrieved policy information does not include details about the ...
+2026-05-17 21:08:13 | INFO | [LATENCY] Response generated in 8.45s
+2026-05-17 21:08:51 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 21:08:51 | INFO | [LATENCY] Response generated in 2.29s
+2026-05-17 21:11:09 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 21:11:09 | INFO | [LATENCY] Response generated in 2.73s
+2026-05-17 21:11:22 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 21:11:22 | INFO | Starting customer policy agent
+2026-05-17 21:11:22 | INFO | Customer ID: C1001
+2026-05-17 21:11:23 | INFO | Tool calls detected: 1
+2026-05-17 21:11:23 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 21:11:23 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 21:11:23 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 21:11:23 | INFO | Tool Result Status: SUCCESS
+2026-05-17 21:11:25 | INFO | Customer policy response generated
+2026-05-17 21:11:26 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:11:26 | INFO | [RESPONSE] Final: Your policy expiration date is August 15, 2026. If you need any further assistan...
+2026-05-17 21:11:26 | INFO | [LATENCY] Response generated in 5.88s
