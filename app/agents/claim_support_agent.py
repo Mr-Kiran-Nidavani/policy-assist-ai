@@ -1,10 +1,11 @@
 from llm.llm_client import LLMClient
-from prompts.claim_prompts import BASE_CLAIM_PROMPT
+from prompts.claim_prompts import RAG_CLAIM_PROMPT
 from logs.logger import get_logger
+from retriever.retriever import get_retriever
 
 logger = get_logger()
 llm_client = LLMClient()
-
+retriever = get_retriever()
 
 def handle_claim_support_query(user_input: str) -> str:
     """
@@ -15,8 +16,17 @@ def handle_claim_support_query(user_input: str) -> str:
     try:
         logger.info("[AGENT] Claim Support Agent: Starting execution")
         
+        # Retrieve relevant policy chunks
+        retrieved_docs = retriever.invoke(user_input)
+
+        # Build retrieval context
+        context = "\n\n".join(
+            [doc.page_content for doc in retrieved_docs]
+        )
+
         # Build prompt
-        prompt = BASE_CLAIM_PROMPT.format(
+        prompt = RAG_CLAIM_PROMPT.format(
+            context=context,
             user_query=user_input
         )
 

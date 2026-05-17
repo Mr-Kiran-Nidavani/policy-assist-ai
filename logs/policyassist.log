@@ -648,3 +648,111 @@ The retrieved policy information does not include details about term...
 2026-05-17 11:04:11 | INFO | [AGENT] General Query Agent: Response received
 2026-05-17 11:04:12 | INFO | [SAFETY] Status: SAFE - Response approved
 2026-05-17 11:04:12 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-17 12:28:35 | INFO | Starting vector database build process
+2026-05-17 12:28:35 | INFO | Loaded documents/pages: 3
+2026-05-17 12:28:35 | INFO | Generated text chunks: 26
+2026-05-17 12:28:35 | INFO | Sample chunk preview:
+2026-05-17 12:28:35 | INFO | # General Claim Process Documentation
+
+## Overview
+This document outlines the standard procedures, required documentation, and limitations for processing claims.
+
+---
+
+## Claim Process Steps
+
+### 1. Claim Initiation
+- Submit claim within specified timeframe
+- Provide claimant information and contact
+2026-05-17 12:28:36 | INFO | Embedding model initialized
+2026-05-17 12:28:39 | INFO | Chroma vector database created successfully
+2026-05-17 12:28:39 | INFO | Persisted vector DB path: data/embeddings
+2026-05-17 12:28:39 | INFO | Stored vectors: 26
+2026-05-17 12:29:08 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:29:08 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:29:12 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:29:13 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:29:13 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- The retrieved information does not include specific details...
+2026-05-17 12:29:42 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:29:42 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:29:45 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:29:46 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:29:46 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- The retrieved information does not specify the exact steps ...
+2026-05-17 12:29:56 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:29:56 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:29:59 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:30:00 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:30:00 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- The retrieved information does not include specific steps o...
+2026-05-17 12:31:37 | INFO | Starting vector database build process
+2026-05-17 12:31:37 | INFO | Loaded documents/pages: 3
+2026-05-17 12:31:37 | INFO | Generated text chunks: 29
+2026-05-17 12:31:37 | INFO | Sample chunk preview:
+2026-05-17 12:31:37 | INFO | # General Claim Support Documentation
+
+## Overview
+This document provides general guidance about insurance claim support, claim processing steps, required documents, claim status tracking, and important limitations.
+
+---
+
+## What is Claim Support?
+
+Claim support helps customers:
+- Understand the ins
+2026-05-17 12:31:38 | INFO | Embedding model initialized
+2026-05-17 12:31:40 | INFO | Chroma vector database created successfully
+2026-05-17 12:31:40 | INFO | Persisted vector DB path: data/embeddings
+2026-05-17 12:31:40 | INFO | Stored vectors: 29
+2026-05-17 12:33:24 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:33:24 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:33:27 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:33:29 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:33:29 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- The retrieved information does not include specific details...
+2026-05-17 12:33:45 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:33:45 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:33:49 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:33:50 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:33:50 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- The retrieved information does not include specific instruc...
+2026-05-17 12:34:03 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:34:03 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:34:06 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:34:07 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:34:07 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- The retrieved information does not include specific instruc...
+2026-05-17 12:34:58 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 12:34:58 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 12:35:01 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 12:35:03 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:35:03 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage is an insurance component that typically pays for...
+2026-05-17 12:37:04 | INFO | Starting vector database build process
+2026-05-17 12:37:04 | INFO | Loaded documents/pages: 3
+2026-05-17 12:37:04 | INFO | Generated text chunks: 33
+2026-05-17 12:37:04 | INFO | Sample chunk preview:
+2026-05-17 12:37:04 | INFO | # Claims Assistance Knowledge Base
+
+## Introduction
+
+This document explains the general insurance claim process, required documents, claim tracking methods, processing timelines, and common customer support guidance.
+
+The information is intended for customer assistance and does not guarantee claim a
+2026-05-17 12:37:06 | INFO | Embedding model initialized
+2026-05-17 12:37:09 | INFO | Chroma vector database created successfully
+2026-05-17 12:37:09 | INFO | Persisted vector DB path: data/embeddings
+2026-05-17 12:37:09 | INFO | Stored vectors: 33
+2026-05-17 12:38:34 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:38:34 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:38:38 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:38:39 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:38:39 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- Basic documents: completed claim form, valid government-iss...
+2026-05-17 12:39:12 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 12:39:12 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 12:39:15 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 12:39:17 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 12:39:17 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- To verify payment for a claim, you may need to provide bank...

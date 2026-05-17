@@ -1,0 +1,139 @@
+# Claims Assistance Knowledge Base
+
+## Introduction
+
+This document explains the general insurance claim process, required documents, claim tracking methods, processing timelines, and common customer support guidance.
+
+The information is intended for customer assistance and does not guarantee claim approval or reimbursement.
+
+---
+
+# Understanding Insurance Claims
+
+An insurance claim is a formal request made by a policyholder to receive compensation or benefits for a covered event such as:
+- Vehicle accidents
+- Medical expenses
+- Property damage
+- Theft or loss
+- Hospitalization
+
+Claims are reviewed according to policy terms, coverage conditions, exclusions, and submitted documentation.
+
+---
+
+# How to Start a Claim
+
+## Step 1: Notify the Insurance Provider
+- Report the incident as soon as possible
+- Provide policy number and contact information
+- Share basic details about the incident
+
+## Step 2: Register the Claim
+- Complete the claim registration process
+- Obtain a claim reference or claim ID
+
+## Step 3: Submit Required Documents
+- Upload or provide supporting documents
+- Ensure information is accurate and complete
+
+## Step 4: Claim Review
+- Documents and policy coverage are verified
+- Additional information may be requested
+
+## Step 5: Final Outcome
+- Claim may be approved, denied, or sent for further review
+- Customers receive official communication regarding the decision
+
+---
+
+# Documents Commonly Required for Claims
+
+The following documents may be requested during claim processing:
+
+## Basic Documents
+- Completed claim form
+- Valid government-issued identification
+- Insurance policy number or copy of policy
+
+## Incident-Related Documents
+Depending on claim type:
+- Medical reports and hospital bills
+- Repair estimates or invoices
+- Photos of damage or loss
+- Police report or FIR
+- Proof of ownership
+- Receipts and supporting evidence
+
+## Payment Verification
+- Bank account details
+- Cancelled cheque or account proof (if required)
+
+Additional documents may be requested during verification.
+
+---
+
+# How Customers Can Check Claim Status
+
+Customers can track claims using the assigned claim reference number.
+
+## Common Claim Status Updates
+
+| Claim Status | Description |
+|---|---|
+| Registered | Claim request successfully created |
+| Pending Documents | Additional documents required |
+| Verification in Progress | Information under review |
+| Assessment Ongoing | Claim investigation or evaluation underway |
+| Approved | Claim approved for settlement processing |
+| Rejected | Claim not approved |
+| Closed | Claim process completed |
+
+## Claim Status Tracking Methods
+- Customer support helpline
+- Claims support email
+- Insurance mobile application
+- Online customer portal
+
+---
+
+# Claim Processing Timelines
+
+Typical claim timelines may include:
+- Claim registration confirmation: within 24 hours
+- Document verification: 2–5 business days
+- Assessment and review: varies by claim type
+- Final processing: generally within 7–15 business days after document completion
+
+Delays may occur if:
+- Documents are incomplete
+- Verification is pending
+- Investigation is required
+
+---
+
+# Important Claim Guidelines
+
+- Claims should be submitted within the policy reporting period
+- Coverage depends on policy terms and exclusions
+- Waiting periods may apply for certain benefits
+- Deductibles or co-payments may reduce reimbursement amounts
+- False or misleading information may result in claim rejection
+- Claim approval is subject to policy verification and assessment
+
+---
+
+# Customer Support Guidance
+
+Customers should:
+- Keep copies of all submitted documents
+- Save the claim reference number
+- Respond quickly to additional document requests
+- Review policy terms for coverage details
+
+For unresolved issues or disputes, customers may contact the insurer’s claims support team or authorized representative.
+
+---
+
+# Disclaimer
+
+This document provides general insurance claim guidance only. Actual claim handling depends on policy terms, insurer review, submitted documents, and applicable conditions.
