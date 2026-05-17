@@ -26,7 +26,9 @@ def process_user_query(user_input: str) -> str:
 
     if user_input.lower() == "reset":
         clear_conversation_memory()
-        return "Conversation memory cleared successfully."
+        return {
+            "response": "Conversation memory cleared successfully."
+        }
 
     save_user_input(user_input)
     # init conversation history
@@ -41,7 +43,9 @@ def process_user_query(user_input: str) -> str:
 
     if missing_info:        
         save_ai_response(missing_info)
-        return missing_info
+        return {
+            "response": missing_info
+        }
     
 
     # Step 2 — Route to appropriate agent
@@ -73,7 +77,10 @@ def process_user_query(user_input: str) -> str:
     safe_response = review_response(user_input, intent, response)
     logger.info(f"[RESPONSE] Final: {safe_response[:80]}...")
     save_ai_response(safe_response)
-    return safe_response
+    return {
+        "response": safe_response,
+        "intent": intent
+    }
 
 
 def main():
@@ -93,7 +100,7 @@ def main():
 
         response = process_user_query(user_input)
 
-        print(f"\nPolicyAssist AI: {response}\n")
+        print(f"\nPolicyAssist AI: {response['response']}\n")
 
 
 if __name__ == "__main__":

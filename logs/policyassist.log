@@ -1112,3 +1112,94 @@ The information is intended for customer assistance and does not guarantee claim
 2026-05-17 15:49:48 | INFO | [AGENT] Policy Update Agent: Response received
 2026-05-17 15:49:48 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
 2026-05-17 15:49:48 | INFO | [RESPONSE] Final: Your phone number has been successfully updated to 9924154326. If you need any f...
+2026-05-17 17:36:54 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:36:54 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:36:59 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:37:00 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:37:00 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage helps pay for repair expenses resulting from ac...
+2026-05-17 17:37:28 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:37:28 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:37:33 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:37:34 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:37:34 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage helps pay for repair expenses resulting from ac...
+2026-05-17 17:44:24 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:44:24 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:44:28 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:44:30 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:44:30 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-17 17:46:03 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:46:03 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:46:07 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:46:11 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:46:11 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage helps pay for repair expenses from accidents in...
+2026-05-17 17:52:14 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:52:14 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:52:19 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:52:21 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:52:21 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs resulting from acciden...
+2026-05-17 17:52:58 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:52:58 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:53:02 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:53:04 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:53:04 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage helps pay for repair costs from accidents invol...
+2026-05-17 17:55:07 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:55:07 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:55:10 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:55:12 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:55:12 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage helps pay for repair costs from vehicle acciden...
+2026-05-17 17:55:26 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:55:26 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:55:29 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:55:31 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:55:31 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage pays for repair costs from vehicle accidents in...
+2026-05-17 17:55:47 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 17:55:47 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 17:55:50 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 17:55:52 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 17:55:52 | INFO | [RESPONSE] Final: [Summary]  
+- Collision coverage pays for vehicle repairs after accidents involv...
+2026-05-17 18:00:46 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 18:00:46 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 18:00:49 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 18:00:51 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 18:00:51 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-17 18:01:04 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 18:01:04 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 18:01:08 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 18:01:09 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 18:01:09 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-17 18:02:32 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 18:02:32 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 18:02:38 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 18:02:39 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 18:02:39 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 18:12:25 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 18:12:25 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 18:12:29 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 18:12:30 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 18:12:30 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 18:55:10 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 18:55:10 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 18:55:16 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 18:55:17 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 18:55:17 | INFO | [RESPONSE] Final: [Summary]  
+Here are the key policy exclusions across different coverage types:
+...
+2026-05-17 18:57:05 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 18:57:05 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 18:57:09 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 18:57:10 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 18:57:10 | INFO | [RESPONSE] Final: [Summary]  
+Common policy exclusions include maternity expenses during the waiti...
