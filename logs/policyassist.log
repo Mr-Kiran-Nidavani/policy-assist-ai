@@ -559,3 +559,92 @@ The waiting period for maternity coverage is typically 24 months, bu...
 2026-05-17 10:02:21 | INFO | [SAFETY] Status: SAFE - Response approved
 2026-05-17 10:02:21 | INFO | [RESPONSE] Final: [Summary]  
 The retrieved policy information does not include details about term...
+2026-05-17 10:40:05 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:43:07 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:43:10 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 10:43:10 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 10:43:11 | INFO | [AGENT] Policy Update Agent: Unsupported operation - escalating
+2026-05-17 10:43:11 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 10:43:11 | INFO | [RESPONSE] Final: This policy update request requires review by a licensed insurance representativ...
+2026-05-17 10:43:38 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:43:40 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 10:43:40 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 10:43:41 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 10:43:41 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 10:43:41 | INFO | Phone updated successfully for customer ID: C1001
+2026-05-17 10:43:41 | INFO | [AGENT] Policy Update Agent: Tool result - SUCCESS
+2026-05-17 10:43:43 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 10:43:43 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 10:43:43 | INFO | [RESPONSE] Final: Your phone number has been updated successfully to 9902160387. If you need any f...
+2026-05-17 10:45:20 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:45:24 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 10:45:24 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 10:45:25 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 10:45:25 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 10:45:25 | INFO | Phone updated successfully for customer ID: C1001
+2026-05-17 10:45:25 | INFO | [AGENT] Policy Update Agent: Tool result - SUCCESS
+2026-05-17 10:45:27 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 10:45:27 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 10:45:27 | INFO | [RESPONSE] Final: Your phone number has been updated successfully to 9928787227. Is there anything...
+2026-05-17 10:45:37 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:45:40 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 10:45:40 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 10:45:42 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-17 10:45:42 | INFO | [TOOL] Email Update: Starting
+2026-05-17 10:45:42 | INFO | [TOOL] Email Update: Success
+2026-05-17 10:45:42 | INFO | [AGENT] Policy Update Agent: Tool result - SUCCESS
+2026-05-17 10:45:44 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 10:45:44 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 10:45:44 | INFO | [RESPONSE] Final: Your email has been successfully updated to test@gmail.com. Is there anything el...
+2026-05-17 10:49:25 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 10:49:34 | INFO | Starting customer policy agent
+2026-05-17 10:49:34 | INFO | Customer ID: C10001
+2026-05-17 10:49:35 | INFO | Tool calls detected: 1
+2026-05-17 10:49:35 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 10:49:35 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 10:49:35 | INFO | [TOOL] Policy Lookup: Failed - Not found
+2026-05-17 10:49:35 | INFO | Tool Result Status: NOT_FOUND
+2026-05-17 10:49:37 | INFO | Customer policy response generated
+2026-05-17 10:49:38 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 10:49:38 | INFO | [RESPONSE] Final: I was unable to locate your policy details in our system. Please verify your cus...
+2026-05-17 10:49:55 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 10:49:59 | INFO | Starting customer policy agent
+2026-05-17 10:49:59 | INFO | Customer ID: C1001
+2026-05-17 10:50:00 | INFO | Tool calls detected: 1
+2026-05-17 10:50:00 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 10:50:00 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 10:50:00 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 10:50:00 | INFO | Tool Result Status: SUCCESS
+2026-05-17 10:50:02 | INFO | Customer policy response generated
+2026-05-17 10:50:03 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 10:50:03 | INFO | [RESPONSE] Final: Your policy expiration date is August 15, 2026. If you need any further assistan...
+2026-05-17 10:55:34 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:55:39 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 10:55:39 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 10:55:41 | INFO | [AGENT] Policy Update Agent: Unsupported operation - escalating
+2026-05-17 10:55:41 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 10:55:41 | INFO | [RESPONSE] Final: This policy update request requires review by a licensed insurance representativ...
+2026-05-17 10:56:21 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-17 10:56:21 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-17 10:56:21 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-17 10:58:28 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 10:58:35 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 10:58:35 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 10:58:36 | INFO | [AGENT] Policy Update Agent: Unsupported operation - escalating
+2026-05-17 10:58:36 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 10:58:36 | INFO | [RESPONSE] Final: This policy update request requires review by a licensed insurance representativ...
+2026-05-17 11:03:04 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 11:03:07 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 11:03:07 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 11:03:08 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 11:03:08 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 11:03:08 | INFO | [TOOL] Phone Update: Failed - Invalid format
+2026-05-17 11:03:08 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_PHONE
+2026-05-17 11:03:10 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 11:03:10 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 11:03:10 | INFO | [RESPONSE] Final: The phone number "1234" is invalid. Please provide a valid phone number to updat...
+2026-05-17 11:04:09 | INFO | [ROUTER] Intent detected: general_query
+2026-05-17 11:04:09 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-17 11:04:11 | INFO | [AGENT] General Query Agent: Response received
+2026-05-17 11:04:12 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 11:04:12 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...

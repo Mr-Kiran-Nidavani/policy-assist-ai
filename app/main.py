@@ -26,7 +26,8 @@ def process_user_query(user_input: str) -> str:
 
     # Customer Policy Query Agent
     elif intent == "customer_policy_query":
-        response = handle_customer_policy_query(user_input)
+        custId = input("Enter your Customer ID for authentication: ")
+        response = handle_customer_policy_query(user_input, customer_id=custId)
 
     # Claim Support Agent
     elif intent == "claim_support":
@@ -34,7 +35,8 @@ def process_user_query(user_input: str) -> str:
 
     # Policy Update Agent
     elif intent == "policy_update":
-        response = handle_policy_update_request(user_input)
+        custId = input("Enter your Customer ID for authentication: ")
+        response = handle_policy_update_request(user_input, customer_id=custId)
 
     # Restricted Operations
     elif intent == "restricted_operation":
