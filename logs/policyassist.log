@@ -1306,3 +1306,170 @@ The retrieved policy information does not include details about the ...
 2026-05-17 21:11:26 | INFO | [SAFETY] Status: SAFE - Response approved
 2026-05-17 21:11:26 | INFO | [RESPONSE] Final: Your policy expiration date is August 15, 2026. If you need any further assistan...
 2026-05-17 21:11:26 | INFO | [LATENCY] Response generated in 5.88s
+2026-05-17 21:41:58 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 21:41:58 | INFO | [LATENCY] Response generated in 3.6s
+2026-05-17 21:42:09 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 21:42:09 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 21:42:14 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 21:42:15 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:42:15 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 21:42:15 | INFO | [LATENCY] Response generated in 8.02s
+2026-05-17 21:42:18 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 21:42:18 | INFO | Starting customer policy agent
+2026-05-17 21:42:18 | INFO | Customer ID: C1001
+2026-05-17 21:42:20 | INFO | Tool calls detected: 1
+2026-05-17 21:42:20 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 21:42:20 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 21:42:20 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 21:42:20 | INFO | Tool Result Status: SUCCESS
+2026-05-17 21:42:21 | INFO | Customer policy response generated
+2026-05-17 21:42:22 | INFO | [SAFETY] Status: RESTRICTED - Response blocked
+2026-05-17 21:42:22 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-17 21:42:22 | INFO | [LATENCY] Response generated in 6.25s
+2026-05-17 21:42:33 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 21:42:33 | INFO | [LATENCY] Response generated in 1.94s
+2026-05-17 21:42:41 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 21:42:41 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 21:42:41 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 21:42:42 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 21:42:42 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 21:42:42 | INFO | Phone updated successfully for customer ID: C1001
+2026-05-17 21:42:42 | INFO | [AGENT] Policy Update Agent: Tool result - SUCCESS
+2026-05-17 21:42:43 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 21:42:43 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 21:42:43 | INFO | [RESPONSE] Final: Your phone number has been successfully updated to 8765654343. If you need any f...
+2026-05-17 21:42:43 | INFO | [LATENCY] Response generated in 4.37s
+2026-05-17 21:42:57 | INFO | [ROUTER] Intent detected: unknown
+2026-05-17 21:42:57 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-17 21:42:58 | INFO | [AGENT] General Query Agent: Response received
+2026-05-17 21:42:59 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:42:59 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-17 21:42:59 | INFO | [LATENCY] Response generated in 4.38s
+2026-05-17 21:43:12 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 21:43:12 | INFO | Starting customer policy agent
+2026-05-17 21:43:12 | INFO | Customer ID: C1001
+2026-05-17 21:43:14 | INFO | Tool calls detected: 1
+2026-05-17 21:43:14 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 21:43:14 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 21:43:14 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 21:43:14 | INFO | Tool Result Status: SUCCESS
+2026-05-17 21:43:15 | INFO | Customer policy response generated
+2026-05-17 21:43:17 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:43:17 | INFO | [RESPONSE] Final: Your policy effective date is August 15, 2025....
+2026-05-17 21:43:17 | INFO | [LATENCY] Response generated in 6.11s
+2026-05-17 21:58:57 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 21:58:57 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 21:59:02 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 21:59:04 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 21:59:04 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 21:59:04 | INFO | [LATENCY] Response generated in 9.76s
+2026-05-17 22:02:08 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 22:02:08 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 22:02:12 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 22:02:12 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 22:02:14 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 22:02:15 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 22:02:15 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 22:02:15 | INFO | [LATENCY] Response generated in 9.66s
+2026-05-17 22:02:18 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 22:02:19 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 22:02:19 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 22:02:19 | INFO | [LATENCY] Response generated in 8.76s
+2026-05-17 22:02:31 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 22:02:31 | INFO | [LATENCY] Response generated in 1.84s
+2026-05-17 22:02:34 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 22:02:34 | INFO | [LATENCY] Response generated in 1.75s
+2026-05-17 22:02:39 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 22:02:39 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 22:02:39 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 22:02:40 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 22:02:40 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 22:02:40 | INFO | Phone updated successfully for customer ID: C1001
+2026-05-17 22:02:40 | INFO | [AGENT] Policy Update Agent: Tool result - SUCCESS
+2026-05-17 22:02:41 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 22:02:41 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 22:02:41 | INFO | [RESPONSE] Final: Your phone number has been successfully updated to 8765654345. If you need any f...
+2026-05-17 22:02:41 | INFO | [LATENCY] Response generated in 4.94s
+2026-05-17 22:02:42 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-17 22:02:42 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-17 22:02:42 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-17 22:02:44 | INFO | [AGENT] Policy Update Agent: Tool called - update_phone
+2026-05-17 22:02:44 | INFO | [TOOL] Phone Update: Starting
+2026-05-17 22:02:44 | INFO | Phone updated successfully for customer ID: C1001
+2026-05-17 22:02:44 | INFO | [AGENT] Policy Update Agent: Tool result - SUCCESS
+2026-05-17 22:02:45 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-17 22:02:45 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-17 22:02:45 | INFO | [RESPONSE] Final: Your phone number has been updated successfully to 8765654345. If you need any f...
+2026-05-17 22:02:45 | INFO | [LATENCY] Response generated in 4.76s
+2026-05-17 22:03:02 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 22:03:02 | INFO | Starting customer policy agent
+2026-05-17 22:03:02 | INFO | Customer ID: C1001
+2026-05-17 22:03:05 | INFO | Tool calls detected: 1
+2026-05-17 22:03:05 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 22:03:05 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 22:03:05 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 22:03:05 | INFO | Tool Result Status: SUCCESS
+2026-05-17 22:03:07 | INFO | Customer policy response generated
+2026-05-17 22:03:08 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 22:03:08 | INFO | Starting customer policy agent
+2026-05-17 22:03:08 | INFO | Customer ID: C1001
+2026-05-17 22:03:09 | INFO | [SAFETY] Status: RESTRICTED - Response blocked
+2026-05-17 22:03:09 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-17 22:03:09 | INFO | [LATENCY] Response generated in 8.23s
+2026-05-17 22:03:11 | INFO | Tool calls detected: 1
+2026-05-17 22:03:11 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 22:03:11 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 22:03:11 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 22:03:11 | INFO | Tool Result Status: SUCCESS
+2026-05-17 22:03:13 | INFO | Customer policy response generated
+2026-05-17 22:03:15 | INFO | [SAFETY] Status: RESTRICTED - Response blocked
+2026-05-17 22:03:15 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-17 22:03:15 | INFO | [LATENCY] Response generated in 8.67s
+2026-05-17 22:03:35 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-17 22:03:35 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-17 22:03:39 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-17 22:03:40 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 22:03:40 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- Basic documents: completed claim form, valid government-iss...
+2026-05-17 22:03:40 | INFO | [LATENCY] Response generated in 7.56s
+2026-05-17 22:03:49 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 22:03:49 | INFO | Starting customer policy agent
+2026-05-17 22:03:49 | INFO | Customer ID: C1001
+2026-05-17 22:03:50 | INFO | Tool calls detected: 1
+2026-05-17 22:03:50 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 22:03:50 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 22:03:50 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 22:03:50 | INFO | Tool Result Status: SUCCESS
+2026-05-17 22:03:52 | INFO | Customer policy response generated
+2026-05-17 22:03:53 | INFO | [SAFETY] Status: RESTRICTED - Response blocked
+2026-05-17 22:03:53 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-17 22:03:53 | INFO | [LATENCY] Response generated in 6.48s
+2026-05-17 22:03:58 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-17 22:03:58 | INFO | Starting customer policy agent
+2026-05-17 22:03:58 | INFO | Customer ID: C1001
+2026-05-17 22:04:00 | INFO | Tool calls detected: 1
+2026-05-17 22:04:00 | INFO | Selected Tool: lookup_policy_details
+2026-05-17 22:04:00 | INFO | [TOOL] Policy Lookup: Starting
+2026-05-17 22:04:00 | INFO | [TOOL] Policy Lookup: Success
+2026-05-17 22:04:00 | INFO | Tool Result Status: SUCCESS
+2026-05-17 22:04:02 | INFO | Customer policy response generated
+2026-05-17 22:04:04 | INFO | [SAFETY] Status: RESTRICTED - Response blocked
+2026-05-17 22:04:04 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-17 22:04:04 | INFO | [LATENCY] Response generated in 7.55s
+2026-05-17 22:10:30 | INFO | [ROUTER] Intent detected: general_query
+2026-05-17 22:10:30 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-17 22:10:32 | INFO | [AGENT] General Query Agent: Response received
+2026-05-17 22:10:33 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 22:10:33 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-17 22:10:33 | INFO | [LATENCY] Response generated in 5.23s
+2026-05-17 22:10:46 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-17 22:10:46 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-17 22:10:51 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-17 22:10:52 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-17 22:10:52 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-17 22:10:52 | INFO | [LATENCY] Response generated in 8.44s

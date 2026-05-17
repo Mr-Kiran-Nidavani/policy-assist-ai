@@ -40,5 +40,19 @@
     "query_type": "policy_information",
     "feedback": "negative",
     "timestamp": "2026-05-17T18:12:15.106341"
+  },
+  {
+    "query": "C1001",
+    "response": "Your phone number has been successfully updated to 8765654343. If you need any further assistance, please let me know.",
+    "query_type": "policy_update",
+    "feedback": "negative",
+    "timestamp": "2026-05-17T21:43:25.569445"
+  },
+  {
+    "query": " what is effective date of my policy?",
+    "response": "I'm unable to assist with this request because it involves restricted or unauthorized operations. Please contact an authorized insurance representative or support specialist for further assistance.",
+    "query_type": "customer_policy_query",
+    "feedback": "positive",
+    "timestamp": "2026-05-17T22:03:49.816537"
   }
 ]
