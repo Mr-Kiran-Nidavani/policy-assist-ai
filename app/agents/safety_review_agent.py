@@ -31,12 +31,12 @@ def review_response(
 
     # Restricted operations blocked immediately
     if intent == "restricted_operation":
-        logger.warning("Restricted operation blocked")
+        logger.info("[SAFETY] Status: RESTRICTED - Operation blocked")
         return RESTRICTED_RESPONSE
     
     # Approved low-risk operational workflows
     if intent == "policy_update":
-        logger.info("Policy update request completed successfully")
+        logger.info("[SAFETY] Status: APPROVED - Low-risk policy update")
         return response
 
     try:
@@ -49,22 +49,21 @@ def review_response(
 
         # Run safety classification
         safety_result = llm_client.ask(prompt)
-
         safety_result = safety_result.strip().upper()
 
         # Enforce final decision
         if safety_result == "RESTRICTED":
-            logger.warning("Restricted operation blocked")
+            logger.info("[SAFETY] Status: RESTRICTED - Response blocked")
             return RESTRICTED_RESPONSE
 
         elif safety_result == "ESCALATE":
-            logger.warning("Response escalated for human review")
+            logger.info("[SAFETY] Status: ESCALATE - Human review required")
             return ESCALATION_RESPONSE
 
-        logger.info("Safe response approved")
+        logger.info("[SAFETY] Status: SAFE - Response approved")
         return response
 
-    except Exception:
+    except Exception as error:
         # Fail-safe fallback
-        logger.error("Safety review agent failed")
+        logger.error(f"[SAFETY] Safety review failed: {str(error)}")
         return ESCALATION_RESPONSE

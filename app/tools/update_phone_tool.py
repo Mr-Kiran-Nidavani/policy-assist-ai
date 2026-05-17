@@ -55,14 +55,14 @@ def update_phone(customer_id: str, new_phone: str) -> dict:
             Update operation result.
     """
 
-    logger.info(f"Updating phone for customer ID: {customer_id}")
+    logger.info("[TOOL] Phone Update: Starting")
 
     # ---------------------------------------------------
     # Validate Phone
     # ---------------------------------------------------
 
     if not is_valid_phone(new_phone):
-        logger.warning(f"Invalid phone number: {new_phone}")
+        logger.info("[TOOL] Phone Update: Failed - Invalid format")
         return {
             "status": "INVALID_PHONE",
             "message": (

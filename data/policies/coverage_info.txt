@@ -1,0 +1,309 @@
+Section: Collision Coverage
+
+Collision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object.
+
+Coverage Conditions:
+- deductible applies before claim payout
+- reimbursement is limited to policy limits
+- claim requires approved damage assessment
+
+Covered Incidents:
+- vehicle collision accidents
+- impact with poles or barriers
+- rollover accidents
+
+Deductible:
+- standard deductible: ₹2,000
+- voluntary deductible options available
+
+Common Exclusions:
+- intentional damage
+- unauthorized driving
+- illegal racing activities
+
+---
+
+Section: Comprehensive Coverage
+
+Comprehensive coverage helps pay for non-collision vehicle damage.
+
+Coverage Conditions:
+- claim subject to policy coverage limits
+- deductible applies for each approved claim
+
+Covered Incidents:
+- theft
+- fire damage
+- flood and cyclone damage
+- vandalism
+- falling objects
+
+Deductible:
+- standard deductible: ₹1,500
+- natural disaster deductible may apply
+
+Common Exclusions:
+- wear and tear
+- mechanical failure
+- uninsured modifications
+
+---
+
+Section: Third-Party Liability Coverage
+
+Third-party liability coverage protects against legal liability for injury or property damage caused to others.
+
+Coverage Conditions:
+- coverage applies only to third-party damages
+- claim must comply with legal liability rules
+
+Covered Incidents:
+- third-party bodily injury
+- third-party property damage
+- legal compensation claims
+
+Deductible:
+- generally no deductible for liability claims
+
+Common Exclusions:
+- damage to insured vehicle
+- contractual disputes
+- intentional harm
+
+---
+
+Section: Personal Accident Coverage
+
+Personal accident coverage provides compensation for accidental injury, disability, or death.
+
+Coverage Conditions:
+- benefit amount depends on injury severity
+- policy coverage limits apply
+
+Covered Incidents:
+- accidental death
+- permanent disability
+- partial disability
+
+Deductible:
+- no deductible in most plans
+
+Common Exclusions:
+- self-inflicted injury
+- injuries during illegal acts
+- hazardous sports without add-on cover
+
+---
+
+Section: Hospitalization Coverage
+
+Hospitalization coverage helps pay for medical expenses during inpatient treatment.
+
+Coverage Conditions:
+- hospitalization must exceed minimum required duration
+- expenses must be medically necessary
+
+Covered Expenses:
+- room charges
+- ICU expenses
+- surgery costs
+- medicines during hospitalization
+
+Deductible:
+- ₹5,000 deductible per hospitalization
+- annual aggregate deductible may apply
+
+Common Exclusions:
+- cosmetic treatment
+- experimental procedures
+- non-medical consumables
+
+---
+
+Section: Outpatient Coverage
+
+Outpatient coverage helps pay for consultations and treatments that do not require hospitalization.
+
+Coverage Conditions:
+- treatment must be prescribed by registered medical practitioner
+- annual coverage limits apply
+
+Covered Expenses:
+- doctor consultations
+- diagnostic tests
+- prescribed medicines
+
+Deductible:
+- ₹500 deductible per visit for non-network clinics
+
+Common Exclusions:
+- wellness supplements
+- cosmetic consultations
+- self-medication expenses
+
+---
+
+Section: Critical Illness Coverage
+
+Critical illness coverage provides lump-sum payout upon diagnosis of covered critical illnesses.
+
+Coverage Conditions:
+- illness must meet policy definition
+- waiting period applies before coverage activation
+
+Covered Illnesses:
+- cancer
+- heart attack
+- kidney failure
+- stroke
+- organ transplant
+
+Deductible:
+- usually no deductible
+- survival period conditions may apply
+
+Common Exclusions:
+- pre-existing critical illnesses
+- early-stage conditions not meeting severity definition
+- illness due to substance abuse
+
+---
+
+Section: Home Structure Coverage
+
+Home structure coverage protects the insured residential building against physical damage.
+
+Coverage Conditions:
+- claim amount based on reconstruction cost
+- deductible applies per approved claim
+
+Covered Incidents:
+- fire
+- earthquake
+- storm damage
+- explosion
+
+Deductible:
+- ₹10,000 standard deductible
+- percentage deductible for natural disasters
+
+Common Exclusions:
+- poor maintenance damage
+- gradual deterioration
+- war-related events
+
+---
+
+Section: Contents Coverage
+
+Contents coverage protects household belongings inside the insured property.
+
+Coverage Conditions:
+- item valuation depends on depreciation rules
+- special limits apply for valuables
+
+Covered Items:
+- furniture
+- electronics
+- appliances
+- clothing
+
+Deductible:
+- ₹2,500 deductible per claim
+
+Common Exclusions:
+- unexplained disappearance
+- cash loss above sub-limit
+- intentional damage
+
+---
+
+Section: Travel Medical Coverage
+
+Travel medical coverage helps pay for emergency medical treatment during travel.
+
+Coverage Conditions:
+- treatment must occur during covered travel period
+- emergency treatment documentation required
+
+Covered Expenses:
+- emergency hospitalization
+- ambulance charges
+- emergency dental treatment
+- evacuation expenses
+
+Deductible:
+- USD 100 deductible for international claims
+- ₹2,000 deductible for domestic travel claims
+
+Common Exclusions:
+- medical tourism
+- untreated pre-existing illness
+- adventure sports without add-on cover
+
+---
+
+Section: Cyber Insurance Coverage
+
+Cyber insurance coverage protects businesses against cyber incidents and data breaches.
+
+Coverage Conditions:
+- claim requires documented cyber event
+- policy sub-limits may apply to specific losses
+
+Covered Incidents:
+- ransomware attacks
+- data breach response
+- forensic investigation
+- business interruption losses
+
+Deductible:
+- ₹50,000 to ₹5 lakh depending on policy tier
+
+Common Exclusions:
+- known unpatched vulnerabilities
+- intentional insider attacks
+- prior known incidents
+
+---
+
+Section: Maternity Coverage
+
+Maternity coverage helps pay for medical expenses related to pregnancy, childbirth, and newborn care.
+
+Coverage Conditions:
+- waiting period must be completed before maternity benefits become active
+- coverage is subject to policy sub-limits
+- treatment must be taken at approved or registered medical facilities
+
+Covered Expenses:
+- normal delivery expenses
+- cesarean section expenses
+- pre-natal consultations and diagnostic tests
+- post-natal medical care
+- newborn baby coverage for specified duration
+
+Waiting Period:
+- standard waiting period: 24 months
+- some policies may have waiting periods up to 36 months
+- maternity claims during waiting period are not covered
+
+Deductible:
+- standard deductible: ₹5,000 per claim
+- co-payment may apply depending on policy plan
+
+Coverage Limits:
+- normal delivery coverage up to ₹50,000
+- cesarean delivery coverage up to ₹75,000
+- newborn coverage available for first 90 days
+
+Common Exclusions:
+- maternity expenses during waiting period
+- fertility or infertility treatments
+- elective pregnancy termination unless medically necessary
+- non-medical hospital consumables
+
+Claim Notes:
+- hospitalization records and discharge summary required
+- claim approval subject to policy verification
+- expenses exceeding policy sub-limits are payable by customer

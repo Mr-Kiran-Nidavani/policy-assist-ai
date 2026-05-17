@@ -1,95 +1,83 @@
-# Phase 4: Knowledge Retrieval & RAG Integration
+# Phase 4 — Add Knowledge & Retrieval
 
-## Table of Contents
+# PolicyAssist AI — Retrieval-Augmented Generation (RAG) Integration
 
-1. [Phase Objective](#1-phase-objective)
-2. [Phase 4 Requirements Coverage](#2-phase-4-requirements-coverage)
-3. [Architecture Overview](#3-architecture-overview)
-4. [Document Preparation & Embedding Pipeline](#4-document-preparation--embedding-pipeline)
-5. [Semantic Chunking Strategy](#5-semantic-chunking-strategy)
-6. [Embedding & Vector Database Implementation](#6-embedding--vector-database-implementation)
-7. [Retriever Implementation](#7-retriever-implementation)
-8. [RAG Agent Integration](#8-rag-agent-integration)
-9. [RAG Prompt Engineering](#9-rag-prompt-engineering)
-10. [Safety & Governance Integration](#10-safety--governance-integration)
-11. [Compare Responses With and Without Retrieval](#11-compare-responses-with-and-without-retrieval)
-12. [Missing Information Handling](#12-missing-information-handling)
-13. [Retrieval Quality Testing](#13-retrieval-quality-testing)
-14. [Execution Evidence](#14-execution-evidence)
-15. [Technical Challenges & Debugging](#15-technical-challenges--debugging)
-16. [Key Learnings](#16-key-learnings)
-17. [Phase Summary](#17-phase-summary)
+# Table of Contents
+
+- [1. Overview](#1-overview)
+- [2. Objectives](#2-objectives)
+- [3. Phase 4 Requirements Coverage](#3-phase-4-requirements-coverage)
+- [4. Architecture Overview](#4-architecture-overview)
+- [5. Project Directory Changes](#5-project-directory-changes)
+- [6. Insurance Knowledge Documents](#6-insurance-knowledge-documents)
+- [7. Document Loading Pipeline](#7-document-loading-pipeline)
+- [8. Text Chunking Strategy](#8-text-chunking-strategy)
+- [9. Embedding & Vector Database Implementation](#9-embedding--vector-database-implementation)
+- [10. Retriever Implementation](#10-retriever-implementation)
+- [11. RAG Policy Information Agent](#11-rag-policy-information-agent)
+- [12. RAG Prompt Engineering](#12-rag-prompt-engineering)
+- [13. Retrieval Workflow](#13-retrieval-workflow)
+- [14. Compare Responses With and Without RAG](#14-compare-responses-with-and-without-rag)
+- [15. Missing Information Handling](#15-missing-information-handling)
+- [16. Governance & Safety Integration](#16-governance--safety-integration)
+- [17. Retrieval Quality Testing](#17-retrieval-quality-testing)
+- [18. Execution Evidence](#18-execution-evidence)
+- [19. Technical Challenges & Debugging](#19-technical-challenges--debugging)
+- [20. Key Learnings](#20-key-learnings)
+- [21. Conclusion](#21-conclusion)
 
 ---
 
-# 1. Phase Objective
+# 1. Overview
 
-The objective of Phase 4 was to transform PolicyAssist AI from a generic LLM-based insurance assistant into a Retrieval-Augmented Generation (RAG) system capable of:
+Phase 4 transformed PolicyAssist AI into a Retrieval-Augmented Generation (RAG) system capable of:
 
-- retrieving policy-grounded information using semantic search
-- reducing hallucinated insurance responses
-- answering using embedded insurance documents
-- supporting multiple insurance policy domains
-- improving factual reliability
-- handling missing information safely
+- semantic insurance policy retrieval
+- retrieval-grounded responses
+- hallucination reduction
+- multi-document knowledge retrieval
+- policy-specific insurance explanations
+- safer missing-information handling
 
 This phase introduced:
-
-- embeddings
-- semantic retrieval
-- vector databases
-- Retrieval-Augmented Generation (RAG)
-- retrieval-grounded prompting
-- semantic chunking
-- retrieval-quality validation
-
----
-
-# 2. Phase 4 Requirements Coverage
-
-## Official Phase 4 Requirements
-
-### Coding Requirements
-
-- Implement embeddings and retrieval
-- Enable document or data reference
-- Show improvement over baseline
-
-### Required Skills & Concepts
-
 - embeddings
 - semantic search
-- RAG concepts
-- text chunking
 - vector databases
+- retrieval pipelines
+- document chunking
+- grounded prompting
 - retrieval-quality testing
-
-### Required Tasks
-
-| Requirement | Implementation |
-|---|---|
-| Prepare documents or datasets for embedding | Health, Auto, and Home insurance policy documents created |
-| Implement semantic search using embeddings | OpenAI embeddings + ChromaDB semantic retrieval |
-| Connect retrieval results to agent responses | Retrieved chunks injected into RAG prompts |
-| Compare responses with and without retrieval | Baseline vs RAG testing completed |
-| Handle cases where relevant information is missing | Missing-information safeguards implemented |
-
-## Final Completion Status
-
-| Requirement | Status |
-|---|---|
-| Prepare documents or datasets for embedding | Completed |
-| Implement semantic search using embeddings | Completed |
-| Connect retrieval results to agent responses | Completed |
-| Compare responses with and without retrieval | Completed |
-| Handle cases where relevant information is missing | Completed |
-| Retrieval-quality testing | Completed |
-| Vector database integration | Completed |
-| Grounded RAG prompting | Completed |
 
 ---
 
-# 3. Architecture Overview
+# 2. Objectives
+
+The goals of Phase 4 were to:
+- implement embeddings and semantic retrieval
+- support document-grounded responses
+- reduce hallucinated policy explanations
+- improve factual consistency
+- connect retrieved policy chunks to agent responses
+- compare baseline vs RAG behavior
+- handle missing information safely
+
+---
+
+# 3. Phase 4 Requirements Coverage
+
+| Requirement | Implementation Status |
+|---|---|
+| Prepare documents for embedding | Completed |
+| Implement semantic search using embeddings | Completed |
+| Connect retrieval results to responses | Completed |
+| Compare responses with and without retrieval | Completed |
+| Handle missing information safely | Completed |
+| Implement vector database | Completed |
+| Retrieval-quality testing | Completed |
+
+---
+
+# 4. Architecture Overview
 
 ## RAG Workflow
 
@@ -104,7 +92,7 @@ OpenAI Embeddings
         ↓
 Chroma Vector Database
         ↓
-Semantic Retrieval
+Semantic Retriever
         ↓
 Retrieved Context Injection
         ↓
@@ -114,142 +102,258 @@ LLM Response
         ↓
 Safety Review Agent
         ↓
-Final Response
+Final Safe Response
 ```
 
-## Technologies Used
+---
 
-| Component | Technology |
+# 5. Project Directory Changes
+
+## New Files Added in Phase 4
+
+```text
+app/
+│
+├── build_vector_db.py
+│
+├── retriever/
+│   ├── document_loader.py
+│   ├── retriever.py
+│   ├── text_splitter.py
+│   └── vector_store.py
+│
+├── prompts/
+│   └── policy_prompts.py
+│
+├── agents/
+│   └── policy_information_agent.py
+│
+├── data/
+│   ├── policies/
+│   │   ├── claim_process_info.txt
+│   │   ├── coverage_info.txt
+│   │   └── policy_update_process.txt
+│   │
+│   └── embeddings/
+│
+└── docs/
+    └── phase4/
+        └── screenshots/
+```
+
+---
+
+# 6. Insurance Knowledge Documents
+
+## Embedded Knowledge Sources
+
+The following insurance documents were embedded into the vector database:
+
+| Document | Purpose |
 |---|---|
-| LLM | OpenAI GPT |
-| Framework | LangChain |
-| Embeddings | OpenAI Embeddings |
-| Vector Database | ChromaDB |
-| Retrieval | Semantic Similarity Search |
-| Chunking | RecursiveCharacterTextSplitter |
-| Logging | Loguru |
+| claim_process_info.txt | Claim procedures and reimbursement workflows |
+| coverage_info.txt | Insurance coverage details and exclusions |
+| policy_update_process.txt | Customer update workflows |
 
 ---
 
-# 4. Document Preparation & Embedding Pipeline
+# 7. Document Loading Pipeline
 
-## Insurance Policy Datasets
+## `document_loader.py`
 
-Multiple insurance domains were added for semantic retrieval testing.
+This component loads insurance documents from the policies directory.
 
-### Health Insurance
+## Full Implementation
 
-- cataract surgery coverage
-- maternity waiting periods
-- reimbursement claims
-- exclusions
+```python
+from pathlib import Path
+import os
+from langchain_community.document_loaders import PyPDFLoader, TextLoader
 
-### Auto Insurance
 
-- collision coverage
-- vehicle addition
-- accident claims
-- driver updates
+POLICY_DATA_PATH = os.getenv(
+    "POLICY_DATA_PATH",
+    "data/policies"
+)
 
-### Home Insurance
 
-- fire damage coverage
-- theft coverage
-- disaster coverage
+def load_policy_documents():
 
-## Supported File Types
+    documents = []
 
-The ingestion pipeline supports:
+    folder_path = Path(POLICY_DATA_PATH)
 
-- TXT files
-- PDF files
+    for file_path in folder_path.iterdir():
 
-## Document Loader Features
+        try:
+            if file_path.suffix == ".pdf":
+                loader = PyPDFLoader(str(file_path))
+                documents.extend(loader.load())
 
-Implemented capabilities:
+            elif file_path.suffix == ".txt":
+                loader = TextLoader(
+                    str(file_path),
+                    encoding="utf-8"
+                )
+                documents.extend(loader.load())
 
-- TXT loading
-- PDF loading
-- metadata extraction
-- exception handling
-- configurable policy directories
+        except Exception as error:
+            print(f"Error loading {file_path.name}: {error}")
+
+    print(f"Loaded {len(documents)} documents/pages")
+
+    return documents
+```
 
 ---
 
-# 5. Semantic Chunking Strategy
+# 8. Text Chunking Strategy
 
-## Why Chunking Was Needed
+## `text_splitter.py`
 
-Insurance policy documents contain:
+Insurance documents were split into semantic chunks before embedding.
 
-- long procedural sections
-- exclusions
-- waiting periods
-- policy conditions
-- dense insurance terminology
+## Full Implementation
 
-Chunking improves retrieval precision and semantic search quality.
+```python
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+import os
 
-## Chunk Configuration
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 500))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 100))
+
+def split_documents(documents):
+
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=[
+            "\n\n",
+            "\n",
+            ". ",
+            " ",
+            ""
+        ]
+    )
+
+    chunks = splitter.split_documents(documents)
+
+    for chunk in chunks:
+        source = chunk.metadata.get("source", "unknown")
+        chunk.metadata["source"] = os.path.basename(source)
+
+    return chunks
+```
+
+---
+
+## Chunking Configuration
 
 ```python
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
 ```
 
-## Semantic Separators
+---
 
-```python
-separators=[
-    "\n\n",
-    "\n",
-    ". ",
-    " ",
-    ""
-]
-```
+## Benefits of Chunking
 
-## Improvements Observed
-
-Larger semantic chunks improved:
-
+Chunking improved:
+- semantic retrieval accuracy
 - policy continuity
-- retrieval accuracy
-- waiting-period retrieval
+- retrieval precision
 - contextual grounding
 
 ---
 
-# 6. Embedding & Vector Database Implementation
+# 9. Embedding & Vector Database Implementation
+
+## `vector_store.py`
+
+This component:
+- loads documents
+- splits chunks
+- generates embeddings
+- stores vectors in ChromaDB
+
+## Full Implementation
+
+```python
+from langchain_openai import OpenAIEmbeddings
+from langchain_chroma import Chroma
+
+from retriever.document_loader import load_policy_documents
+from retriever.text_splitter import split_documents
+
+from logs.logger import get_logger
+
+import os
+
+
+logger = get_logger()
+
+VECTOR_DB_PATH = os.getenv(
+    "VECTOR_DB_PATH",
+    "data/embeddings"
+)
+
+
+def build_vector_store():
+
+    logger.info("Starting vector database build process")
+
+    documents = load_policy_documents()
+
+    logger.info(f"Loaded documents/pages: {len(documents)}")
+
+    chunks = split_documents(documents)
+
+    logger.info(f"Generated text chunks: {len(chunks)}")
+
+    embeddings = OpenAIEmbeddings(
+        openai_api_key=os.environ["OPENAI_API_KEY"],
+        base_url=os.getenv("OPENAI_API_BASE"),
+        model=os.getenv(
+            "EMBEDDING_MODEL",
+            "text-embedding-3-small"
+        )
+    )
+
+    logger.info("Embedding model initialized")
+
+    vector_store = Chroma.from_documents(
+        documents=chunks,
+        embedding=embeddings,
+        persist_directory=VECTOR_DB_PATH,
+        collection_name="policy_assist"
+    )
+
+    logger.info("Chroma vector database created successfully")
+
+    logger.info(f"Persisted vector DB path: {VECTOR_DB_PATH}")
+
+    logger.info(f"Stored vectors: {vector_store._collection.count()}")
+
+    return vector_store
+```
+
+---
 
 ## Embedding Model
 
 ```python
-OpenAIEmbeddings(
-    model="text-embedding-3-small"
-)
+text-embedding-3-small
 ```
+
+---
 
 ## Vector Database
 
-ChromaDB was selected because it supports:
-
-- local persistence
-- semantic retrieval
-- metadata support
-- LangChain integration
-- configurable collections
-
-## ChromaDB Configuration
-
 ```python
-vector_store = Chroma.from_documents(
-    documents=chunks,
-    embedding=embeddings,
-    persist_directory=VECTOR_DB_PATH,
-    collection_name="policy_assist"
-)
+ChromaDB
 ```
+
+---
 
 ## Persistence Location
 
@@ -257,86 +361,120 @@ vector_store = Chroma.from_documents(
 data/embeddings/
 ```
 
-This prevents rebuilding embeddings every application run.
-
 ---
 
-# 7. Retriever Implementation
+# 10. Retriever Implementation
 
-## Semantic Retriever
+## `retriever.py`
 
-The retriever loads persisted vectors and performs semantic similarity search.
+This component loads persisted vectors and performs semantic retrieval.
 
-## Retriever Configuration
+## Full Implementation
 
 ```python
-retriever = vectorstore.as_retriever(
-    search_type="similarity",
-    search_kwargs={"k": 5}
+import os
+
+from langchain_openai import OpenAIEmbeddings
+from langchain_chroma import Chroma
+
+
+VECTOR_DB_PATH = os.getenv(
+    "VECTOR_DB_PATH",
+    "data/embeddings"
 )
+
+TOP_K = int(os.getenv("TOP_K", 5))
+
+
+def get_retriever():
+
+    embeddings = OpenAIEmbeddings(
+        openai_api_key=os.environ["OPENAI_API_KEY"],
+        base_url=os.getenv("OPENAI_API_BASE"),
+        model=os.getenv(
+            "EMBEDDING_MODEL",
+            "text-embedding-3-small"
+        )
+    )
+
+    vectorstore = Chroma(
+        persist_directory=VECTOR_DB_PATH,
+        embedding_function=embeddings,
+        collection_name="policy_assist"
+    )
+
+    print(
+        "Stored vectors:",
+        vectorstore._collection.count()
+    )
+
+    retriever = vectorstore.as_retriever(
+        search_type="similarity",
+        search_kwargs={"k": TOP_K}
+    )
+
+    return retriever
 ```
-
-## Retrieval Goals
-
-The retriever was designed to:
-
-- retrieve relevant policy chunks
-- support multi-policy retrieval
-- improve factual grounding
-- reduce hallucinations
 
 ---
 
-# 8. RAG Agent Integration
+# 11. RAG Policy Information Agent
 
-## Previous Baseline Flow
+## `policy_information_agent.py`
 
-```text
-User Query → LLM → Response
-```
+The policy information workflow was upgraded to Retrieval-Augmented Generation (RAG).
 
-## Updated RAG Flow
-
-```text
-User Query
-    ↓
-Semantic Retrieval
-    ↓
-Relevant Policy Chunks
-    ↓
-RAG Prompt
-    ↓
-Grounded LLM Response
-```
-
-## Retrieved Context Injection
+## Full Implementation
 
 ```python
-context = "\n\n".join(
-    [doc.page_content for doc in retrieved_docs]
-)
+from llm.llm_client import LLMClient
+from prompts.policy_prompts import RAG_POLICY_PROMPT
+from retriever.retriever import get_retriever
+from logs.logger import get_logger
+
+llm_client = LLMClient()
+retriever = get_retriever()
+logger = get_logger()
+
+
+def handle_policy_information_query(user_input: str) -> str:
+
+    try:
+        logger.info("[AGENT] Policy Information Agent: Starting execution")
+        
+        # Retrieve relevant policy chunks
+        retrieved_docs = retriever.invoke(user_input)
+        
+        # Build retrieval context
+        context = "\n\n".join(
+            [doc.page_content for doc in retrieved_docs]
+        )
+
+        # Build grounded RAG prompt
+        prompt = RAG_POLICY_PROMPT.format(
+            context=context,
+            user_query=user_input
+        )
+
+        # Generate grounded response
+        response = llm_client.ask(prompt)
+        logger.info(f"[AGENT] Policy Information Agent: Response received")
+
+        return response
+
+    except Exception as error:
+        logger.error(f"[AGENT] Policy Information Agent: Error - {str(error)}")
+        return (
+            "I'm unable to process the policy information request at the moment. "
+            "Please try again later or contact customer support."
+        )
 ```
-
-## Benefits
-
-- retrieval-grounded responses
-- policy-specific answers
-- improved factual reliability
-- reduced hallucination risk
 
 ---
 
-# 9. RAG Prompt Engineering
+# 12. RAG Prompt Engineering
 
-## Prompt Objectives
-
-The RAG prompt was redesigned to enforce:
-
-- retrieval grounding
-- hallucination prevention
-- uncertainty handling
-- operational safety
-- missing-information acknowledgment
+## `RAG_POLICY_PROMPT`
 
 ## Key Prompt Constraints
 
@@ -345,363 +483,265 @@ The RAG prompt was redesigned to enforce:
 - Never fabricate policy details
 - Do not generate unsupported assumptions
 - Clearly acknowledge missing information
+- Use only retrieval-grounded reasoning
 ```
 
-## Governance-Aware Prompting
-
-The prompt also enforced:
-
-- no claim approval guarantees
-- no reimbursement guarantees
-- escalation guidance
-- professional communication
-
 ---
 
-# 10. Safety & Governance Integration
-
-## Safety Review Layer
-
-All generated responses pass through a secondary safety review agent.
-
-## Classification Categories
-
-| Classification | Purpose |
-|---|---|
-| SAFE | Normal grounded informational responses |
-| ESCALATE | Sensitive or ambiguous operational workflows |
-| RESTRICTED | Unsafe or unauthorized operations |
-
-## Governance Examples
-
-| Query | Result |
-|---|---|
-| What is the maternity waiting period? | SAFE |
-| Can you reduce my premium? | ESCALATE |
-| Approve my insurance claim | RESTRICTED |
-
-## Governance Improvements
-
-The escalation workflow was refined to:
-
-- reduce over-escalation
-- separate escalation vs restriction
-- preserve usability
-- maintain operational safety
-
----
-
-# 11. Compare Responses With and Without Retrieval
-
-## Objective
-
-Responses were compared before and after retrieval integration to evaluate:
-
-- factual grounding
-- policy specificity
-- hallucination reduction
-- semantic retrieval quality
-- response reliability
-
----
-
-## Without Retrieval (Baseline System)
-
-### Architecture
+## Structured Output Format
 
 ```text
-User Query → LLM Prompt → Response
+[Summary]
+
+[Important Considerations]
+
+[Recommended Next Step]
 ```
-
-### Observed Limitations
-
-- generic insurance explanations
-- estimated policy details
-- unsupported assumptions
-- inconsistent factual grounding
-- hallucination risk
 
 ---
 
-## With Retrieval (RAG System)
+# 13. Retrieval Workflow
 
-### Architecture
+## Previous Workflow
+
+```text
+User Query → LLM → Response
+```
+
+---
+
+## Updated RAG Workflow
 
 ```text
 User Query
     ↓
 Semantic Retrieval
     ↓
-Relevant Policy Chunks
+Retrieved Policy Chunks
     ↓
-Retrieved Context Injection
+Context Injection
     ↓
-Grounded LLM Response
+RAG Prompt
+    ↓
+Grounded Response
 ```
 
-### Improvements Observed
-
-- retrieval-grounded responses
-- policy-specific answers
-- reduced hallucinations
-- improved factual consistency
-- safer uncertainty handling
-
 ---
 
-## Baseline vs RAG Comparison Table
+# 14. Compare Responses With and Without RAG
 
-| Query | Baseline Response | RAG Response |
-|---|---|---|
-| Does my policy cover cataract surgery? | Generic surgery explanation | Retrieved cataract surgery policy details |
-| What is the waiting period for maternity coverage? | Estimated waiting period range | Exact 36-month waiting period |
-| What is covered under collision coverage? | Generic auto explanation | Retrieved repair expense coverage |
-| Does home insurance cover fire damage? | Generic fire coverage explanation | Retrieved structural repair coverage |
-| Does my policy cover dental implants? | Risk of unsupported assumptions | Safe missing-information acknowledgment |
+# Example 1 — Collision Coverage
 
----
-
-## Example Comparison
+## Without RAG
 
 ### Query
 
 ```text
-What is the waiting period for maternity coverage?
+what is collision coverage?
 ```
 
-### Baseline Response (Without Retrieval)
+### Response
 
 ```text
-The waiting period for maternity coverage varies by insurer and policy. It commonly ranges from 9 to 12 months.
+Collision coverage is an auto insurance component that helps pay for damage to your vehicle resulting from a collision with another vehicle or object.
 ```
 
-### Problems in Baseline Response
+### Observed Problems
 
-- not grounded in policy documents
-- estimated answer
 - generic explanation
-- hallucination risk
+- no policy-specific deductible
+- no grounded coverage conditions
 
 ---
 
-### RAG Response (With Retrieval)
+## With RAG
+
+### Response
 
 ```text
-The waiting period for maternity benefits eligibility is 36 continuous months from the policy start date.
+Collision coverage helps pay for repair expenses resulting from accidents involving your vehicle colliding with another vehicle or object.
+
+A deductible of ₹2,000 applies before any claim payout, and reimbursement is limited to your policy limits.
 ```
 
 ### Improvements
 
-- exact policy-grounded answer
-- retrieval-backed response
+- retrieval-grounded response
+- exact deductible retrieval
+- policy-specific conditions
 - reduced hallucination risk
-- improved factual accuracy
 
 ---
 
-# 12. Missing Information Handling
+# Example 2 — Maternity Waiting Period
+
+## Without RAG
+
+### Query
+
+```text
+what is waiting period in maternity policy?
+```
+
+### Response
+
+```text
+The waiting period typically ranges from 9 to 12 months depending on the insurer.
+```
+
+### Problems
+
+- estimated answer
+- unsupported assumptions
+- generic response
+
+---
+
+## With RAG
+
+### Response
+
+```text
+The waiting period for maternity coverage is typically 24 months, but some policies may have waiting periods up to 36 months.
+```
+
+### Improvements
+
+- grounded policy information
+- factual retrieval
+- reduced hallucinations
+- safer response generation
+
+---
+
+# 15. Missing Information Handling
 
 ## Objective
 
 Prevent hallucinated insurance responses when policy information is unavailable.
 
-## Missing Information Rules
+---
+
+## Example Query
 
 ```text
-- Clearly acknowledge missing information
-- Do not fabricate policy details
-- Recommend human review when needed
+what is coverage term insurance?
 ```
 
-## Example Queries
+## RAG Behavior
 
-| Query | Expected Behavior |
-|---|---|
-| Does my policy cover dental implants? | Acknowledge unavailable information |
-| What is the LASIK surgery coverage limit? | Avoid unsupported assumptions |
+```text
+The retrieved policy information does not include details about term insurance coverage.
+```
+
+---
 
 ## Benefits
 
 This improved:
-
+- hallucination prevention
+- uncertainty handling
 - operational safety
-- response trustworthiness
-- hallucination resistance
-- compliance behavior
+- user trust
 
 ---
 
-# 13. Retrieval Quality Testing
+# 16. Governance & Safety Integration
 
-## Retrieval Validation Queries
+## Safety Categories
+
+| Status | Purpose |
+|---|---|
+| SAFE | Informational grounded responses |
+| ESCALATE | Sensitive workflows |
+| RESTRICTED | Unauthorized operations |
+
+---
+
+## Restricted Examples
+
+| Query | Result |
+|---|---|
+| can you reduce my premium? | RESTRICTED |
+| approve my claim | RESTRICTED |
+
+---
+
+# 17. Retrieval Quality Testing
+
+## Validation Queries
 
 | Query | Expected Retrieval |
 |---|---|
-| Cataract surgery | Health policy |
-| Collision coverage | Auto policy |
-| Fire damage | Home policy |
-| Maternity waiting period | Health maternity section |
-
-## Testing Goals
-
-- validate semantic similarity search
-- confirm correct policy retrieval
-- ensure multi-domain retrieval
-- evaluate grounding quality
-
-## Retrieval Outcome
-
-Semantic retrieval successfully:
-
-- matched queries to correct policy domains
-- retrieved relevant chunks
-- improved response grounding
+| collision coverage | auto coverage document |
+| maternity waiting period | maternity policy section |
+| reimbursement claims | claims workflow document |
+| phone update process | policy update workflow |
 
 ---
 
-# 14. Execution Evidence
+## Retrieval Goals
+
+- validate semantic retrieval
+- confirm grounded responses
+- reduce hallucinations
+- verify policy relevance
+
+---
+
+# 18. Execution Evidence
 
 ## Screenshot Index
 
-| Screenshot | Purpose | Link |
-|---|---|---|
-| rag_execution_policy_info_1.png | Health policy retrieval | [View Screenshot](screenshots/rag_execution_policy_info_1.png) |
-| rag_execution_policy_info_2.png | Multi-domain retrieval | [View Screenshot](screenshots/rag_execution_policy_info_2.png) |
-| rag_execution_missing_info.png | Missing information handling | [View Screenshot](screenshots/rag_execution_missing_info.png) |
-| rag_execution_escalation.png | Escalation and restriction workflows | [View Screenshot](screenshots/rag_execution_escalation.png) |
-| rag_retrieval_logs.png | Embedding and vector database logs | [View Screenshot](screenshots/rag_retrieval_logs.png) |
+| Screenshot | Purpose |
+|---|---|
+| rag_execution_policy_info_1.png | Collision coverage retrieval |
+| rag_execution_policy_info_2.png | Maternity waiting period retrieval |
+| rag_execution_missing_info.png | Missing information handling |
+| rag_execution_escalation.png | Governance and restriction handling |
+| rag_retrieval_logs.png | Embedding and vector database logs |
 
 ---
 
-## 14.1 Health Policy Retrieval
+## Collision Coverage Retrieval
 
-### Screenshot
-
-```text
-rag_execution_policy_info_1.png
-```
-
-### Queries Executed
-
-```text
-Does my policy cover cataract surgery?
-
-What is the waiting period for maternity coverage?
-```
-
-### Evidence Demonstrated
-
-- semantic retrieval
-- grounded policy answers
-- waiting period retrieval
-- safe grounded responses
+![Collision Coverage Retrieval](screenshots/rag_execution_policy_info_1.png)
 
 ---
 
-## 14.2 Multi-Domain Retrieval
+## Maternity Waiting Period Retrieval
 
-### Screenshot
-
-```text
-rag_execution_policy_info_2.png
-```
-
-### Queries Executed
-
-```text
-What is covered under collision coverage?
-
-Does home insurance cover fire damage?
-```
-
-### Evidence Demonstrated
-
-- multi-policy retrieval
-- semantic similarity search
-- grounded policy responses
+![Maternity Waiting Period](screenshots/rag_execution_policy_info_2.png)
 
 ---
 
-## 14.3 Missing Information Handling
+## Missing Information Handling
 
-### Screenshot
-
-```text
-rag_execution_missing_info.png
-```
-
-### Queries Executed
-
-```text
-Does my policy cover dental implants?
-
-What is the coverage limit for LASIK surgery?
-```
-
-### Evidence Demonstrated
-
-- hallucination prevention
-- uncertainty handling
-- safe limitation acknowledgment
+![Missing Information](screenshots/rag_execution_missing_info.png)
 
 ---
 
-## 14.4 Escalation & Restriction Governance
+## Governance & Restrictions
 
-### Screenshot
-
-```text
-rag_execution_escalation.png
-```
-
-### Queries Executed
-
-```text
-Can you reduce my premium?
-
-Why was my claim rejected?
-
-Approve my insurance claim immediately.
-```
-
-### Evidence Demonstrated
-
-- escalation workflows
-- restricted operation blocking
-- governance-aware orchestration
+![Governance & Restrictions](screenshots/rag_execution_escalation.png)
 
 ---
 
-## 14.5 Retrieval Infrastructure Logs
+## Retrieval Logs
 
-### Screenshot
-
-```text
-rag_retrieval_logs.png
-```
-
-### Evidence Demonstrated
-
-- document ingestion
-- chunk generation
-- embedding initialization
-- ChromaDB persistence
-- stored vector validation
-- observability logging
+![Retrieval Logs](screenshots/rag_retrieval_logs.png)
 
 ---
 
-# 15. Technical Challenges & Debugging
+# 19. Technical Challenges & Debugging
 
-## Challenge 1: Empty Retrieval Context
-
-### Issue
-
-Retriever returned empty retrieval context despite embeddings being generated.
+## Challenge 1 — Empty Retrieval Context
 
 ### Root Cause
 
-Chroma collections were inconsistent because collection names were not shared.
+Collection names were inconsistent during:
+- vector creation
+- vector loading
 
 ### Fix
 
@@ -709,16 +749,13 @@ Chroma collections were inconsistent because collection names were not shared.
 collection_name="policy_assist"
 ```
 
-was added to:
-
-- vector creation
-- vector loading
+was added consistently.
 
 ---
 
-## Challenge 2: Fragmented Retrieval
+## Challenge 2 — Fragmented Retrieval
 
-### Issue
+### Root Cause
 
 Small chunks fragmented policy sections.
 
@@ -730,54 +767,32 @@ CHUNK_OVERLAP = 150
 ```
 
 Improved:
-
-- retrieval continuity
-- semantic context
-- waiting period retrieval
-
----
-
-## Challenge 3: Over-Escalation
-
-### Issue
-
-Safety reviewer escalated many informational responses.
-
-### Fix
-
-Reviewer logic was simplified to:
-
-- prefer SAFE for informational responses
-- reserve ESCALATE for sensitive workflows
-- reserve RESTRICTED for unsafe operations
+- semantic continuity
+- retrieval quality
+- grounded responses
 
 ---
 
-# 16. Key Learnings
+# 20. Key Learnings
 
 ## Technical Learnings
 
 - semantic chunking strongly affects retrieval quality
-- retrieval grounding reduces hallucinations
-- Chroma collection management is important
-- observability logging simplifies RAG debugging
-
-## AI Safety Learnings
-
-- over-aggressive safety review reduces usability
-- uncertainty should not always trigger escalation
-- governance workflows require balanced tuning
-
-## Architecture Learnings
-
-- RAG improves enterprise reliability
-- grounded prompting improves factual consistency
-- vector persistence improves performance
-- semantic retrieval supports multi-domain systems
+- grounded retrieval reduces hallucinations
+- Chroma persistence improves performance
+- retrieval logging improves debugging
 
 ---
 
-# 17. Phase Summary
+## AI Safety Learnings
+
+- grounded prompts improve reliability
+- missing-information handling improves trust
+- governance-aware RAG improves operational safety
+
+---
+
+# 21. Conclusion
 
 Phase 4 successfully transformed PolicyAssist AI into a Retrieval-Augmented Generation (RAG) system capable of:
 
@@ -785,17 +800,18 @@ Phase 4 successfully transformed PolicyAssist AI into a Retrieval-Augmented Gene
 - grounded insurance explanations
 - vector-based search
 - hallucination reduction
-- multi-policy support
+- multi-document retrieval
 - governance-aware orchestration
-- missing-information handling
+- safer uncertainty handling
 
 The system now supports:
-
 - embeddings
-- semantic search
+- semantic retrieval
 - ChromaDB persistence
-- retrieval-grounded prompting
-- multi-domain policy retrieval
-- enterprise-style governance workflows
+- grounded prompting
+- retrieval-quality validation
+- enterprise-style RAG workflows
 
-This phase established the foundational knowledge infrastructure required for scalable and reliable enterprise AI support systems.
+This phase established the foundational knowledge retrieval infrastructure required for scalable enterprise insurance AI systems.
+
+---

@@ -1,0 +1,61 @@
+# General Claim Process Documentation
+
+## Overview
+This document outlines the standard procedures, required documentation, and limitations for processing claims.
+
+---
+
+## Claim Process Steps
+
+### 1. Claim Initiation
+- Submit claim within specified timeframe
+- Provide claimant information and contact details
+- Assign unique claim reference number
+
+### 2. Documentation Review
+- Verify all required documents are provided
+- Check document authenticity and completeness
+- Request additional information if needed
+
+### 3. Assessment
+- Evaluate claim eligibility
+- Review policy coverage and terms
+- Conduct investigation if necessary
+
+### 4. Decision
+- Approve, deny, or request amendments
+- Provide written decision with reasoning
+- Communicate outcome to claimant
+
+### 5. Resolution
+- Process payment or denial notification
+- Update claim status
+- Archive documentation
+
+---
+
+## Required Documents
+
+- Original claim form (completed and signed)
+- Valid identification/proof of eligibility
+- Supporting evidence (receipts, invoices, medical records, etc.)
+- Policy documentation
+- Proof of loss or damage
+- Bank details for payment (if approved)
+
+---
+
+## Limitations
+
+- Claims must be filed within 30 days of incident
+- Maximum coverage limits per policy
+- Exclusions apply per policy terms
+- Fraudulent claims will be rejected and reported
+- Processing time: 10-15 business days
+- No retroactive claims beyond policy start date
+
+---
+
+## Contact & Support
+
+For inquiries, contact Claims Department with reference number.

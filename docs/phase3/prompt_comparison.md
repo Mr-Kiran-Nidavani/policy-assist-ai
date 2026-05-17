@@ -1,535 +1,700 @@
-# Phase 3 — LLM Integration & Multi-Agent Architecture
+# Phase 3 — Make the Agent Smarter
+
+# PolicyAssist AI — LLM Integration & Prompt Engineering
 
 # Table of Contents
 
-1. [Overview](#overview)
-2. [Objectives](#objectives)
-3. [Technology Stack](#technology-stack)
-4. [LangChain & OpenAI Integration](#langchain--openai-integration)
-5. [Prompt Engineering](#prompt-engineering)
-6. [Prompt Variants](#prompt-variants)
-7. [Structured Response Design](#structured-response-design)
-8. [Multi-Agent Architecture](#multi-agent-architecture)
-9. [Agent Responsibilities](#agent-responsibilities)
-10. [Intent Routing Improvements](#intent-routing-improvements)
-11. [Safety Review Architecture](#safety-review-architecture)
-12. [Safety Enforcement Strategy](#safety-enforcement-strategy)
-13. [Logging & Observability](#logging--observability)
-14. [Example Improvements Over Phase 2](#example-improvements-over-phase-2)
-15. [Execution Evidence](#execution-evidence)
-16. [Prompt Engineering Evaluation](#prompt-engineering-evaluation)
-17. [Prompt Comparison Summary](#prompt-comparison-summary)
-18. [Policy Information Prompt Comparison](#policy-information-prompt-comparison)
-19. [Claim Support Prompt Comparison](#claim-support-prompt-comparison)
-20. [Key Engineering Findings](#key-engineering-findings)
-21. [Prompt Engineering Insights](#prompt-engineering-insights)
-22. [Operational Readiness Improvements](#operational-readiness-improvements)
-23. [Challenges Encountered](#challenges-encountered)
-24. [Known Limitations](#known-limitations)
-25. [Conclusion](#conclusion)
-
-# Overview
-
-Phase 3 focuses on transforming PolicyAssist AI from a rule-based baseline assistant into a lightweight enterprise-style multi-agent AI system using LangChain and OpenAI-powered workflows.
-
-This phase introduces:
-- LLM-powered semantic routing
-- domain-specialized AI agents
-- prompt-engineered response generation
-- layered AI safety review
-- operational logging and observability
-
-The architecture was designed to improve response quality, modularity, scalability, and safety while preparing the system for future Retrieval-Augmented Generation (RAG) workflows.
+- [1. Overview](#1-overview)
+- [2. Objectives](#2-objectives)
+- [3. Phase 2 vs Phase 3 Evolution](#3-phase-2-vs-phase-3-evolution)
+- [4. Updated Multi-Agent Architecture](#4-updated-multi-agent-architecture)
+- [5. LLM Integration](#5-llm-integration)
+- [6. Intent Router Agent](#6-intent-router-agent)
+- [7. Policy Information Agent](#7-policy-information-agent)
+- [8. Claim Support Agent](#8-claim-support-agent)
+- [9. Prompt Engineering Strategy](#9-prompt-engineering-strategy)
+- [10. Prompt Variants](#10-prompt-variants)
+- [11. Prompt Comparison Testing](#11-prompt-comparison-testing)
+- [12. Prompt Comparison Results](#12-prompt-comparison-results)
+- [13. Improvements Introduced in Phase 3](#13-improvements-introduced-in-phase-3)
+- [14. New Failure Modes Introduced](#14-new-failure-modes-introduced)
+- [15. Default Prompt Strategy Selection](#15-default-prompt-strategy-selection)
+- [16. Observations](#16-observations)
+- [17. Planned Improvements for Future Phases](#17-planned-improvements-for-future-phases)
+- [18. Conclusion](#18-conclusion)
 
 ---
 
-# Objectives
+# 1. Overview
 
-The primary goals of Phase 3 were:
+Phase 3 focused on evolving PolicyAssist AI from a rule-based baseline system into an LLM-powered multi-agent insurance support assistant.
 
-- replace static responses with LLM-generated outputs
-- replace keyword-based routing with semantic intent classification
-- introduce prompt engineering for safer insurance support behavior
-- implement layered AI safety validation
-- improve explainability and operational observability
-- establish scalable multi-agent orchestration
-
----
-
-# Technology Stack
-
-| Component | Technology |
-|---|---|
-| LLM Framework | LangChain |
-| LLM Provider | OpenAI |
-| Model | GPT-4.1-mini |
-| Environment Management | uv |
-| Logging | Loguru |
-| Prompting | Structured prompt templates |
-
----
-
-# LangChain & OpenAI Integration
-
-The project integrates LangChain using the `ChatOpenAI` wrapper for centralized LLM communication.
-
-A reusable `LLMClient` was implemented to:
-- centralize model configuration
-- standardize LLM access
-- simplify agent integration
-- support future scalability
-
-The LLM client supports:
-- configurable models
-- retry handling
-- timeout handling
-- environment variable configuration
-
----
-
-# Prompt Engineering
-
-Phase 3 introduced structured prompt engineering for:
-- policy information workflows
-- claims support workflows
-- safety review workflows
-- general support workflows
-- intent routing workflows
-
-Prompt engineering focused on:
-- reducing hallucinations
-- enforcing operational boundaries
-- improving output consistency
-- improving uncertainty handling
-- preventing unsafe guarantees
-
----
-
-# Prompt Variants
-
-The system maintains:
-- baseline prompts
-- safety-focused prompts
-
-This enables prompt comparison evaluation between:
-- generic LLM behavior
-- safety-constrained regulated behavior
-
----
-
-# Structured Response Design
-
-The prompts enforce structured response formatting using sections such as:
-
-```text
-[Summary]
-[Important Considerations]
-[Recommended Next Step]
-```
-
-and:
-
-```text
-[Claim Guidance]
-[Important Limitations]
-[Recommended Next Step]
-```
-
-This improves:
-- consistency
-- readability
-- evaluation quality
-- operational professionalism
-
----
-
-# Multi-Agent Architecture
-
-Phase 3 introduced a lightweight multi-agent orchestration architecture.
-
-## Workflow Overview
-
-```text
-User Query
-      ↓
-Intent Router LLM Agent
-      ↓
-Domain-Specific AI Agent
-      ↓
-Safety Review LLM Agent
-      ↓
-Final Safe Response
-```
-
----
-
-# Agent Responsibilities
-
-| Agent | Responsibility |
-|---|---|
-| Intent Router Agent | Detects user intent using semantic classification |
-| Policy Information Agent | Explains coverage, deductibles, exclusions, and policy terms |
-| Claim Support Agent | Provides claims guidance and reimbursement support |
-| General Query Agent | Handles greetings and general insurance assistance |
-| Policy Update Agent | Handles approved low-risk operational workflows |
-| Safety Review Agent | Performs centralized AI safety validation |
-
----
-
-# Intent Routing Improvements
-
-The original Phase 2 implementation used keyword-based intent routing.
-
-Example limitations included:
-- fragile phrase matching
-- false positives
-- false negatives
-- poor handling of ambiguous wording
-
-Phase 3 replaced this approach with an LLM-powered Intent Router Agent.
-
-Supported intent categories:
-- policy_information
-- claim_support
-- policy_update
-- restricted_operation
-- general_query
-- unknown
-
-This significantly improved:
-- semantic understanding
-- routing flexibility
-- workflow scalability
-
----
-
-# Safety Review Architecture
-
-A dedicated AI Safety Review Agent was introduced to validate generated responses before returning them to users.
-
-The reviewer checks for:
-- unauthorized operations
-- claim approval guarantees
-- reimbursement guarantees
-- fabricated policy information
-- misleading insurance guidance
-- escalation requirements
-
-The reviewer returns one of three classifications:
-- SAFE
-- ESCALATE
-- RESTRICTED
-
-This creates a layered safety enforcement workflow.
-
----
-
-# Safety Enforcement Strategy
-
-The architecture combines:
-- orchestration-based restrictions
-- prompt-level constraints
-- AI-based response review
-- fail-safe escalation behavior
-
-Restricted operations are blocked immediately before response generation.
-
-Examples:
-- claim approval requests
-- premium reduction requests
-- deductible waiver requests
-- policy cancellation requests
-
----
-
-# Logging & Observability
-
-Phase 3 introduced operational logging using Loguru.
-
-The system logs:
-- detected intents
-- workflow execution
-- safety review execution
-- escalation events
-- restricted operation blocks
-- runtime failures
-
-The logging design avoids storing sensitive customer information.
-
-This improves:
-- debugging
-- observability
-- deployment readiness
-- operational tracing
-
----
-
-# Example Improvements Over Phase 2
-
-| Phase 2 | Phase 3 |
-|---|---|
-| Rule-based routing | LLM semantic routing |
-| Static responses | AI-generated responses |
-| Keyword matching | Context-aware understanding |
-| Basic refusal handling | Layered AI safety review |
-| Minimal logging | Structured observability |
-
----
-
-# Execution Evidence
-
-The following screenshots demonstrate the successful execution of major Phase 3 workflows.
-
----
-
-# Multi-Agent Workflow Execution — Part 1
-
-This execution demonstrates:
-- policy information workflow
+This phase introduced:
+- LLM integration
 - semantic intent routing
-- safety review execution
-- structured policy response generation
-- operational logging
+- prompt engineering
+- safety-focused prompting
+- structured response generation
+- prompt comparison evaluation
 
-![Execution Proof 1](screenshots/execution_proof_1.png)
+The objective was to improve:
+- natural language understanding
+- response quality
+- workflow flexibility
+- hallucination resistance
+- compliance-oriented behavior
 
----
-
-# Multi-Agent Workflow Execution — Part 2
-
-This execution demonstrates:
-- claim support workflow
-- reimbursement guidance
-- approved low-risk policy update workflow
-- structured claims assistance
-
-![Execution Proof 2](screenshots/execution_proof_2.png)
-
----
-
-# Multi-Agent Workflow Execution — Part 3
-
-This execution demonstrates:
+while preserving:
+- modular orchestration
+- centralized safety validation
 - restricted operation enforcement
-- refusal handling
-- general query handling
-- empty input validation
-- graceful workflow behavior
-
-![Execution Proof 3](screenshots/execution_proof_3.png)
 
 ---
 
-# Prompt Engineering Evaluation
+# 2. Objectives
 
-Phase 3 evaluated the behavioral impact of:
-- baseline prompts
-- safety-focused prompts
-
-The evaluation focused on:
-- uncertainty handling
-- structured output quality
-- escalation behavior
-- hallucination reduction
-- guarantee prevention
-- operational safety compliance
+The goals of Phase 3 were to:
+- integrate an LLM into the multi-agent workflow
+- replace static responses with dynamic generation
+- improve semantic understanding
+- design and compare multiple prompt strategies
+- evaluate prompt behavior differences
+- improve safety and uncertainty handling
+- document new LLM-related failure modes
 
 ---
 
-# Prompt Comparison Summary
+# 3. Phase 2 vs Phase 3 Evolution
 
-| Evaluation Area | Base Prompt | Safety Prompt |
+| Capability | Phase 2 | Phase 3 |
 |---|---|---|
-| Response Structure | Less structured | Structured and standardized |
-| Uncertainty Handling | Moderate | Strong and explicit |
-| Escalation Guidance | Inconsistent | Clear and consistent |
-| Claim Guarantee Prevention | Moderate | Strong operational safeguards |
-| Hallucination Resistance | Lower | Improved cautious behavior |
-| Output Professionalism | Moderate | Consistent enterprise-style tone |
-| Safety Reviewer Intervention | More frequent | Reduced frequency |
-| Operational Compliance | Basic | Strong regulated-support behavior |
-| Workflow Predictability | Moderate | Improved consistency |
+| Intent Detection | Rule-based keywords | LLM semantic classification |
+| Responses | Static templates | Dynamic LLM-generated responses |
+| Prompting | None | Prompt-engineered workflows |
+| Safety Handling | Basic refusal rules | Layered safety prompting + validation |
+| Query Understanding | Weak semantic understanding | Improved contextual understanding |
+| Response Structure | Static text | Structured and explainable outputs |
 
 ---
 
-# Policy Information Prompt Comparison
-
-## Evaluation Query
+# 4. Updated Multi-Agent Architecture
 
 ```text
-Will my surgery definitely be covered?
+                         Customer Query
+                                │
+                                ▼
+                    ┌─────────────────────┐
+                    │ Intent Router Agent │
+                    │   (LLM Powered)     │
+                    └─────────────────────┘
+                                │
+        ┌──────────────┬────────┼────────┬──────────────┬──────────────┐
+        │              │        │        │              │              │
+        ▼              ▼        ▼        ▼              ▼              ▼
+┌──────────────┐ ┌───────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│ Policy Info  │ │ Customer  │ │ Claim Support│ │ Policy Update│ │ General Query│
+│ Agent        │ │ Policy    │ │ Agent        │ │ Agent        │ │ Agent        │
+│ (LLM Powered)│ │ Agent     │ │ (LLM Powered)│ │ Agent        │ │ Agent        │
+└──────────────┘ └───────────┘ └──────────────┘ └──────────────┘ └──────────────┘
+        └──────────────┬────────┴────────┬──────────────┬──────────────┘
+                       │
+                       ▼
+                ┌─────────────────────┐
+                │ Safety Review Agent │
+                └─────────────────────┘
+                               │
+                               ▼
+                    Final Safe Response
 ```
 
 ---
 
-## Base Prompt Behavior
+# 5. LLM Integration
 
-Observed behavior:
-- weaker uncertainty handling
-- less structured response formatting
-- triggered escalation by the Safety Review Agent
+Phase 3 introduced a centralized LLM client responsible for:
+- prompt execution
+- response generation
+- dynamic conversational reasoning
 
-Result:
-- response required additional safety intervention
-
----
-
-## Safety Prompt Behavior
-
-Observed behavior:
-- explicit uncertainty handling
-- structured response formatting
-- improved operational caution
-- no downstream escalation required
-
-Result:
-- response passed safety review successfully
+The implementation uses:
+- LangChain
+- OpenAI-compatible API integration
+- centralized model configuration
+- reusable orchestration logic
 
 ---
 
-## Key Observation
+## `llm_client.py`
 
-The safety-focused prompt produced more stable and compliant behavior, reducing downstream intervention from the Safety Review Agent.
+## Full Implementation
 
----
+```python
+# app/llm/llm_client.py
 
-## Evidence
+import os
 
-![Policy Prompt Comparison](screenshots/prompt_comparison_policy.png)
+from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
 
----
 
-# Claim Support Prompt Comparison
+load_dotenv()
 
-## Evaluation Query
 
-```text
-will I definately get my full claim amount
+class LLMClient:
+    """
+    Centralized LangChain OpenAI client
+    for PolicyAssist AI.
+    """
+
+    def __init__(self):
+        self.llm = ChatOpenAI(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            base_url=os.getenv("OPENAI_API_BASE"),  # Optional
+            model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+            temperature=float(os.getenv("TEMPERATURE", 0.3)),
+            max_tokens=int(os.getenv("MAX_TOKENS", 512)),
+            timeout=30,
+            max_retries=2,
+        )
+
+    def ask(self, prompt: str) -> str:
+        """
+        Executes LLM request using prompt string.
+        """
+
+        response = self.llm.invoke(prompt)
+
+        return response.content
+
+    def get_model(self):
+        """
+        Returns underlying LangChain model.
+        """
+
+        return self.llm
 ```
 
 ---
 
-## Base Prompt Behavior
+## LLM Integration Improvements
 
-Observed behavior:
-- generic claim guidance
-- weaker explanation of claim limitations
-- less structured formatting
+Compared to Phase 2:
+- responses are dynamically generated
+- agents can reason over natural language
+- semantic understanding improved significantly
+- prompt-controlled behavior became possible
 
----
-
-## Safety Prompt Behavior
-
-Observed behavior:
-- explicit non-guarantee language
-- structured operational guidance
-- stronger claim limitation explanation
-- clearer reimbursement uncertainty handling
-
----
-
-## Key Observation
-
-Safety-focused prompting improved response consistency, operational safety language, and clarity regarding claim outcome uncertainty.
-
----
-
-## Evidence
-
-![Claim Prompt Comparison](screenshots/prompt_comparison_claim.png)
-
----
-
-# Key Engineering Findings
-
-Phase 3 produced several important engineering observations:
-
-| Finding | Observation |
-|---|---|
-| Semantic routing improved flexibility | LLM routing reduced keyword dependency |
-| Structured prompts improved consistency | Outputs became more predictable and professional |
-| Safety-focused prompts reduced escalation frequency | Better prompts reduced downstream safety interventions |
-| Layered safety review improved operational control | Unsafe workflows were blocked or escalated |
-| Logging improved observability | Workflow tracing became easier to debug and evaluate |
-
----
-
-# Prompt Engineering Insights
-
-The experiments demonstrated that carefully designed safety-focused prompts significantly improve:
-- response consistency
-- uncertainty handling
-- hallucination prevention
-- escalation behavior
-- operational safety compliance
-
-The evaluation also showed that stronger prompts reduce the burden on downstream safety review agents.
-
----
-
-# Operational Readiness Improvements
-
-Phase 3 also introduced several deployment-oriented improvements:
-- centralized LLM configuration
-- modular agent architecture
-- fail-safe escalation handling
-- operational logging
-- empty input validation
-- structured workflow orchestration
-
-These improvements increase:
+The centralized LLM client also improved:
 - maintainability
-- observability
-- workflow scalability
-- enterprise readiness
+- modularity
+- reusable orchestration
+- model configuration management
 
 ---
 
-# Challenges Encountered
+# 6. Intent Router Agent
 
-Several realistic engineering issues were encountered during implementation:
-- over-aggressive keyword routing
-- false safety escalations
-- prompt inconsistency
-- semantic ambiguity
-- balancing safety vs usability
+## `intent_router_agent.py`
 
-These issues were progressively improved through:
-- prompt refinement
-- semantic routing
-- layered safety review
-- workflow-aware orchestration
+The Phase 2 keyword-based router was replaced with an LLM-powered semantic intent classifier.
+
+## Full Implementation
+
+```python
+from llm.llm_client import LLMClient
+from prompts.router_prompts import INTENT_ROUTER_PROMPT
+
+
+llm_client = LLMClient()
+
+
+VALID_INTENTS = {
+    "policy_information",
+    "claim_support",
+    "policy_update",
+    "restricted_operation",
+    "general_query",
+    "customer_policy_query",
+    "unknown",
+}
+
+
+def detect_intent(user_input: str) -> str:
+
+    try:
+        prompt = INTENT_ROUTER_PROMPT.format(
+            user_query=user_input
+        )
+
+        response = llm_client.ask(prompt)
+
+        intent = response.strip().lower()
+
+        if intent in VALID_INTENTS:
+            return intent
+
+        return "unknown"
+
+    except Exception:
+        return "unknown"
+```
 
 ---
 
-# Known Limitations
+## Intent Router Improvements
 
-Although Phase 3 significantly improved the system, several limitations remain:
-- responses are not yet grounded in policy documents
-- hallucinations may still occur
-- customer-specific coverage validation is unavailable
-- vector retrieval has not yet been implemented
-- long-term memory support is not available
+### Phase 2 Failure
 
-These limitations will be addressed in future phases.
+```text
+Can you explain how much I need to pay before my insurance starts helping?
+```
+
+The rule-based router failed because:
+- no keyword matched
+- semantic meaning was not understood
 
 ---
 
-# Conclusion
+### Phase 3 Improvement
 
-Phase 3 transformed PolicyAssist AI from a rule-based prototype into a lightweight enterprise-style multi-agent AI orchestration system.
+The LLM router correctly inferred:
+```text
+policy_information
+```
 
-Key improvements include:
-- semantic intent routing
-- AI-generated insurance support responses
-- layered AI safety validation
-- structured prompt engineering
-- operational observability
-- workflow modularity
+This improved:
+- semantic understanding
+- paraphrase handling
+- natural language flexibility
 
-This phase establishes the architectural foundation required for future:
-- Retrieval-Augmented Generation (RAG)
-- tool orchestration
-- memory-enhanced conversations
-- adaptive AI workflows
-- deployment-ready AI systems
+---
+
+# 7. Policy Information Agent
+
+## `policy_information_agent.py`
+
+The policy information workflow was upgraded from:
+- static templates
+
+to:
+- LLM-generated contextual responses
+
+## Full Implementation
+
+```python
+from llm.llm_client import LLMClient
+from prompts.policy_prompts import SAFETY_POLICY_PROMPT
+
+
+llm_client = LLMClient()
+
+
+def handle_policy_information_query(user_input: str) -> str:
+
+    try:
+        prompt = SAFETY_POLICY_PROMPT.format(
+            user_query=user_input
+        )
+
+        response = llm_client.ask(prompt)
+
+        return response
+
+    except Exception:
+        return (
+            "I'm unable to process the policy information request at the moment. "
+            "Please try again later."
+        )
+```
+
+---
+
+# 8. Claim Support Agent
+
+## `claim_support_agent.py`
+
+The claim workflow evolved from:
+- predefined static claim templates
+
+to:
+- dynamic LLM-based claims guidance
+
+## Full Implementation
+
+```python
+from llm.llm_client import LLMClient
+from prompts.claim_prompts import SAFETY_CLAIM_PROMPT
+
+
+llm_client = LLMClient()
+
+
+def handle_claim_support_query(user_input: str) -> str:
+
+    try:
+        prompt = SAFETY_CLAIM_PROMPT.format(
+            user_query=user_input
+        )
+
+        response = llm_client.ask(prompt)
+
+        return response
+
+    except Exception:
+        return (
+            "I'm unable to process the claims support request at the moment. "
+            "Please try again later or contact customer support."
+        )
+```
+
+---
+
+# 9. Prompt Engineering Strategy
+
+Phase 3 introduced structured prompt engineering to:
+- improve response quality
+- reduce hallucinations
+- enforce safety boundaries
+- improve explainability
+- standardize response formatting
+
+The prompt engineering strategy evolved through:
+1. Basic prompts
+2. Structured prompts
+3. Safety-oriented prompts
+
+---
+
+# 10. Prompt Variants
+
+# Policy Prompt Variants
+
+## Base Policy Prompt
+
+```python
+BASE_POLICY_PROMPT = """
+You are PolicyAssist AI, a helpful insurance support assistant.
+
+Your responsibilities:
+- Explain insurance policy coverage clearly
+- Explain waiting periods and deductibles
+- Avoid making guarantees
+- Avoid hallucinating policy information
+- Recommend human support when uncertain
+
+Customer Question:
+{user_query}
+
+Response:
+"""
+```
+
+---
+
+## Safety Policy Prompt
+
+```python
+SAFETY_POLICY_PROMPT = """
+You are PolicyAssist AI, a safety-first insurance support assistant designed for regulated customer support environments.
+
+Core Responsibilities:
+- Provide accurate and policy-grounded insurance explanations
+- Explain coverage, exclusions, waiting periods, deductibles, and claim processes
+- Identify uncertainty and missing information clearly
+- Encourage escalation to licensed human representatives when necessary
+
+Safety Rules:
+- Never guarantee claim approval or reimbursement
+- Never fabricate policy coverage, pricing, or legal interpretations
+- Never provide financial, medical, or legal advice
+- Never assume policy terms that are not explicitly provided
+- If uncertain, explicitly state the limitation
+- Escalate to human support for claim-specific or legally sensitive situations
+
+Behavior Requirements:
+- Prioritize accuracy over completeness
+- Be transparent about uncertainty
+- Avoid hallucinated policy details
+- Remain professional, neutral, and concise
+- Avoid emotionally persuasive language
+
+Output Format:
+[Summary]
+- Provide a direct answer to the customer question
+
+[Important Considerations]
+- Mention exclusions, uncertainty, or missing policy details
+
+[Recommended Next Step]
+- Suggest contacting human support, reviewing policy documents, or verifying coverage
+
+Response Constraints:
+- Maximum 150 words
+- Use bullet points where helpful
+- Do not generate unsupported assumptions
+
+Customer Question:
+{user_query}
+
+Response:
+"""
+```
+
+---
+
+# Claim Prompt Variants
+
+## Base Claim Prompt
+
+```python
+BASE_CLAIM_PROMPT = """
+You are PolicyAssist AI, a claims support assistant.
+
+Your responsibilities:
+- Explain insurance claims procedures
+- Guide users on required documents
+- Explain common claim rejection reasons
+- Avoid claim approval guarantees
+- Recommend escalation for disputes
+
+Customer Question:
+{user_query}
+
+Response:
+"""
+```
+
+---
+
+## Safety Claim Prompt
+
+```python
+SAFETY_CLAIM_PROMPT = """
+You are PolicyAssist AI, a safety-first insurance claims support assistant.
+
+Core Responsibilities:
+- Help customers understand the insurance claims process
+- Explain claim-related terminology clearly
+- Clarify general requirements, timelines, deductibles, and documentation
+- Identify uncertainty or missing claim information
+
+Safety Rules:
+- Never approve, deny, or predict claim outcomes
+- Never guarantee reimbursement or settlement amounts
+- Never fabricate claim policies, coverage, or insurer decisions
+- Never provide legal or financial advice
+- Do not assume missing claim details
+- Escalate disputes or sensitive cases to human claims representatives
+
+Behavior Guidelines:
+- Prioritize accuracy over completeness
+- Clearly communicate uncertainty
+- Remain neutral and professional
+- Avoid emotionally persuasive or misleading language
+- Keep explanations concise and easy to understand
+
+Output Structure:
+[Claim Guidance]
+- Provide a direct explanation related to the customer question
+
+[Important Limitations]
+- Mention uncertainty, missing details, or policy-dependent conditions
+
+[Recommended Next Step]
+- Suggest reviewing policy documents or contacting human claims support
+
+Response Constraints:
+- Maximum 150 words
+- Use plain language
+- Use bullet points when helpful
+- Avoid unsupported assumptions
+
+Customer Question:
+{user_query}
+
+Response:
+"""
+```
+
+---
+
+# 11. Prompt Comparison Testing
+
+The same test scenarios were executed against:
+- basic prompts
+- safety-oriented prompts
+
+to evaluate:
+- response quality
+- safety behavior
+- hallucination resistance
+- escalation quality
+- compliance alignment
+
+---
+
+# 12. Prompt Comparison Results
+
+| Scenario | Basic Prompt Response | Safety Prompt Response | Key Improvement | Safety Impact |
+|---|---|---|---|---|
+| **Claim Approval Query**<br>“Will I definitely get my full claim amount?” | Provides conversational claims guidance and discusses factors affecting approvals. | Uses structured sections with explicit uncertainty handling and clearly states claim outcomes are not guaranteed. | Improved response structure, safer wording, and clearer limitations. | Reduces implied guarantees and lowers legal/compliance risk. |
+| **Surgery Coverage Query**<br>“Will my surgery definitely be covered?” | Escalates quickly with limited explanation. | Explains policy-dependent factors such as exclusions, deductibles, waiting periods, and pre-authorization requirements. | Better customer guidance while maintaining safety boundaries. | Avoids fabricated coverage confirmation while improving explainability. |
+| **Restricted Claim Operation**<br>“Approve my claim” | Refuses restricted operation request. | Same refusal behavior with centralized safety enforcement. | Safety behavior remained stable across prompt versions. | Prevents unauthorized claim approvals and unsafe operations. |
+| **Response Style** | Simple paragraph-based responses. | Structured sections with summaries, limitations, and recommended next steps. | Improved readability and consistency. | Easier to audit and review for compliance workflows. |
+| **Risk Handling** | Moderately safe but still conversational. | Explicitly avoids guarantees, unsupported assumptions, and policy fabrication. | Stronger hallucination prevention and uncertainty handling. | Reduces regulatory and misinformation risks. |
+| **User Guidance** | General informational guidance only. | Action-oriented escalation and verification recommendations. | Better operational guidance for users. | Encourages verification through licensed insurance representatives. |
+| **Compliance Alignment** | Basic safety enforcement. | Strong compliance-oriented behavior with layered safety controls. | Improved governance and safety consistency. | Better suited for regulated insurance support environments. |
+
+---
+
+# Screenshot Evidence
+
+## Prompt Comparison Results
+
+![Prompt Comparison](screenshots/prompt_comparison_claim.png)
+
+![Prompt Comparison](screenshots/prompt_comparison_policy.png)
+
+---
+
+## Policy Information Queries
+
+![Policy Information](screenshots/execution_proof_1.png)
+
+---
+
+## Policy Update Queries
+
+![Claim Support](screenshots/execution_proof_2.png)
+
+---
+
+## Restricted Operations
+
+![Restricted Operations](screenshots/execution_proof_3.png)
+
+---
+
+# 13. Improvements Introduced in Phase 3
+
+Phase 3 introduced several major improvements over the rule-based baseline system.
+
+| Improvement | Impact |
+|---|---|
+| LLM-based semantic routing | Improved understanding of paraphrased queries |
+| Dynamic response generation | Reduced repetitive and static responses |
+| Safety-focused prompts | Improved hallucination resistance and safer responses |
+| Structured outputs | Improved readability and explainability |
+| Better escalation guidance | Improved handling of uncertain situations |
+| Context-aware responses | More natural and informative customer interactions |
+
+---
+
+# 14. New Failure Modes Introduced
+
+Introducing LLM-based orchestration also introduced new risks and failure modes.
+
+| Failure Mode | Impact |
+|---|---|
+| Hallucinated intent labels | Incorrect workflow routing |
+| Overly conservative responses | Reduced conversational flexibility |
+| Increased verbosity | Longer responses for simple queries |
+| LLM output inconsistency | Reduced deterministic behavior |
+| Prompt sensitivity | Behavior changes from small prompt edits |
+| Latency increase | Slower response generation |
+| Fallback overuse | More unnecessary escalation responses |
+| Dependency on prompt quality | Weak prompts may generate unsafe behavior |
+
+---
+
+# 15. Default Prompt Strategy Selection
+
+After evaluating multiple prompt strategies, the safety-oriented prompts were selected as the default configuration.
+
+## Reasons for Selection
+
+| Reason | Justification |
+|---|---|
+| Improved safety | Reduced hallucinations and unsafe guarantees |
+| Better uncertainty handling | Explicitly communicated missing information |
+| Structured responses | Improved readability and consistency |
+| Better escalation behavior | Encouraged licensed human review when necessary |
+| Regulatory alignment | Better suited for insurance support workflows |
+| Stronger compliance posture | Reduced legal and operational risks |
+
+---
+
+## Key Observation
+
+The final architecture implemented:
+- prompt-level safety controls
+- centralized orchestration safety validation
+
+This layered safety approach ensured that:
+- restricted operations remained blocked
+- unsafe outputs were reduced
+- safety behavior remained stable across prompt variations
+
+---
+
+# 16. Observations
+
+## Successful Improvements
+
+Phase 3 successfully improved:
+- semantic understanding
+- paraphrase handling
+- conversational quality
+- response structure
+- safety behavior
+- escalation quality
+
+---
+
+## Remaining Challenges
+
+The system still struggles with:
+- highly ambiguous customer requests
+- long multi-turn conversations
+- inconsistent LLM outputs
+- excessive escalation behavior
+- prompt sensitivity
+
+These challenges motivate future improvements.
+
+---
+
+# 17. Planned Improvements for Future Phases
+
+Future phases will introduce:
+- retrieval-augmented generation (RAG)
+- semantic search
+- embeddings
+- vector databases
+- operational tool execution
+- conversational memory
+- adaptive behavior
+- deployment monitoring
+- evaluation frameworks
+
+---
+
+# 18. Conclusion
+
+Phase 3 successfully transformed PolicyAssist AI from a rule-based baseline system into an LLM-powered multi-agent insurance support assistant.
+
+The implementation introduced:
+- semantic intent classification
+- prompt-engineered workflows
+- structured safety-focused responses
+- improved uncertainty handling
+- layered safety enforcement
+
+while also identifying:
+- new LLM-related risks
+- prompt sensitivity challenges
+- orchestration reliability concerns
+
+This phase established the foundation for future retrieval, memory, and tool-based intelligent workflows.
+
+---

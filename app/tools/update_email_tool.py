@@ -37,18 +37,17 @@ def update_email( customer_id: str,  new_email: str) -> dict:
     Returns:
         dict:  Update operation result.
     """
-    logger.info(f"Updating email for customer ID: {customer_id}")
+    logger.info("[TOOL] Email Update: Starting")
     # ---------------------------------------------------
     # Validate Email
     # ---------------------------------------------------
 
     if not is_valid_email( new_email ):
-        logger.warning(f"Invalid email address: {new_email}")
+        logger.info("[TOOL] Email Update: Failed - Invalid format")
         return {
             "status": "INVALID_EMAIL",
             "message": "Provided email address is invalid."
         }
-
 
     # ---------------------------------------------------
     # Find Customer Policy
@@ -56,7 +55,7 @@ def update_email( customer_id: str,  new_email: str) -> dict:
     policy = get_customer_policy(customer_id)
 
     if not policy:
-        logger.warning(f"Customer not found: {customer_id}")
+        logger.warning(f"[TOOL] Customer not found: {customer_id}")
         return {
             "status": "NOT_FOUND",
             "message": "Customer policy record not found."
@@ -66,7 +65,7 @@ def update_email( customer_id: str,  new_email: str) -> dict:
     policy["email"] = new_email
 
     save_customer_policy(policy)
-    logger.info(f"Email updated successfully for customer ID: {customer_id}")
+    logger.info("[TOOL] Email Update: Success")
     return {
         "status": "SUCCESS",
         "message": (

@@ -1,70 +1,80 @@
-# Problem Framing — Phase 1
+# PolicyAssist AI  
+## Phase 1 — Problem Framing & Success Definition
 
-## Project Name
-# PolicyAssist AI
+# Project Description
 
-## Project Description
+PolicyAssist AI is a safety-first lightweight orchestrated multi-agent insurance support assistant designed to help users understand general insurance concepts, policy coverage information, claims procedures, exclusions, deductibles, and basic customer support workflows using AI-powered retrieval, conversational reasoning, contextual memory, and controlled tool usage.
 
-PolicyAssist AI is a safety-first lightweight orchestrated multi-agent insurance support and controlled operations assistant designed to help existing policyholders understand insurance coverage, claims procedures, exclusions, deductibles, waiting periods, and operational workflows using AI-powered retrieval, conversational reasoning, contextual memory, and controlled tool usage.
-
-The system combines:
-- retrieval-augmented generation (RAG)
-- multi-agent orchestration
-- operational tools
-- conversational memory
-- safety validation
-- escalation handling
-
-to provide enterprise-style insurance customer support assistance.
+The system follows a modular multi-agent architecture where specialized agents collaborate to:
+- provide general insurance information using Retrieval-Augmented Generation (RAG)
+- assist existing policyholders with policy-specific information using controlled tools
+- support limited low-risk customer detail updates
+- provide claims process guidance
+- enforce operational safety restrictions and escalation handling
 
 PolicyAssist AI supports:
-- policy clarification
-- claims guidance
-- low-risk operational assistance
-- customer profile updates
-- policy-related workflows
+- general insurance education
+- policy coverage clarification
+- existing policy information lookup
+- claims process guidance
+- basic customer detail updates
 - safe refusal handling
 
-The architecture follows a modular multi-agent workflow with dedicated responsibilities for:
-- intent routing
-- policy information support
-- claims assistance
-- operational request handling
-- safety validation and escalation review
+The system allows only limited low-risk operations such as:
+- updating email address
+- updating phone number
+
+The system strictly restricts high-risk policy modifications including:
+- adding drivers
+- adding vehicles
+- changing policy effective dates
+- modifying policy coverage
+- claim approval promises
+- reimbursement guarantees
+- premium reduction requests
+
+The system prioritizes:
+- retrieval-grounded responses
+- explainable assistance
+- operational safety
+- controlled tool access
+- responsible AI behaviour
 
 ---
 
 # Problem Statement
 
 Insurance customers often struggle to understand:
+- insurance terminology
 - policy coverage
-- claims procedures
-- waiting periods
 - deductibles
 - exclusions
-- operational workflows
-- policy update procedures
+- claim submission procedures
+- reimbursement workflows
+- policy expiration details
+- customer support processes
 
-due to:
-- complex policy wording
-- insurance terminology
-- delayed support responses
-- inconsistent support quality
+Customers also experience delays when trying to retrieve information about their existing insurance policy due to:
+- manual customer support workflows
+- repetitive support requests
+- long response times
+- inconsistent explanations from support teams
 
-Insurance support teams frequently handle repetitive customer requests that require:
-- manual document searches
-- operational verification
-- repeated policy explanations
-- escalation handling
+Insurance support teams frequently spend time handling repetitive low-risk informational requests such as:
+- explaining policy terms
+- answering coverage questions
+- checking policy expiration dates
+- explaining claims procedures
+- updating customer contact details
 
-This results in:
-- delayed response times
-- increased operational workload
-- inconsistent customer experiences
+This creates:
 - operational inefficiencies
+- increased support workload
+- inconsistent customer experiences
 - customer frustration
+- delayed response handling
 
-PolicyAssist AI aims to improve insurance support efficiency by providing safe, explainable, retrieval-grounded, and operationally controlled assistance while enforcing strict guardrails for high-risk actions.
+PolicyAssist AI aims to improve insurance support efficiency by providing safe, explainable, retrieval-grounded, and operationally controlled assistance while enforcing strict restrictions on unsafe or high-risk insurance operations.
 
 ---
 
@@ -72,16 +82,15 @@ PolicyAssist AI aims to improve insurance support efficiency by providing safe, 
 
 ## Existing Insurance Policyholder
 
-The primary user is an existing insurance customer seeking assistance regarding:
-- policy coverage
-- claims guidance
-- waiting periods
-- exclusions
+The primary user is an existing insurance customer seeking help with:
+- policy information
+- policy expiration details
+- insurance terminology
+- claims procedures
+- required claim documents
 - deductibles
-- claim documentation
-- customer profile updates
-- driver and vehicle additions
-- operational policy workflows
+- exclusions
+- contact detail updates
 
 ---
 
@@ -91,7 +100,7 @@ The primary user is an existing insurance customer seeking assistance regarding:
 |---|---|
 | User Type | Existing policyholder |
 | Technical Expertise | Low to Medium |
-| Primary Goal | Fast and accurate insurance support |
+| Primary Goal | Quick and accurate insurance support |
 | Pain Points | Complex policy wording and delayed support |
 | Expectations | Safe, explainable, and trustworthy responses |
 
@@ -104,13 +113,15 @@ Customer submits support request
         ↓
 Human support agent reviews request
         ↓
-Agent manually searches policy documents
+Agent manually checks policy records
         ↓
-Agent verifies operational permissions
+Agent searches policy documents
         ↓
-Agent explains policy or processes request
+Agent explains coverage or process
         ↓
-Escalation occurs if request is high-risk
+Operational verification is performed
+        ↓
+Escalation occurs for restricted requests
 ```
 
 ---
@@ -119,78 +130,73 @@ Escalation occurs if request is high-risk
 
 | Problem | Impact |
 |---|---|
-| Manual document searches | Slow response times |
-| Repetitive customer requests | Increased operational workload |
-| Inconsistent policy explanations | Reduced customer trust |
-| Complex policy terminology | Customer confusion |
-| High support ticket volume | Support agent overload |
-| Operational verification delays | Poor customer experience |
+| Manual policy lookup | Slow response times |
+| Repetitive support requests | Increased support workload |
+| Complex insurance terminology | Customer confusion |
+| Inconsistent explanations | Reduced customer trust |
+| High support volume | Operational inefficiency |
+| Delayed operational verification | Poor customer experience |
 
 ---
 
 # Multi-Agent System Architecture
 
-PolicyAssist AI follows a lightweight orchestrated multi-agent architecture.
-
-The system contains multiple domain-specific agents with dedicated responsibilities.
+PolicyAssist AI follows a lightweight orchestrated multi-agent architecture where specialized agents collaborate to handle different insurance support workflows.
 
 | Agent | Responsibility |
 |---|---|
-| Intent Router Agent | Detects user intent and routes workflows |
-| Policy Information Agent | Handles policy explanations using retrieval workflows |
-| Claim Support Agent | Handles claims guidance and claim-related support |
-| Policy Update Agent | Handles approved low-risk operational requests |
-| General Query Agent | Handles greetings and unsupported requests |
-| Safety Review Agent | Validates outputs and enforces safety policies |
+| Query Orchestrator Agent | Detects user intent and routes requests to the correct workflow |
+| General Policy Information Agent | Explains insurance concepts and policy terminology using RAG |
+| Existing Policy Support Agent | Retrieves policyholder-specific information using controlled tools |
+| Claims Support Agent | Provides claims process guidance and claim documentation support |
+| Customer Details Update Agent | Handles approved low-risk customer detail updates |
+| Safety Review Agent | Validates outputs, enforces restrictions, and handles escalation review |
 
 ---
 
 # AI Agent Role
 
 PolicyAssist AI is designed to:
-- answer insurance policy-related questions
-- retrieve relevant policy clauses
-- explain policy coverage in simplified language
-- guide customers through claims procedures
-- assist with approved low-risk customer operations
-- provide escalation guidance when required
-- validate responses before returning them to customers
+- explain insurance concepts
+- retrieve policy-related information
+- assist existing policyholders with policy-specific queries
+- guide users through claims procedures
+- support approved low-risk customer detail updates
+- refuse restricted operational requests
+- avoid unsupported guarantees or promises
+- validate responses before returning them to users
 
 ---
 
 # Supported Operations
 
-The system supports approved low-risk customer service operations.
-
-## Allowed Operations
+The system supports informational assistance and limited low-risk customer detail updates.
 
 | Operation | Status |
 |---|---|
+| General insurance explanation | ✅ Supported |
 | Policy coverage explanation | ✅ Supported |
-| Claims guidance | ✅ Supported |
-| Claim status lookup | ✅ Supported |
+| Existing policy information lookup | ✅ Supported |
+| Claims process guidance | ✅ Supported |
+| Claim document guidance | ✅ Supported |
 | Update email address | ✅ Supported |
 | Update phone number | ✅ Supported |
-| Update mailing address | ✅ Supported |
-| Add new vehicle | ✅ Supported |
-| Add new driver | ✅ Supported |
-| Download policy documents | ✅ Supported |
 
 ---
 
 # Restricted Operations
 
-The system enforces strict restrictions on high-risk actions.
-
-## Restricted Operations
+The system enforces strict restrictions on high-risk operations and unsupported insurance actions.
 
 | Operation | Status |
 |---|---|
-| Claim approval or rejection | ❌ Restricted |
-| Reduce insurance premium | ❌ Restricted |
-| Modify coverage limits | ❌ Restricted |
-| Backdate policy | ❌ Restricted |
+| Add new driver | ❌ Restricted |
+| Add new vehicle | ❌ Restricted |
 | Change policy effective date | ❌ Restricted |
+| Modify policy coverage | ❌ Restricted |
+| Reduce insurance premium | ❌ Restricted |
+| Claim approval or rejection | ❌ Restricted |
+| Promise early claim approval | ❌ Restricted |
 | Waive deductibles | ❌ Restricted |
 | Cancel policy | ❌ Restricted |
 | Legal or financial guarantees | ❌ Restricted |
@@ -199,47 +205,48 @@ The system enforces strict restrictions on high-risk actions.
 
 # Inputs & Outputs
 
-# Inputs
+## Inputs
 
 The system accepts:
 - customer support questions
-- operational requests
 - policy-related queries
 - claims-related questions
+- customer detail update requests
 - conversation history
 - retrieved policy documents
+- simulated policy records
 
 ---
 
-# Outputs
+## Outputs
 
 The system provides:
-- policy explanations
+- insurance explanations
+- policy information
 - claims guidance
-- operational assistance
+- customer detail update confirmations
 - escalation recommendations
 - safe refusal responses
 - uncertainty-aware responses
-- contextual follow-up responses
 
 ---
 
 # Constraints & Assumptions
 
-# Constraints
+## Constraints
 
 | Constraint | Description |
 |---|---|
 | Restricted operational scope | High-risk actions are blocked |
 | Retrieval dependency | Responses depend on available documents |
 | Safety-first design | Unsafe requests must be refused |
-| Limited domain scope | Insurance workflows only |
+| Limited operational permissions | Only approved updates allowed |
 | No legal advice | Informational assistance only |
-| Simulated backend operations | No real insurance backend integration |
+| Simulated backend tools | No real insurance backend integration |
 
 ---
 
-# Assumptions
+## Assumptions
 
 | Assumption | Description |
 |---|---|
@@ -252,50 +259,53 @@ The system provides:
 
 # Example User Questions
 
-## Policy Coverage Questions
-- “Does my policy cover knee replacement surgery?”
-- “What is the waiting period for maternity coverage?”
-- “Is cataract surgery included in my plan?”
+## Existing Policy Questions
+- “What is my policy expiration date?”
+- “Does my policy include roadside assistance?”
 
 ---
 
-## Claims Questions
+## General Insurance Questions
+- “What is collision coverage?”
+- “What is a deductible?”
+
+---
+
+## Claims Support Questions
+- “How do I submit a claim?”
 - “What documents are required for reimbursement claims?”
-- “Why was my claim rejected?”
-- “What is the current status of my claim?”
 
 ---
 
-## Operational Requests
+## Allowed Operational Requests
+- “Update my phone number.”
 - “Update my email address.”
-- “Add a new driver to my policy.”
-- “Add a vehicle to my insurance plan.”
 
 ---
 
 ## Restricted Requests
-- “Reduce my insurance premium.”
 - “Change my policy effective date.”
+- “Add a new driver to my policy.”
 - “Approve my insurance claim immediately.”
 
 ---
 
 # Success Criteria
 
-# Functional Success Criteria
+## Functional Success Criteria
 
 | Criteria | Expected Outcome |
 |---|---|
 | Accurate retrieval | Correct policy clauses retrieved |
 | Helpful responses | Clear and understandable guidance |
-| Safe operational handling | Approved operations handled safely |
+| Safe operational handling | Only approved updates allowed |
 | Proper refusal handling | Restricted requests rejected |
-| Proper escalation | High-risk queries escalated |
+| Proper escalation | High-risk requests escalated |
 | Multi-turn understanding | Context maintained during conversations |
 
 ---
 
-# Technical Success Criteria
+## Technical Success Criteria
 
 | Metric | Goal |
 |---|---|
@@ -308,15 +318,15 @@ The system provides:
 
 ---
 
-# User Experience Success Criteria
+## User Experience Success Criteria
 
 | Goal | Indicator |
 |---|---|
 | Faster support | Reduced response delays |
-| Better clarity | Simplified policy explanations |
+| Better clarity | Simplified insurance explanations |
 | Higher trust | Grounded and explainable responses |
 | Better escalation | Proper human handoff |
-| Improved usability | Easier operational assistance |
+| Improved usability | Easier customer support experience |
 
 ---
 
@@ -325,9 +335,10 @@ The system provides:
 | Failure Scenario | Potential Risk |
 |---|---|
 | Hallucinated policy coverage | Customer misinformation |
-| Missing retrieval context | Incomplete answers |
+| Missing retrieval context | Incomplete responses |
 | Unsafe operational approval | Unauthorized action |
 | Incorrect tool routing | Workflow failure |
+| Unsupported claim promise | Customer trust issues |
 | Long conversations | Context loss |
 
 ---
@@ -349,11 +360,13 @@ The system provides:
 ## Refusal Handling
 
 The system must refuse:
-- claim approvals
-- premium reductions
-- high-risk policy modifications
-- payment processing
-- legal guarantees
+- claim approval promises
+- reimbursement guarantees
+- policy modification requests
+- policy effective date changes
+- adding drivers or vehicles
+- premium reduction requests
+- legal or financial guarantees
 - unauthorized operations
 
 ---
@@ -362,11 +375,11 @@ The system must refuse:
 
 The system must escalate:
 - disputed claims
-- fraud-related concerns
 - policy conflicts
 - legal complaints
 - unresolved customer dissatisfaction
-- operational requests requiring human approval
+- unsupported operational requests
+- high-risk requests requiring human approval
 
 ---
 
@@ -383,8 +396,8 @@ The system must:
 ## Logging Safety
 
 The system must:
-- avoid storing personal customer data
-- mask sensitive information in logs
+- avoid storing sensitive customer data
+- mask customer identifiers in logs
 - follow privacy-safe logging practices
 
 ---
@@ -394,22 +407,22 @@ The system must:
 ```text
 Customer Query
       ↓
-Intent Router Agent
+Query Orchestrator Agent
       ↓
 ──────────────────────────────────────────────
 │                │                │
 ↓                ↓                ↓
-Policy Info      Claim            Policy
-Agent            Support          Update
-                 Agent            Agent
-│
-└────────────────────┬───────────────────────┘
-                     ↓
-            General Query Agent
-                     ↓
-            Safety Review Agent
-                     ↓
-             Final Safe Response
+General Policy   Existing         Claims
+Information      Policy           Support
+Agent            Support Agent    Agent
+                                   │
+                                   ↓
+                        Customer Details
+                           Update Agent
+                                   ↓
+                          Safety Review Agent
+                                   ↓
+                         Final Safe Response
 ```
 
 ---
@@ -420,16 +433,16 @@ PolicyAssist AI aims to:
 - reduce repetitive customer support workload
 - improve response consistency
 - shorten customer response times
-- improve customer understanding of policies
-- streamline low-risk operational assistance
-- improve escalation workflows
+- improve customer understanding of insurance policies
+- streamline low-risk customer support workflows
+- improve escalation handling
 - provide scalable insurance support assistance
 
 ---
 
 # Conclusion
 
-PolicyAssist AI is designed as a safe, explainable, retrieval-grounded, and operationally controlled lightweight orchestrated multi-agent insurance support assistant focused on improving customer support workflows while maintaining strict operational and safety boundaries.
+PolicyAssist AI is designed as a safe, explainable, retrieval-grounded, and operationally controlled lightweight multi-agent insurance support assistant focused on improving customer support workflows while maintaining strict operational and safety boundaries.
 
 The system prioritizes:
 - grounded responses

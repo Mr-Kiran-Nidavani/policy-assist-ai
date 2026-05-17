@@ -50,9 +50,7 @@ def handle_policy_update_request(user_query: str, customer_id: str) -> str:
     controlled tool calling.
     """
 
-    logger.info("Starting policy update agent")
-
-    logger.info(f"Customer ID: {customer_id}")
+    logger.info("[AGENT] Policy Update Agent: Starting execution")
 
     # ---------------------------------------------------
     # Build User Message
@@ -93,7 +91,7 @@ Customer Query:
         )
     ]
 
-    logger.info("Invoking tool-enabled LLM")
+    logger.info("[AGENT] Policy Update Agent: Processing request")
     response = tool_enabled_llm.invoke(messages)
 
     # ---------------------------------------------------
@@ -101,12 +99,10 @@ Customer Query:
     # ---------------------------------------------------
 
     if response.tool_calls:
-        logger.info(f"Tool calls detected: {len(response.tool_calls)}")
         for tool_call in response.tool_calls:
             tool_name = tool_call["name"]
             tool_args = tool_call["args"]
-            logger.info(f"Selected Tool: {tool_name}")
-            logger.info(f"Tool Arguments: {tool_args}")
+            logger.info(f"[AGENT] Policy Update Agent: Tool called - {tool_name}")
 
             # Ensure customer_id exists
             if ("customer_id" not in tool_args):
@@ -129,8 +125,8 @@ Customer Query:
                 continue
 
             tool_result = selected_tool.invoke(tool_args)
-
-            logger.info(f"Tool Result Status: {tool_result.get('status')}")
+            status = tool_result.get('status')
+            logger.info(f"[AGENT] Policy Update Agent: Tool result - {status}")
 
             # ---------------------------------------------------
             # Append Tool Result
@@ -152,16 +148,15 @@ Customer Query:
         # Generate Final Response
         # ---------------------------------------------------
 
-        logger.info("Generating final policy update response")
         final_response = llm.invoke(messages)
-        logger.info("Policy update response generated")
+        logger.info("[AGENT] Policy Update Agent: Response received")
         return final_response.content
 
     # ---------------------------------------------------
     # Unsupported Update Request
     # ---------------------------------------------------
 
-    logger.warning("Unsupported update request requires human review" )
+    logger.info("[AGENT] Policy Update Agent: Unsupported operation - escalating")
 
     return (
         "This policy update request "

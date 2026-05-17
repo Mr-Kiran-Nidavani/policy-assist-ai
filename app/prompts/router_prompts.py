@@ -23,10 +23,7 @@ Available Intent Categories:
   - effective date changes
   - unauthorized operational actions
 
-5. general_query
-- Greetings, help requests, general insurance assistance
-
-6. customer_policy_query
+5. customer_policy_query
 - Questions about the customer's own policy details
 - Queries containing:
   - my policy
@@ -43,8 +40,8 @@ Examples:
 - Is my policy active?
 - What is my deductible?
 
-7. unknown
-- Unsupported, unrelated, or unclear requests
+6. general_query
+- when none of the above categories apply, but the query is still insurance-related
 
 
 Example Customer Query and Intent Classification:

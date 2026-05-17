@@ -1,0 +1,65 @@
+# Insurance Policy Update Process
+
+## Overview
+This document outlines the procedures for updating insurance policies through various channels including chatbot, self-service portal, and licensed agents.
+
+## Updatable Information
+
+### Contact Details (Self-Service)
+- Email address
+- Phone number
+- Mailing address
+- Updated via: Chatbot, Self-Service Portal, or Licensed Agent
+
+### Personal Information
+- Driver information
+- Vehicle details
+- Coverage preferences
+- Updated via: Licensed Agent, Self-Service Portal
+
+### Coverage Changes
+- Deductible amounts
+- Additional endorsements
+- Coverage limits
+- **Note:** Premium may increase or decrease based on changes
+
+## Update Process
+
+### Step 1: Provide Required Details
+- Submit current policy information
+- Provide new details requiring updates
+- Verify identity through security questions
+
+### Step 2: Document Verification
+- Submit supporting documents if required
+- Examples: Driver's license, vehicle registration, proof of address
+
+### Step 3: Review and Approval
+- Simple updates: Automated approval via self-service
+- Complex changes: Licensed agent review required
+- Policy updated upon approval
+
+### Step 4: Confirmation
+- Receive update confirmation via email/SMS
+- New policy documents issued if applicable
+
+## Not Allowed - Restrictions
+
+### Effective Date Changes
+- ❌ Cannot backdate policy effective dates
+- ❌ Cannot make changes retroactive to past billing periods
+
+### Policy Cancellation
+- ❌ Cannot cancel via chatbot for pending claims
+- ❌ Cancellation requires licensed agent review
+- ⚠️ Subject to cancellation policy terms and conditions
+
+### Premium Modifications
+- ❌ Cannot manually adjust premiums outside system
+- Premiums recalculated based on approved updates only
+
+## Contact Licensed Agent
+For complex updates, cancellations, or disputes:
+- Call: [Agent Contact Number]
+- Email: [Agent Email]
+- In-person appointment available
