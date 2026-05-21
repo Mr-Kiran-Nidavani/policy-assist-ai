@@ -1473,3 +1473,136 @@ Collision coverage helps pay for repair costs when your vehicle is d...
 2026-05-17 22:10:52 | INFO | [RESPONSE] Final: [Summary]  
 Collision coverage helps pay for repair costs when your vehicle is d...
 2026-05-17 22:10:52 | INFO | [LATENCY] Response generated in 8.44s
+2026-05-21 13:03:40 | INFO | [ROUTER] Intent detected: general_query
+2026-05-21 13:03:40 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-21 13:03:41 | INFO | [AGENT] General Query Agent: Response received
+2026-05-21 13:03:43 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:03:43 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-21 13:03:43 | INFO | [LATENCY] Response generated in 5.91s
+2026-05-21 13:24:26 | INFO | [ROUTER] Intent detected: general_query
+2026-05-21 13:24:26 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-21 13:24:27 | INFO | [AGENT] General Query Agent: Response received
+2026-05-21 13:24:29 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:24:29 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-21 13:24:29 | INFO | [LATENCY] Response generated in 5.94s
+2026-05-21 13:27:10 | INFO | [ROUTER] Intent detected: general_query
+2026-05-21 13:27:10 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-21 13:27:11 | INFO | [AGENT] General Query Agent: Response received
+2026-05-21 13:27:12 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:27:12 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-21 13:27:12 | INFO | [LATENCY] Response generated in 5.01s
+2026-05-21 13:31:52 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:31:52 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:31:56 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:31:57 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:31:57 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:31:57 | INFO | [LATENCY] Response generated in 9.52s
+2026-05-21 13:36:24 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:36:24 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:36:29 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:36:30 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:36:30 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:36:30 | INFO | [LATENCY] Response generated in 8.42s
+2026-05-21 13:41:56 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:41:56 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:42:00 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:42:01 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:42:01 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:42:01 | INFO | [LATENCY] Response generated in 7.73s
+2026-05-21 13:42:27 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:42:27 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:42:30 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:42:32 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:42:32 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:42:32 | INFO | [LATENCY] Response generated in 7.57s
+2026-05-21 13:47:29 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:47:29 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:47:32 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:47:34 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:47:34 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:47:34 | INFO | [LATENCY] Response generated in 8.09s
+2026-05-21 13:49:25 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:49:25 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:49:30 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:49:32 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:49:32 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs resulting from vehicle...
+2026-05-21 13:49:32 | INFO | [LATENCY] Response generated in 8.32s
+2026-05-21 13:50:10 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:50:10 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:50:15 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:50:16 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:50:16 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:50:16 | INFO | [LATENCY] Response generated in 7.4s
+2026-05-21 13:50:39 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:50:39 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:50:44 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:50:45 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:50:45 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:50:45 | INFO | [LATENCY] Response generated in 7.93s
+2026-05-21 13:51:18 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:51:18 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:51:22 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:51:24 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:51:24 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:51:24 | INFO | [LATENCY] Response generated in 8.1s
+2026-05-21 13:54:13 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:54:13 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:54:18 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:54:19 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:54:19 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:54:19 | INFO | [LATENCY] Response generated in 9.06s
+2026-05-21 13:54:36 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:54:36 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:54:40 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:54:42 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:54:42 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-21 13:54:42 | INFO | [LATENCY] Response generated in 7.66s
+2026-05-21 13:56:33 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:56:33 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:56:39 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:56:40 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:56:40 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-21 13:56:40 | INFO | [LATENCY] Response generated in 10.5s
+2026-05-21 13:59:35 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 13:59:35 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 13:59:39 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 13:59:41 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 13:59:41 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-21 13:59:41 | INFO | [LATENCY] Response generated in 8.76s
+2026-05-21 14:02:01 | INFO | [ROUTER] Intent detected: general_query
+2026-05-21 14:02:01 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-21 14:02:03 | INFO | [AGENT] General Query Agent: Response received
+2026-05-21 14:02:04 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 14:02:04 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-21 14:02:04 | INFO | [LATENCY] Response generated in 5.42s
+2026-05-21 14:04:37 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-21 14:04:37 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-21 14:04:37 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-21 14:04:39 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-21 14:04:39 | INFO | [TOOL] Email Update: Starting
+2026-05-21 14:04:39 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-21 14:04:39 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-21 14:04:41 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-21 14:04:41 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-21 14:04:41 | INFO | [RESPONSE] Final: The email address "test@test" you provided is invalid. Please provide a valid em...
+2026-05-21 14:04:41 | INFO | [LATENCY] Response generated in 7.11s
+2026-05-21 14:07:13 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-21 14:07:13 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-21 14:07:20 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-21 14:07:21 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-21 14:07:21 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair costs when your vehicle is d...
+2026-05-21 14:07:21 | INFO | [LATENCY] Response generated in 11.63s

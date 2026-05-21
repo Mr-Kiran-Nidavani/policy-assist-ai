@@ -383,6 +383,8 @@ Why this was added:
 
 ### Runtime Error Handling Evidence
 
+![Runtime Error Handling](screenshots/runtime_error_logging_stremlit.png)
+
 ![Runtime Error Handling](screenshots/runtime_error_logging.png)
 
 ---
@@ -416,6 +418,8 @@ Why this was added:
 * improves user experience
 
 ### Invalid Email Handling Evidence
+
+![Invalid Email Handling](screenshots/invalid_email_stremlit.png)
 
 ![Invalid Email Handling](screenshots/invalid_email.png)
 

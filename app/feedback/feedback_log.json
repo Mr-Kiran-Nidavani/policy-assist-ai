@@ -1,58 +1,72 @@
 [
   {
-    "query": "what is collision coverage?",
-    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object. It covers vehicle collisions, impacts with poles or barriers, and rollover accidents.\n\n[Important Considerations]  \n- A deductible (standard \u20b92,000) applies before claim payout.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
-    "query_type": "policy_information",
+    "query": "hi",
+    "response": "\"I am an insurance support assistant and can only help with insurance-related questions.\"",
+    "query_type": "general_query",
     "feedback": "negative",
-    "timestamp": "2026-05-17T18:00:57.165344"
+    "timestamp": "2026-05-21T13:27:20.106735"
   },
   {
-    "query": "what is collision coverage?",
-    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible (standard \u20b92,000) applies before payout.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing.\n\n[Recommended Next Step]  \nReview your specific policy for deductible options and limits, or contact a licensed representative for detailed claim guidance.",
-    "query_type": "policy_information",
-    "feedback": "negative",
-    "timestamp": "2026-05-17T18:01:26.606182"
-  },
-  {
-    "query": "what is collision coverage?",
-    "response": "[Summary]  \nCollision coverage helps pay for repair costs when your vehicle is damaged due to accidents involving another vehicle or object. This includes collisions with other cars, impacts with poles or barriers, and rollover accidents.\n\n[Coverage Details]  \n- **Covered incidents:** Vehicle collisions, impact with poles/barriers, rollovers  \n- **Deductible:** Standard \u20b92,000 applies before payout; you may choose a voluntary deductible option  \n- **Claim process:** Requires an approved damage assessment, and reimbursement is limited to your policy limits  \n\n[Exclusions]  \n- Intentional damage caused by you  \n- Damage while driving without authorization  \n- Accidents during illegal racing activities  \n\n[Important Considerations]  \n- Deductible must be paid before coverage applies  \n- Coverage payout cannot exceed policy limits  \n- Damage assessment approval is mandatory for claims  \n\n[Recommended Next Step]  \n- Review your specific policy documents for exact limits and deductible options  \n- Contact a licensed representative for claim filing or detailed coverage questions  \n- Escalate to human support for claim-specific or legal concerns",
-    "query_type": "policy_information",
-    "feedback": "negative",
-    "timestamp": "2026-05-17T18:12:12.413892"
-  },
-  {
-    "query": "what is collision coverage?",
-    "response": "[Summary]  \nCollision coverage helps pay for repair costs when your vehicle is damaged due to accidents involving another vehicle or object. This includes collisions with other cars, impacts with poles or barriers, and rollover accidents.\n\n[Coverage Details]  \n- **Covered incidents:** Vehicle collisions, impact with poles/barriers, rollovers  \n- **Deductible:** Standard \u20b92,000 applies before payout; you may choose a voluntary deductible option  \n- **Claim process:** Requires an approved damage assessment, and reimbursement is limited to your policy limits  \n\n[Exclusions]  \n- Intentional damage caused by you  \n- Damage while driving without authorization  \n- Accidents during illegal racing activities  \n\n[Important Considerations]  \n- Deductible must be paid before coverage applies  \n- Coverage payout cannot exceed policy limits  \n- Damage assessment approval is mandatory for claims  \n\n[Recommended Next Step]  \n- Review your specific policy documents for exact limits and deductible options  \n- Contact a licensed representative for claim filing or detailed coverage questions  \n- Escalate to human support for claim-specific or legal concerns",
-    "query_type": "policy_information",
-    "feedback": "negative",
-    "timestamp": "2026-05-17T18:12:14.071812"
-  },
-  {
-    "query": "what is collision coverage?",
-    "response": "[Summary]  \nCollision coverage helps pay for repair costs when your vehicle is damaged due to accidents involving another vehicle or object. This includes collisions with other cars, impacts with poles or barriers, and rollover accidents.\n\n[Coverage Details]  \n- **Covered incidents:** Vehicle collisions, impact with poles/barriers, rollovers  \n- **Deductible:** Standard \u20b92,000 applies before payout; you may choose a voluntary deductible option  \n- **Claim process:** Requires an approved damage assessment, and reimbursement is limited to your policy limits  \n\n[Exclusions]  \n- Intentional damage caused by you  \n- Damage while driving without authorization  \n- Accidents during illegal racing activities  \n\n[Important Considerations]  \n- Deductible must be paid before coverage applies  \n- Coverage payout cannot exceed policy limits  \n- Damage assessment approval is mandatory for claims  \n\n[Recommended Next Step]  \n- Review your specific policy documents for exact limits and deductible options  \n- Contact a licensed representative for claim filing or detailed coverage questions  \n- Escalate to human support for claim-specific or legal concerns",
-    "query_type": "policy_information",
-    "feedback": "negative",
-    "timestamp": "2026-05-17T18:12:14.550987"
-  },
-  {
-    "query": "what is collision coverage?",
-    "response": "[Summary]  \nCollision coverage helps pay for repair costs when your vehicle is damaged due to accidents involving another vehicle or object. This includes collisions with other cars, impacts with poles or barriers, and rollover accidents.\n\n[Coverage Details]  \n- **Covered incidents:** Vehicle collisions, impact with poles/barriers, rollovers  \n- **Deductible:** Standard \u20b92,000 applies before payout; you may choose a voluntary deductible option  \n- **Claim process:** Requires an approved damage assessment, and reimbursement is limited to your policy limits  \n\n[Exclusions]  \n- Intentional damage caused by you  \n- Damage while driving without authorization  \n- Accidents during illegal racing activities  \n\n[Important Considerations]  \n- Deductible must be paid before coverage applies  \n- Coverage payout cannot exceed policy limits  \n- Damage assessment approval is mandatory for claims  \n\n[Recommended Next Step]  \n- Review your specific policy documents for exact limits and deductible options  \n- Contact a licensed representative for claim filing or detailed coverage questions  \n- Escalate to human support for claim-specific or legal concerns",
-    "query_type": "policy_information",
-    "feedback": "negative",
-    "timestamp": "2026-05-17T18:12:15.106341"
-  },
-  {
-    "query": "C1001",
-    "response": "Your phone number has been successfully updated to 8765654343. If you need any further assistance, please let me know.",
-    "query_type": "policy_update",
-    "feedback": "negative",
-    "timestamp": "2026-05-17T21:43:25.569445"
-  },
-  {
-    "query": " what is effective date of my policy?",
-    "response": "I'm unable to assist with this request because it involves restricted or unauthorized operations. Please contact an authorized insurance representative or support specialist for further assistance.",
-    "query_type": "customer_policy_query",
+    "query": "hi",
+    "response": "\"I am an insurance support assistant and can only help with insurance-related questions.\"",
+    "query_type": "general_query",
     "feedback": "positive",
-    "timestamp": "2026-05-17T22:03:49.816537"
+    "timestamp": "2026-05-21T13:27:34.451903"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollover accidents.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options are available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents for exact limits and deductible options or contact a licensed representative for claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:47:41.856407"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:14.734503"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:15.118871"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:16.100498"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:16.448065"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:16.748619"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:17.297992"
+  },
+  {
+    "query": "what is collision coverage?",
+    "response": "[Summary]  \nCollision coverage helps pay for repair expenses resulting from accidents involving another vehicle or object, such as vehicle collisions, impacts with poles or barriers, and rollovers.\n\n[Important Considerations]  \n- A deductible of \u20b92,000 (standard) applies before claim payout; voluntary deductible options may be available.  \n- Reimbursement is limited to policy limits.  \n- Claims require an approved damage assessment.  \n- Excludes intentional damage, unauthorized driving, and illegal racing activities.\n\n[Recommended Next Step]  \nReview your specific policy documents or contact a licensed representative for detailed coverage and claim assistance.",
+    "query_type": "policy_information",
+    "feedback": "negative",
+    "timestamp": "2026-05-21T13:56:18.912222"
   }
 ]

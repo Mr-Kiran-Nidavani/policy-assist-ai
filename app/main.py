@@ -28,7 +28,7 @@ def process_user_query(user_input: str) -> str:
     try:
         
         global pending_query
-
+        
         if user_input.lower() == "reset":
             clear_conversation_memory()
             latency = round(time.time() - start_time, 2)
@@ -82,6 +82,8 @@ def process_user_query(user_input: str) -> str:
         # General Query Agent
         else:
             response = handle_general_query(user_input)
+
+       
 
         # Step 3 — Safety Review
         safe_response = review_response(user_input, intent, response)
