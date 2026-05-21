@@ -293,6 +293,10 @@ Streamlit automatically:
 
 ![Cloud Runtime Execution](screenshots/cloud_execution_2.png)
 
+![Cloud Runtime Execution](screenshots/cloud_execution_3.png)
+
+![Cloud Runtime Execution](screenshots/cloud_execution_4.png)
+
 ---
 
 # 8. Logging & Tracing
