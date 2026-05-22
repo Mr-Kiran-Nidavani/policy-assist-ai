@@ -18,8 +18,18 @@ def handle_policy_information_query(user_input: str) -> str:
     try:
         logger.info("[AGENT] Policy Information Agent: Starting execution")
         
-        # Retrieve relevant policy chunks
-        retrieved_docs = retriever.invoke(user_input)
+        # Retrieve relevant policy chunks (robustly support different retriever APIs)
+        if hasattr(retriever, "get_relevant_documents"):
+            retrieved_docs = retriever.get_relevant_documents(user_input)
+        elif hasattr(retriever, "retrieve"):
+            retrieved_docs = retriever.retrieve(user_input)
+        elif callable(retriever):
+            try:
+                retrieved_docs = retriever(user_input)
+            except Exception:
+                retrieved_docs = []
+        else:
+            retrieved_docs = []
         
         # Build retrieval context
         context = "\n\n".join(

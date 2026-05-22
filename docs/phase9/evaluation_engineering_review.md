@@ -358,24 +358,42 @@ The safety review layer was validated against:
 
 # 4. Test Harness Design
 
-A reusable automated evaluation framework was implemented to systematically evaluate the insurance AI support system.
+A reusable automated evaluation framework was implemented to systematically evaluate the insurance AI support system. The harness is intentionally lightweight and designed to be extended with semantic scoring, human review, or regression assertions.
 
-The evaluation harness includes:
+### 4.1 Components
 
-| Component | Purpose |
-|---|---|
-| `evaluation_test_cases.py` | Centralized evaluation scenarios |
-| `run_evaluation.py` | Automated evaluation execution |
-| `evaluation_results.json` | Persistent evaluation storage |
+- `app/evaluation/evaluation_test_cases.py`: Centralized evaluation scenarios and prompts. Test cases include metadata fields such as `category`, `query`, `evaluation_keywords`, `repeat_count`, optional `requires_retrieval`, and `expected_retrieval_keywords` to enable retrieval-specific assertions.
+- `app/evaluation/run_retrieval_comparison.py`: Executes test cases, compares LLM-only (no-RAG) responses with RAG-grounded responses, measures median latencies, and computes simple keyword-based quality scores.
+- `app/evaluation/retrieval_comparison_results.json`: Output file storing per-case comparison data (responses, median latencies, keyword scores, retrieval diagnostics).
+- Robust retriever invocation: the harness supports a variety of retriever interfaces (`get_relevant_documents`, `retrieve`, `get_relevant_chunks`, or callable retrievers) to maximize compatibility with different vector stores.
 
-The evaluation framework automatically:
-- executes evaluation prompts
-- captures system responses
-- measures latency
-- calculates evaluation scores
-- performs repeated consistency testing
-- validates runtime recovery
-- stores evaluation results
+### 4.2 How to run
+
+1. Install dependencies (from the project root):
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+2. Build the vector DB if you plan to run RAG comparisons:
+
+```bash
+python app/build_vector_db.py
+```
+
+3. Run the retrieval comparison harness:
+
+```bash
+python app/evaluation/run_retrieval_comparison.py
+```
+
+Output:
+- `app/evaluation/retrieval_comparison_results.json` — contains an array of result objects with fields: `category`, `query`, `no_rag` (response, median latency, keyword score), `rag` (response, median latency, keyword score, retrieved_count, retrieval_missing, expected_retrieval_matches), and `repeat_count`.
+
+Notes:
+- The default scoring is keyword-presence counting; the harness is designed to be extended to use semantic similarity scoring or human labels.
+- Test cases may include `requires_retrieval: true` to indicate that retrieval is expected; if retrieval returns no documents for those cases, the harness will mark `retrieval_missing` in the output.
+- Extend or replace `evaluation_keywords` with more robust evaluation logic as needed (e.g., BLEU, ROUGE, or embedding-based similarity).
 
 ---
 

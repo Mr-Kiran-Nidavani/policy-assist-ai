@@ -16,8 +16,12 @@ def handle_claim_support_query(user_input: str) -> str:
     try:
         logger.info("[AGENT] Claim Support Agent: Starting execution")
         
-        # Retrieve relevant policy chunks
-        retrieved_docs = retriever.invoke(user_input)
+        # Retrieve relevant policy chunks (robust single-line fallback)
+        retrieved_docs = (retriever.get_relevant_documents(user_input)
+                          if hasattr(retriever, "get_relevant_documents")
+                          else (retriever.retrieve(user_input)
+                                if hasattr(retriever, "retrieve")
+                                else (retriever(user_input) if callable(retriever) else [])))
 
         # Build retrieval context
         context = "\n\n".join(
