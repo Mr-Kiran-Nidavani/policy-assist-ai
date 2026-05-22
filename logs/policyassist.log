@@ -1607,3 +1607,770 @@ Collision coverage helps pay for repair costs when your vehicle is d...
 Collision coverage helps pay for repair costs when your vehicle is d...
 2026-05-21 14:07:21 | INFO | [LATENCY] Response generated in 11.63s
 2026-05-21 14:09:52 | ERROR | Error processing user query: division by zero
+2026-05-22 11:32:21 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:32:21 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:32:29 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:32:30 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:32:30 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:32:30 | INFO | [LATENCY] Response generated in 13.37s
+2026-05-22 11:32:35 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 11:32:35 | INFO | [LATENCY] Response generated in 4.92s
+2026-05-22 11:32:38 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:32:38 | INFO | [LATENCY] Response generated in 3.22s
+2026-05-22 11:32:40 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:32:40 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:32:42 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:32:44 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:32:44 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 11:32:44 | INFO | [LATENCY] Response generated in 5.96s
+2026-05-22 11:32:47 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:32:47 | INFO | [LATENCY] Response generated in 3.01s
+2026-05-22 11:32:51 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:32:51 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:32:53 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:32:54 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:32:54 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 11:32:54 | INFO | [LATENCY] Response generated in 7.03s
+2026-05-22 11:36:37 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:36:37 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:36:43 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:36:45 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:36:45 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:36:45 | INFO | [LATENCY] Response generated in 11.04s
+2026-05-22 11:36:47 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 11:36:47 | INFO | [LATENCY] Response generated in 2.23s
+2026-05-22 11:36:50 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:36:50 | INFO | [LATENCY] Response generated in 2.72s
+2026-05-22 11:36:52 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:36:52 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:36:54 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:36:56 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:36:56 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 11:36:56 | INFO | [LATENCY] Response generated in 6.69s
+2026-05-22 11:36:59 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:36:59 | INFO | [LATENCY] Response generated in 3.1s
+2026-05-22 11:37:02 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:37:02 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:37:04 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:37:09 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:37:09 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 11:37:09 | INFO | [LATENCY] Response generated in 9.56s
+2026-05-22 11:43:06 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:43:06 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:43:11 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:43:12 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:43:12 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:43:12 | INFO | [LATENCY] Response generated in 10.04s
+2026-05-22 11:44:53 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:44:53 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:44:59 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:45:01 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:45:01 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:45:01 | INFO | [LATENCY] Response generated in 13.92s
+2026-05-22 11:45:04 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 11:45:04 | INFO | [LATENCY] Response generated in 3.21s
+2026-05-22 11:45:06 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:45:06 | INFO | [LATENCY] Response generated in 2.19s
+2026-05-22 11:45:08 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:45:08 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:45:10 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:45:11 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:45:11 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 11:45:11 | INFO | [LATENCY] Response generated in 5.12s
+2026-05-22 11:45:13 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:45:13 | INFO | [LATENCY] Response generated in 2.11s
+2026-05-22 11:45:15 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:45:15 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:45:17 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:45:19 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:45:19 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 11:45:19 | INFO | [LATENCY] Response generated in 5.11s
+2026-05-22 11:49:21 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:49:21 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:49:28 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:49:30 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:49:30 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:49:30 | INFO | [LATENCY] Response generated in 13.24s
+2026-05-22 11:49:32 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 11:49:32 | INFO | [LATENCY] Response generated in 1.78s
+2026-05-22 11:49:35 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:49:35 | INFO | [LATENCY] Response generated in 2.71s
+2026-05-22 11:49:37 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:49:37 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:49:39 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:49:40 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:49:40 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 11:49:40 | INFO | [LATENCY] Response generated in 5.42s
+2026-05-22 11:49:42 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:49:42 | INFO | [LATENCY] Response generated in 1.82s
+2026-05-22 11:49:44 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:49:44 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:49:45 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:49:48 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:49:48 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 11:49:48 | INFO | [LATENCY] Response generated in 5.65s
+2026-05-22 11:58:51 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:58:51 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:59:02 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:59:04 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:59:04 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:59:04 | INFO | [LATENCY] Response generated in 15.76s
+2026-05-22 11:59:07 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 11:59:07 | INFO | [LATENCY] Response generated in 2.92s
+2026-05-22 11:59:10 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:59:10 | INFO | [LATENCY] Response generated in 2.18s
+2026-05-22 11:59:11 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:59:11 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:59:13 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:59:14 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:59:14 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 11:59:14 | INFO | [LATENCY] Response generated in 4.72s
+2026-05-22 11:59:20 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 11:59:20 | INFO | [LATENCY] Response generated in 5.74s
+2026-05-22 11:59:23 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 11:59:23 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 11:59:24 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 11:59:26 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:59:26 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 11:59:26 | INFO | [LATENCY] Response generated in 5.49s
+2026-05-22 11:59:28 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:59:28 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:59:33 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:59:35 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:59:35 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:59:35 | INFO | [LATENCY] Response generated in 9.17s
+2026-05-22 11:59:38 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:59:38 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:59:44 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:59:46 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:59:46 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:59:46 | INFO | [LATENCY] Response generated in 11.03s
+2026-05-22 11:59:48 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 11:59:48 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 11:59:54 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 11:59:55 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 11:59:55 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 11:59:55 | INFO | [LATENCY] Response generated in 9.64s
+2026-05-22 12:36:44 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:36:44 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:36:49 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:36:50 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:36:50 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:36:50 | INFO | [LATENCY] Response generated in 33.74s
+2026-05-22 12:37:40 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 12:37:40 | INFO | [LATENCY] Response generated in 2.3s
+2026-05-22 12:38:19 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:38:19 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:38:20 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:38:22 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:38:22 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 12:38:22 | INFO | [LATENCY] Response generated in 6.41s
+2026-05-22 12:39:44 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:39:44 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 12:39:44 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 12:39:47 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-22 12:39:47 | INFO | [TOOL] Email Update: Starting
+2026-05-22 12:39:47 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-22 12:39:47 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-22 12:39:49 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-22 12:39:49 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 12:39:49 | INFO | [RESPONSE] Final: The email address "test@test" appears to be invalid. Please provide a valid emai...
+2026-05-22 12:39:49 | INFO | [LATENCY] Response generated in 7.57s
+2026-05-22 12:40:31 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-22 12:40:31 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-22 12:40:36 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-22 12:40:37 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:40:37 | INFO | [RESPONSE] Final: [Claim Guidance]  
+I cannot guarantee reimbursement as claim approval depends on...
+2026-05-22 12:40:37 | INFO | [LATENCY] Response generated in 8.88s
+2026-05-22 12:41:03 | INFO | [LATENCY] Response generated in 0.0s
+2026-05-22 12:41:15 | INFO | [ROUTER] Intent detected: claim_support
+2026-05-22 12:41:15 | INFO | [AGENT] Claim Support Agent: Starting execution
+2026-05-22 12:41:19 | INFO | [AGENT] Claim Support Agent: Response received
+2026-05-22 12:41:22 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:41:22 | INFO | [RESPONSE] Final: [Claim Guidance]  
+- Reimbursement cannot be guaranteed as claim approval depend...
+2026-05-22 12:41:22 | INFO | [LATENCY] Response generated in 9.52s
+2026-05-22 12:42:16 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 12:42:16 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 12:42:16 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 12:42:16 | INFO | [LATENCY] Response generated in 2.79s
+2026-05-22 12:43:53 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:43:53 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:43:58 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:44:00 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:44:00 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:44:00 | INFO | [LATENCY] Response generated in 9.89s
+2026-05-22 12:44:02 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 12:44:02 | INFO | [LATENCY] Response generated in 1.84s
+2026-05-22 12:44:05 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:44:05 | INFO | [LATENCY] Response generated in 2.62s
+2026-05-22 12:44:07 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:44:07 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:44:09 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:44:11 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:44:11 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 12:44:11 | INFO | [LATENCY] Response generated in 6.45s
+2026-05-22 12:44:13 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:44:13 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 12:44:13 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 12:44:16 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-22 12:44:16 | INFO | [TOOL] Email Update: Starting
+2026-05-22 12:44:16 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-22 12:44:16 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-22 12:44:22 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-22 12:44:22 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 12:44:22 | INFO | [RESPONSE] Final: The email address "test@test" appears to be invalid. Please provide a valid emai...
+2026-05-22 12:44:22 | INFO | [LATENCY] Response generated in 10.51s
+2026-05-22 12:44:28 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:44:28 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:44:30 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:44:31 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:44:31 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 12:44:31 | INFO | [LATENCY] Response generated in 9.57s
+2026-05-22 12:44:35 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 12:44:35 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 12:44:35 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 12:44:35 | INFO | [LATENCY] Response generated in 4.21s
+2026-05-22 12:44:37 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:44:37 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:44:43 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:44:45 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:44:45 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:44:45 | INFO | [LATENCY] Response generated in 9.64s
+2026-05-22 12:44:47 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:44:47 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:44:52 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:44:54 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:44:54 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:44:54 | INFO | [LATENCY] Response generated in 8.97s
+2026-05-22 12:44:58 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:44:58 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:45:03 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:45:04 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:45:04 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:45:04 | INFO | [LATENCY] Response generated in 10.23s
+2026-05-22 12:48:26 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:48:26 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:48:31 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:48:32 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:48:32 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:48:32 | INFO | [LATENCY] Response generated in 9.22s
+2026-05-22 12:48:34 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:48:34 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:48:39 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:48:40 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:48:40 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:48:40 | INFO | [LATENCY] Response generated in 7.81s
+2026-05-22 12:48:42 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:48:42 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:48:52 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:48:54 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:48:54 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:48:54 | INFO | [LATENCY] Response generated in 13.76s
+2026-05-22 12:48:56 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 12:48:56 | INFO | [LATENCY] Response generated in 1.91s
+2026-05-22 12:48:58 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 12:48:58 | INFO | [LATENCY] Response generated in 2.32s
+2026-05-22 12:49:00 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 12:49:00 | INFO | [LATENCY] Response generated in 2.2s
+2026-05-22 12:49:02 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:49:02 | INFO | [LATENCY] Response generated in 2.09s
+2026-05-22 12:49:05 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:49:05 | INFO | [LATENCY] Response generated in 2.19s
+2026-05-22 12:49:07 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:49:07 | INFO | [LATENCY] Response generated in 2.35s
+2026-05-22 12:49:09 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:49:09 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:49:10 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:49:12 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:49:12 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 12:49:12 | INFO | [LATENCY] Response generated in 5.58s
+2026-05-22 12:49:15 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:49:15 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:49:16 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:49:18 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:49:18 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 12:49:18 | INFO | [LATENCY] Response generated in 5.25s
+2026-05-22 12:49:20 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:49:20 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:49:22 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:49:23 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:49:23 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 12:49:23 | INFO | [LATENCY] Response generated in 5.4s
+2026-05-22 12:49:25 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:49:25 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 12:49:25 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 12:49:28 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-22 12:49:28 | INFO | [TOOL] Email Update: Starting
+2026-05-22 12:49:28 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-22 12:49:28 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-22 12:49:30 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-22 12:49:30 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 12:49:30 | INFO | [RESPONSE] Final: The email address "test@test" you provided is invalid. Please provide a valid em...
+2026-05-22 12:49:30 | INFO | [LATENCY] Response generated in 7.21s
+2026-05-22 12:49:34 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:49:34 | INFO | [LATENCY] Response generated in 3.13s
+2026-05-22 12:49:38 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 12:49:38 | INFO | [LATENCY] Response generated in 4.44s
+2026-05-22 12:49:42 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:49:42 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:49:45 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:49:47 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:49:47 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 12:49:47 | INFO | [LATENCY] Response generated in 8.87s
+2026-05-22 12:49:49 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:49:49 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:49:50 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:49:52 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:49:52 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 12:49:52 | INFO | [LATENCY] Response generated in 4.82s
+2026-05-22 12:49:54 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 12:49:54 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 12:49:55 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 12:49:57 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:49:57 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 12:49:57 | INFO | [LATENCY] Response generated in 5.12s
+2026-05-22 12:50:00 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 12:50:00 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 12:50:00 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 12:50:00 | INFO | [LATENCY] Response generated in 3.09s
+2026-05-22 12:50:02 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 12:50:02 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 12:50:02 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 12:50:02 | INFO | [LATENCY] Response generated in 2.02s
+2026-05-22 12:50:04 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 12:50:04 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 12:50:04 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 12:50:04 | INFO | [LATENCY] Response generated in 2.1s
+2026-05-22 12:50:06 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:50:06 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:50:10 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:50:15 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:50:15 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses from accidents invo...
+2026-05-22 12:50:15 | INFO | [LATENCY] Response generated in 10.65s
+2026-05-22 12:50:18 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:50:18 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:50:23 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:50:24 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:50:24 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:50:24 | INFO | [LATENCY] Response generated in 9.68s
+2026-05-22 12:50:26 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 12:50:26 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 12:50:35 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 12:50:41 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 12:50:41 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 12:50:41 | INFO | [LATENCY] Response generated in 17.08s
+2026-05-22 13:28:37 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:28:37 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:28:43 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:28:45 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:28:45 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:28:45 | INFO | [LATENCY] Response generated in 14.67s
+2026-05-22 13:28:47 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:28:47 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:28:53 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:28:55 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:28:55 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:28:55 | INFO | [LATENCY] Response generated in 10.2s
+2026-05-22 13:28:58 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:28:58 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:29:03 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:29:05 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:29:05 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:29:05 | INFO | [LATENCY] Response generated in 10.05s
+2026-05-22 13:29:07 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:29:07 | INFO | [LATENCY] Response generated in 2.22s
+2026-05-22 13:29:10 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:29:10 | INFO | [LATENCY] Response generated in 2.71s
+2026-05-22 13:29:13 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:29:13 | INFO | [LATENCY] Response generated in 2.87s
+2026-05-22 13:29:15 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:29:15 | INFO | [LATENCY] Response generated in 2.28s
+2026-05-22 13:29:19 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:29:19 | INFO | [LATENCY] Response generated in 3.53s
+2026-05-22 13:29:21 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:29:21 | INFO | [LATENCY] Response generated in 2.49s
+2026-05-22 13:29:24 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:29:24 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:29:25 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:29:27 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:29:27 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:29:27 | INFO | [LATENCY] Response generated in 5.97s
+2026-05-22 13:29:30 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:29:30 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:29:33 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:29:34 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:29:34 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:29:34 | INFO | [LATENCY] Response generated in 6.96s
+2026-05-22 13:29:36 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:29:36 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:29:39 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:29:41 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:29:41 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:29:41 | INFO | [LATENCY] Response generated in 6.91s
+2026-05-22 13:29:44 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:29:44 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 13:29:44 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 13:29:46 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-22 13:29:46 | INFO | [TOOL] Email Update: Starting
+2026-05-22 13:29:46 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-22 13:29:46 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-22 13:29:48 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-22 13:29:48 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 13:29:48 | INFO | [RESPONSE] Final: The email address "test@test" you provided is invalid. Please provide a valid em...
+2026-05-22 13:29:48 | INFO | [LATENCY] Response generated in 6.63s
+2026-05-22 13:29:50 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:29:50 | INFO | [LATENCY] Response generated in 2.5s
+2026-05-22 13:29:53 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:29:53 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 13:29:53 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 13:29:55 | INFO | [AGENT] Policy Update Agent: Unsupported operation - escalating
+2026-05-22 13:29:55 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 13:29:55 | INFO | [RESPONSE] Final: This policy update request requires review by a licensed insurance representativ...
+2026-05-22 13:29:55 | INFO | [LATENCY] Response generated in 4.9s
+2026-05-22 13:29:57 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:29:57 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:30:00 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:30:02 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:30:02 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:30:02 | INFO | [LATENCY] Response generated in 7.05s
+2026-05-22 13:30:04 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:30:04 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:30:06 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:30:08 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:30:08 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:30:08 | INFO | [LATENCY] Response generated in 5.67s
+2026-05-22 13:30:11 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:30:11 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:30:12 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:30:14 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:30:14 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:30:14 | INFO | [LATENCY] Response generated in 5.67s
+2026-05-22 13:30:16 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:30:16 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:30:16 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:30:16 | INFO | [LATENCY] Response generated in 2.15s
+2026-05-22 13:30:18 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:30:18 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:30:18 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:30:18 | INFO | [LATENCY] Response generated in 2.44s
+2026-05-22 13:30:20 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:30:20 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:30:20 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:30:20 | INFO | [LATENCY] Response generated in 2.14s
+2026-05-22 13:30:22 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:30:22 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:30:28 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:30:31 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:30:31 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:30:31 | INFO | [LATENCY] Response generated in 10.43s
+2026-05-22 13:30:36 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:30:36 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:30:42 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:30:43 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:30:43 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:30:43 | INFO | [LATENCY] Response generated in 12.52s
+2026-05-22 13:30:46 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:30:46 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:30:54 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:30:56 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:30:56 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:30:56 | INFO | [LATENCY] Response generated in 12.18s
+2026-05-22 13:31:22 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:31:22 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:31:27 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:31:29 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:31:29 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:31:29 | INFO | [LATENCY] Response generated in 8.84s
+2026-05-22 13:31:30 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:31:30 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:31:34 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:31:36 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:31:36 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:31:36 | INFO | [LATENCY] Response generated in 7.41s
+2026-05-22 13:31:38 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:31:38 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:31:42 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:31:44 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:31:44 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:31:44 | INFO | [LATENCY] Response generated in 8.51s
+2026-05-22 13:31:47 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:31:47 | INFO | [LATENCY] Response generated in 2.36s
+2026-05-22 13:31:49 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:31:49 | INFO | [LATENCY] Response generated in 1.8s
+2026-05-22 13:31:50 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:31:50 | INFO | [LATENCY] Response generated in 1.8s
+2026-05-22 13:31:52 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:31:52 | INFO | [LATENCY] Response generated in 1.9s
+2026-05-22 13:31:55 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:31:55 | INFO | [LATENCY] Response generated in 2.67s
+2026-05-22 13:31:57 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:31:57 | INFO | [LATENCY] Response generated in 2.06s
+2026-05-22 13:31:59 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:31:59 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:32:00 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:32:02 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:02 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:32:02 | INFO | [LATENCY] Response generated in 5.22s
+2026-05-22 13:32:04 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:32:04 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:32:05 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:32:09 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:09 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:32:09 | INFO | [LATENCY] Response generated in 6.69s
+2026-05-22 13:32:11 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:32:11 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:32:12 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:32:14 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:14 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:32:14 | INFO | [LATENCY] Response generated in 4.54s
+2026-05-22 13:32:15 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:32:15 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 13:32:15 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 13:32:17 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-22 13:32:17 | INFO | [TOOL] Email Update: Starting
+2026-05-22 13:32:17 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-22 13:32:17 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-22 13:32:19 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-22 13:32:19 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 13:32:19 | INFO | [RESPONSE] Final: The email address "test@test" you provided is invalid. Please provide a valid em...
+2026-05-22 13:32:19 | INFO | [LATENCY] Response generated in 5.19s
+2026-05-22 13:32:21 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:32:21 | INFO | [LATENCY] Response generated in 2.21s
+2026-05-22 13:32:23 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:32:23 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 13:32:23 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 13:32:25 | INFO | [AGENT] Policy Update Agent: Unsupported operation - escalating
+2026-05-22 13:32:25 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 13:32:25 | INFO | [RESPONSE] Final: This policy update request requires review by a licensed insurance representativ...
+2026-05-22 13:32:25 | INFO | [LATENCY] Response generated in 3.84s
+2026-05-22 13:32:26 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:32:26 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:32:28 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:32:29 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:29 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:32:29 | INFO | [LATENCY] Response generated in 4.67s
+2026-05-22 13:32:32 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:32:32 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:32:33 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:32:36 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:36 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:32:36 | INFO | [LATENCY] Response generated in 6.3s
+2026-05-22 13:32:38 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:32:38 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:32:40 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:32:42 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:42 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:32:42 | INFO | [LATENCY] Response generated in 5.78s
+2026-05-22 13:32:44 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:32:44 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:32:44 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:32:44 | INFO | [LATENCY] Response generated in 2.12s
+2026-05-22 13:32:46 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:32:46 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:32:46 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:32:46 | INFO | [LATENCY] Response generated in 1.91s
+2026-05-22 13:32:47 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:32:47 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:32:47 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:32:47 | INFO | [LATENCY] Response generated in 1.92s
+2026-05-22 13:32:50 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:32:50 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:32:57 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:32:58 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:32:58 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:32:58 | INFO | [LATENCY] Response generated in 10.7s
+2026-05-22 13:33:01 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:33:01 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:33:06 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:33:07 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:33:07 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:33:07 | INFO | [LATENCY] Response generated in 8.96s
+2026-05-22 13:33:09 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:33:09 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:33:15 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:33:18 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:33:18 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:33:18 | INFO | [LATENCY] Response generated in 11.05s
+2026-05-22 13:34:25 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:34:25 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:34:25 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:34:25 | INFO | [LATENCY] Response generated in 3.65s
+2026-05-22 13:35:18 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:35:18 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:35:25 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:35:26 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:35:26 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:35:26 | INFO | [LATENCY] Response generated in 11.6s
+2026-05-22 13:35:29 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:35:29 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:35:34 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:35:36 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:35:36 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:35:36 | INFO | [LATENCY] Response generated in 9.16s
+2026-05-22 13:35:37 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:35:37 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:35:42 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:35:43 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:35:43 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:35:43 | INFO | [LATENCY] Response generated in 7.77s
+2026-05-22 13:35:46 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:35:46 | INFO | [LATENCY] Response generated in 2.56s
+2026-05-22 13:35:48 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:35:48 | INFO | [LATENCY] Response generated in 2.02s
+2026-05-22 13:35:50 | INFO | [ROUTER] Intent detected: customer_policy_query
+2026-05-22 13:35:50 | INFO | [LATENCY] Response generated in 2.28s
+2026-05-22 13:35:52 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:35:52 | INFO | [LATENCY] Response generated in 2.27s
+2026-05-22 13:35:54 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:35:54 | INFO | [LATENCY] Response generated in 1.93s
+2026-05-22 13:35:56 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:35:56 | INFO | [LATENCY] Response generated in 2.1s
+2026-05-22 13:35:58 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:35:58 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:36:00 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:36:02 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:36:02 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:36:02 | INFO | [LATENCY] Response generated in 5.17s
+2026-05-22 13:36:03 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:36:03 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:36:05 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:36:06 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:36:06 | INFO | [RESPONSE] Final: "I am an insurance support assistant and can only help with insurance-related qu...
+2026-05-22 13:36:06 | INFO | [LATENCY] Response generated in 4.52s
+2026-05-22 13:36:08 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:36:08 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:36:10 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:36:12 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:36:12 | INFO | [RESPONSE] Final: I am an insurance support assistant and can only help with insurance-related que...
+2026-05-22 13:36:12 | INFO | [LATENCY] Response generated in 5.32s
+2026-05-22 13:36:14 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:36:14 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 13:36:14 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 13:36:16 | INFO | [AGENT] Policy Update Agent: Tool called - update_email
+2026-05-22 13:36:16 | INFO | [TOOL] Email Update: Starting
+2026-05-22 13:36:16 | INFO | [TOOL] Email Update: Failed - Invalid format
+2026-05-22 13:36:16 | INFO | [AGENT] Policy Update Agent: Tool result - INVALID_EMAIL
+2026-05-22 13:36:18 | INFO | [AGENT] Policy Update Agent: Response received
+2026-05-22 13:36:18 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 13:36:18 | INFO | [RESPONSE] Final: The email address "test@test" appears to be invalid. Please provide a valid emai...
+2026-05-22 13:36:18 | INFO | [LATENCY] Response generated in 6.26s
+2026-05-22 13:36:20 | INFO | [ROUTER] Intent detected: policy_update
+2026-05-22 13:36:20 | INFO | [AGENT] Policy Update Agent: Starting execution
+2026-05-22 13:36:20 | INFO | [AGENT] Policy Update Agent: Processing request
+2026-05-22 13:36:22 | INFO | [AGENT] Policy Update Agent: Unsupported operation - escalating
+2026-05-22 13:36:22 | INFO | [SAFETY] Status: APPROVED - Low-risk policy update
+2026-05-22 13:36:22 | INFO | [RESPONSE] Final: This policy update request requires review by a licensed insurance representativ...
+2026-05-22 13:36:22 | INFO | [LATENCY] Response generated in 3.98s
+2026-05-22 13:36:25 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:25 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:25 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:25 | INFO | [LATENCY] Response generated in 2.9s
+2026-05-22 13:36:27 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:36:27 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:36:29 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:36:31 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:36:31 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:36:31 | INFO | [LATENCY] Response generated in 6.76s
+2026-05-22 13:36:33 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:36:33 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:36:35 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:36:37 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:36:37 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:36:37 | INFO | [LATENCY] Response generated in 5.14s
+2026-05-22 13:36:39 | INFO | [ROUTER] Intent detected: general_query
+2026-05-22 13:36:39 | INFO | [AGENT] General Query Agent: Starting execution
+2026-05-22 13:36:40 | INFO | [AGENT] General Query Agent: Response received
+2026-05-22 13:36:42 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:36:42 | INFO | [RESPONSE] Final: I don't have much information on that request. Please contact a licensed agent f...
+2026-05-22 13:36:42 | INFO | [LATENCY] Response generated in 5.4s
+2026-05-22 13:36:44 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:44 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:44 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:44 | INFO | [LATENCY] Response generated in 2.23s
+2026-05-22 13:36:46 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:46 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:46 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:46 | INFO | [LATENCY] Response generated in 1.97s
+2026-05-22 13:36:48 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:48 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:48 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:48 | INFO | [LATENCY] Response generated in 1.91s
+2026-05-22 13:36:51 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:51 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:51 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:51 | INFO | [LATENCY] Response generated in 2.53s
+2026-05-22 13:36:53 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:53 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:53 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:53 | INFO | [LATENCY] Response generated in 2.18s
+2026-05-22 13:36:55 | INFO | [ROUTER] Intent detected: restricted_operation
+2026-05-22 13:36:55 | INFO | [SAFETY] Status: RESTRICTED - Operation blocked
+2026-05-22 13:36:55 | INFO | [RESPONSE] Final: I'm unable to assist with this request because it involves restricted or unautho...
+2026-05-22 13:36:55 | INFO | [LATENCY] Response generated in 1.96s
+2026-05-22 13:36:57 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:36:57 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:37:01 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:37:02 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:37:02 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:37:02 | INFO | [LATENCY] Response generated in 7.5s
+2026-05-22 13:37:05 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:37:05 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:37:09 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:37:10 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:37:10 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:37:10 | INFO | [LATENCY] Response generated in 7.85s
+2026-05-22 13:37:12 | INFO | [ROUTER] Intent detected: policy_information
+2026-05-22 13:37:12 | INFO | [AGENT] Policy Information Agent: Starting execution
+2026-05-22 13:37:17 | INFO | [AGENT] Policy Information Agent: Response received
+2026-05-22 13:37:19 | INFO | [SAFETY] Status: SAFE - Response approved
+2026-05-22 13:37:19 | INFO | [RESPONSE] Final: [Summary]  
+Collision coverage helps pay for repair expenses resulting from acci...
+2026-05-22 13:37:19 | INFO | [LATENCY] Response generated in 8.37s
+2026-05-22 13:45:51 | ERROR | Error processing user query: division by zero
+2026-05-22 13:45:51 | ERROR | Error processing user query: division by zero
+2026-05-22 13:45:51 | ERROR | Error processing user query: division by zero
+2026-05-22 13:46:20 | ERROR | Error processing user query: division by zero
+2026-05-22 13:46:20 | ERROR | Error processing user query: division by zero
+2026-05-22 13:46:20 | ERROR | Error processing user query: division by zero
+2026-05-22 13:48:14 | ERROR | Error processing user query: division by zero
+2026-05-22 13:48:14 | ERROR | Error processing user query: division by zero
+2026-05-22 13:48:14 | ERROR | Error processing user query: division by zero

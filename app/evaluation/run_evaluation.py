@@ -591,10 +591,6 @@ under both successful and failure conditions.
 | Repeated execution testing | Measures response consistency |
 | Existing logging reuse | Provides observability without redesign |
 | Existing safety review reuse | Preserves regulated safety architecture |
-| LangChain framework | Simplifies agent orchestration, prompts, tools, and workflows |
-| RAG with Chroma | Keeps insurance responses grounded in approved documents |
-| Safety before retrieval | Prevents unsafe reasoning before retrieval execution |
-| Friendly fallback responses | Prevents exposing stack traces to end users |
 
 ---
 
@@ -701,14 +697,11 @@ Tradeoff:
 |---|---|
 | High | Add semantic evaluation scoring |
 | High | Add automated pass/fail assertions |
-| High | Add stricter PII masking and validation |
-| High | Wire memory and feedback directly into live workflows |
-| Medium | Add structured JSON logging |
+| High | Add structured JSON logging |
 | Medium | Add trace IDs for orchestration tracking |
 | Medium | Add Dockerized evaluation execution |
 | Medium | Add Prometheus & Grafana monitoring |
 | Medium | Replace keyword scoring with LLM evaluation |
-| Medium | Add TLS termination for public deployment |
 | Low | Add evaluation dashboard |
 | Low | Add distributed tracing support |
 

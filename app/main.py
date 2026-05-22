@@ -26,7 +26,6 @@ def process_user_query(user_input: str) -> str:
 
     start_time = time.time()
     try:
-        
         global pending_query
         
         if user_input.lower() == "reset":
