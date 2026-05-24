@@ -456,4 +456,3 @@ The project demonstrates:
 - safety enforcement
 - deployment readiness
 
-as required by the Industry Capstone Project evaluation criteria. :contentReference[oaicite:6]{index=6}
