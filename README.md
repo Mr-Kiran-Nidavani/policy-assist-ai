@@ -29,10 +29,11 @@ This project was developed as part of the Industry Capstone Project requirements
 - [9. Phase Documentation](#9-phase-documentation)
 - [10. Evidence Walkthrough](#10-evidence-walkthrough)
 - [11. Final Submission Documents](#11-final-submission-documents)
-- [12. Safety Features](#12-safety-features)
-- [13. Known Limitations](#13-known-limitations)
-- [14. Future Improvements](#14-future-improvements)
-- [15. Conclusion](#15-conclusion)
+- [12. Cloud Deployment](#12-cloud-deployment)
+- [13. Safety Features](#13-safety-features)
+- [14. Known Limitations](#14-known-limitations)
+- [15. Future Improvements](#15-future-improvements)
+- [16. Conclusion](#16-conclusion)
 
 ---
 
@@ -420,7 +421,17 @@ These documents collectively satisfy the final capstone submission requirements.
 
 ---
 
-# 12. Safety Features
+# 12. Cloud Deployment
+
+The application was deployed using Streamlit Community Cloud directly from GitHub.
+
+Deployment URL:
+
+https://policy-assist-ai-jsd2jadz7ab8pckgjpdmcu.streamlit.app/
+
+---
+
+# 13. Safety Features
 
 PolicyAssist AI includes multiple safety-focused engineering controls:
 
@@ -451,7 +462,7 @@ These safeguards align with the Customer Support safety requirements defined in 
 
 ---
 
-# 13. Known Limitations
+# 14. Known Limitations
 
 - Retrieval quality depends on available policy documents
 - RAG responses may become conservative when context is insufficient
@@ -462,7 +473,7 @@ These safeguards align with the Customer Support safety requirements defined in 
 
 ---
 
-# 14. Future Improvements
+# 15. Future Improvements
 
 - Semantic evaluation scoring
 - Improved retrieval ranking
@@ -477,7 +488,7 @@ These safeguards align with the Customer Support safety requirements defined in 
 
 ---
 
-# 15. Conclusion
+# 16. Conclusion
 
 PolicyAssist AI demonstrates a safety-first, retrieval-grounded, multi-agent insurance support architecture designed for:
 - explainability
