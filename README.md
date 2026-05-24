@@ -27,11 +27,12 @@ This project was developed as part of the Industry Capstone Project requirements
 - [7. Evaluation & Testing](#7-evaluation--testing)
 - [8. Logs & Monitoring](#8-logs--monitoring)
 - [9. Phase Documentation](#9-phase-documentation)
-- [10. Final Submission Documents](#10-final-submission-documents)
-- [11. Safety Features](#11-safety-features)
-- [12. Known Limitations](#12-known-limitations)
-- [13. Future Improvements](#13-future-improvements)
-- [14. Conclusion](#14-conclusion)
+- [10. Evidence Walkthrough](#10-evidence-walkthrough)
+- [11. Final Submission Documents](#11-final-submission-documents)
+- [12. Safety Features](#12-safety-features)
+- [13. Known Limitations](#13-known-limitations)
+- [14. Future Improvements](#14-future-improvements)
+- [15. Conclusion](#15-conclusion)
 
 ---
 
@@ -405,7 +406,7 @@ Covers:
 - latency tracking
 - debugging evidence
 
-# 10. Final Submission Documents
+# 11. Final Submission Documents
 
 | Document | Purpose |
 |---|---|
@@ -419,7 +420,7 @@ These documents collectively satisfy the final capstone submission requirements.
 
 ---
 
-# 11. Safety Features
+# 12. Safety Features
 
 PolicyAssist AI includes multiple safety-focused engineering controls:
 
@@ -450,7 +451,7 @@ These safeguards align with the Customer Support safety requirements defined in 
 
 ---
 
-# 12. Known Limitations
+# 13. Known Limitations
 
 - Retrieval quality depends on available policy documents
 - RAG responses may become conservative when context is insufficient
@@ -461,7 +462,7 @@ These safeguards align with the Customer Support safety requirements defined in 
 
 ---
 
-# 13. Future Improvements
+# 14. Future Improvements
 
 - Semantic evaluation scoring
 - Improved retrieval ranking
@@ -476,7 +477,7 @@ These safeguards align with the Customer Support safety requirements defined in 
 
 ---
 
-# 14. Conclusion
+# 15. Conclusion
 
 PolicyAssist AI demonstrates a safety-first, retrieval-grounded, multi-agent insurance support architecture designed for:
 - explainability
