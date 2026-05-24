@@ -249,6 +249,14 @@ git clone <repository-url>
 cd policyassist-ai
 ```
 
+
+## Create Vertual ENV
+
+```bash
+pip venv
+.venv\Scripts\activate
+```
+
 ## Install Dependencies
 
 ```bash
@@ -356,6 +364,46 @@ The deployment and monitoring implementation aligns with the capstone deployment
 | Phase 9 | Evaluation & Engineering Review | <a href="docs/phase9/evaluation_engineering_review.md" target="_blank">View</a> |
 ---
 
+# 10. Evidence Walkthrough
+
+Two consolidated evidence walkthrough PDFs are included to help evaluators quickly verify:
+- retrieval grounding
+- orchestration workflows
+- safety enforcement
+- evaluation tooling
+- runtime logging
+- tool execution
+- memory workflows
+- Streamlit interaction
+- CLI execution
+
+## Streamlit Workflow Evidence
+
+[PolicyAssist_AI_Streamlit_Evidence.pdf](screenshots/PolicyAssist_AI_Streamlit_Evidence.pdf)
+
+Covers:
+- Streamlit UI workflows
+- policy retrieval
+- claims guidance
+- memory workflows
+- reset functionality
+- safety enforcement
+- evaluation screenshots
+
+## Console & Runtime Logs Evidence
+
+![PolicyAssist_AI_Console_Logs_Evidence.pdf](screenshots/PolicyAssist_AI_Console_Logs_Evidence.png)
+
+Covers:
+- routing logs
+- safety review logs
+- orchestration traces
+- evaluation execution
+- retrieval comparison execution
+- runtime recovery
+- tool execution traces
+- latency tracking
+- debugging evidence
 
 # 10. Final Submission Documents
 

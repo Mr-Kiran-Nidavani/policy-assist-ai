@@ -524,6 +524,59 @@ Multiple real-world engineering failures were identified and analyzed during eva
 | False-positive evaluation scoring | Runtime fallback responses not detected | Added fault-aware evaluation scoring | Updated `run_evaluation.py` |
 | Cloud deployment dependency failure | Protobuf conflict & oversized dependencies | Pinned protobuf and minimized dependencies | Deployment logs |
 | Missing deployment credentials | Environment variables not configured | Added secure Streamlit secrets | Cloud deployment validation |
+| Customer policy coverage query incorrectly blocked | Safety review classified valid customer coverage explanation as RESTRICTED | Refined safety classification rules to allow grounded customer policy coverage explanations while still blocking unauthorized operations | [Before Fix](screenshots/customer_policy_restricted_before_fix.png) → [After Fix](screenshots/customer_policy_restricted_after_fix.png) |
+
+
+
+## Additional Safety Classification Improvement
+
+A valid customer-policy coverage query was incorrectly escalated as a restricted operation after authentication flow completion.
+
+Example:
+
+```text
+User: is my policy coverage collision coverage?
+Assistant: Please provide your customer ID to proceed.
+
+User: C1001
+Assistant: I'm unable to assist with this request because it involves restricted or unauthorized operations.
+```
+
+### Root Cause
+
+The safety-review prompt was overly aggressive when evaluating authenticated customer-policy responses and incorrectly classified grounded policy coverage explanations as restricted operations.
+
+### Fix Applied
+
+The safety-review classification rules were refined to explicitly allow:
+- coverage explanations
+- deductible information
+- reimbursement percentage explanations
+- benefit explanations
+- grounded customer-policy responses
+
+provided the request does not involve:
+- unauthorized policy modifications
+- claim approvals
+- restricted operational actions
+
+### Prompt Improvement Added
+
+```text
+Coverage details, deductible amounts, reimbursement percentages, and benefit explanations are NOT RESTRICTED when grounded in verified policy data.
+
+Customer policy coverage questions should not be classified as RESTRICTED unless they request unauthorized policy changes.
+```
+
+### Engineering Impact
+
+This refinement improved:
+- customer-policy workflow reliability
+- safety classification accuracy
+- authentication workflow continuity
+- retrieval-grounded explainability
+
+while still preserving restricted-operation enforcement.
 
 ---
 
