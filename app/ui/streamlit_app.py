@@ -652,9 +652,9 @@ if "pending_query" in st.session_state:
     formatted_response = f"""
 <div class="assistant-message">
 
-🛡️ <b>PolicyAssist AI</b><br>
+🛡️ <b>PolicyAssist AI: </b> {response["response"]}
 
-{response["response"].replace(chr(10), "<br>")}
+
 
 </div>
 """

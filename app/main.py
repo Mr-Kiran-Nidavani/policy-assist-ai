@@ -28,7 +28,7 @@ def process_user_query(user_input: str) -> str:
     try:
         global pending_query
         
-        if user_input.lower() == "reset":
+        if user_input.lower().strip() == "reset":
             clear_conversation_memory()
             latency = round(time.time() - start_time, 2)
             logger.info(f"[LATENCY] Response generated in {latency}s")

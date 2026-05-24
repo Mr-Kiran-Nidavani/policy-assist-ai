@@ -378,6 +378,9 @@ policyassist-ai/
 ├── tests/
 ├── logs/
 │
+├── FINAL_DEMO_SCRIPT.md
+├── PROMPT_COMPARISON_ANALYSIS.md
+├── ENGINEERING_PRODUCT_JUSTIFICATION.md
 ├── .env
 ├── pyproject.toml
 ├── uv.lock
@@ -476,6 +479,18 @@ Contains:
 | `phase7/` | Adaptive behaviour |
 | `phase8/` | Deployment readiness |
 | `phase9/` | Evaluation and engineering review |
+
+---
+
+# Final Submission Artifacts
+This repository includes the core phase documentation plus final capstone artifacts:
+- [`FINAL_DEMO_SCRIPT.md`](FINAL_DEMO_SCRIPT.md)
+- [`PROMPT_COMPARISON_ANALYSIS.md`](PROMPT_COMPARISON_ANALYSIS.md)
+- [`ENGINEERING_PRODUCT_JUSTIFICATION.md`](ENGINEERING_PRODUCT_JUSTIFICATION.md)
+- [`docs/phase1/problem_framing_and_system_design.md`](docs/phase1/problem_framing_and_system_design.md)
+- [`docs/phase3/prompt_comparison.md`](docs/phase3/prompt_comparison.md)
+- [`docs/phase9/evaluation_engineering_review.md`](docs/phase9/evaluation_engineering_review.md)
+- [`app/evaluation/evaluation_results.json`](app/evaluation/evaluation_results.json)
 
 ---
 
@@ -723,11 +738,13 @@ The system includes:
 
 This project includes:
 - Working AI Agent
-- Problem Framing Document
-- Demo Script
-- Evaluation Report
-- Engineering Justification
-- Prompt Comparison Evidence
+- [`docs/phase1/problem_framing_and_system_design.md`](docs/phase1/problem_framing_and_system_design.md)
+- [`FINAL_DEMO_SCRIPT.md`](FINAL_DEMO_SCRIPT.md)
+- [`PROMPT_COMPARISON_ANALYSIS.md`](PROMPT_COMPARISON_ANALYSIS.md)
+- [`ENGINEERING_PRODUCT_JUSTIFICATION.md`](ENGINEERING_PRODUCT_JUSTIFICATION.md)
+- [`docs/phase3/prompt_comparison.md`](docs/phase3/prompt_comparison.md)
+- [`docs/phase9/evaluation_engineering_review.md`](docs/phase9/evaluation_engineering_review.md)
+- [`app/evaluation/evaluation_results.json`](app/evaluation/evaluation_results.json)
 - Safety Enforcement Demonstration
 
 ---
