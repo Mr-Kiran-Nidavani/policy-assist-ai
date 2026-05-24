@@ -1,4 +1,3 @@
-# PROMPT_COMPARISON_ANALYSIS.md
 
 # Prompt Comparison Analysis — PolicyAssist AI
 

@@ -1,5 +1,3 @@
-# README.md
-
 # PolicyAssist AI
 
 PolicyAssist AI is a safety-first multi-agent insurance support assistant built using LangChain, OpenAI, ChromaDB, and Retrieval-Augmented Generation (RAG).

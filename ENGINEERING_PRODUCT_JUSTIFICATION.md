@@ -1,4 +1,3 @@
-# ENGINEERING_AND_PRODUCT_JUSTIFICATION.md
 
 # Engineering & Product Justification — PolicyAssist AI
 
