@@ -1,758 +1,459 @@
+# README.md
+
 # PolicyAssist AI
 
-## Intelligent Insurance Support & Controlled Operations Assistant
+PolicyAssist AI is a safety-first multi-agent insurance support assistant built using LangChain, OpenAI, ChromaDB, and Retrieval-Augmented Generation (RAG).
+
+The system provides:
+- policy information assistance
+- claim guidance
+- controlled policy updates
+- retrieval-grounded responses
+- layered safety enforcement
+- workflow orchestration
+- evaluation tooling
+- Streamlit-based UI workflows
+
+This project was developed as part of the Industry Capstone Project requirements for designing, building, evaluating, and justifying a production-oriented AI agent system. :contentReference[oaicite:0]{index=0}
 
 ---
 
 # Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Problem Statement](#problem-statement)
-3. [Key Objectives](#key-objectives)
-4. [Core Features](#core-features)
-5. [Supported Operations](#supported-operations)
-6. [Restricted Operations](#restricted-operations)
-7. [Safety Constraints](#safety-constraints)
-8. [Technology Stack](#technology-stack)
-9. [Multi-Agent Architecture](#multi-agent-architecture)
-10. [Project Structure](#project-structure)
-11. [Folder Responsibilities](#folder-responsibilities)
-12. [Documentation Structure](#documentation-structure)
-13. [Setting Up the Project Using uv](#setting-up-the-project-using-uv)
-14. [How the System Works](#how-the-system-works)
-15. [Sample User Interactions](#sample-user-interactions)
-16. [Prompt Engineering](#prompt-engineering)
-17. [Evaluation Metrics](#evaluation-metrics)
-18. [Failure Analysis](#failure-analysis)
-19. [Deployment Readiness](#deployment-readiness)
-20. [Known Limitations](#known-limitations)
-21. [Future Improvements](#future-improvements)
-22. [Capstone Deliverables](#capstone-deliverables)
-23. [Disclaimer](#disclaimer)
+- [1. Project Overview](#1-project-overview)
+- [2. Features](#2-features)
+- [3. Architecture Overview](#3-architecture-overview)
+- [4. Tech Stack](#4-tech-stack)
+- [5. Project Structure](#5-project-structure)
+- [6. Setup Instructions](#6-setup-instructions)
+- [7. Evaluation & Testing](#7-evaluation--testing)
+- [8. Logs & Monitoring](#8-logs--monitoring)
+- [9. Phase Documentation](#9-phase-documentation)
+- [10. Final Submission Documents](#10-final-submission-documents)
+- [11. Safety Features](#11-safety-features)
+- [12. Known Limitations](#12-known-limitations)
+- [13. Future Improvements](#13-future-improvements)
+- [14. Conclusion](#14-conclusion)
 
 ---
 
-# Project Overview
+# 1. Project Overview
 
-PolicyAssist AI is a safety-first lightweight orchestrated multi-agent insurance support and controlled operations assistant designed to help existing policyholders understand insurance coverage, claims procedures, exclusions, deductibles, waiting periods, and operational workflows using AI-powered retrieval, conversational reasoning, contextual memory, and controlled tool usage.
+PolicyAssist AI is a production-oriented insurance support assistant designed to:
+- explain insurance policy information
+- assist with claims guidance
+- handle controlled operational workflows
+- provide retrieval-grounded responses
+- enforce safety restrictions
+- support evaluation-driven development
 
 The system combines:
-- retrieval-augmented generation (RAG)
 - multi-agent orchestration
-- operational tools
-- conversational memory
-- safety validation
-- escalation handling
-- adaptive behaviour
+- Retrieval-Augmented Generation (RAG)
+- layered safety enforcement
+- workflow continuity
+- runtime evaluation tooling
 
-to provide enterprise-style insurance customer support assistance.
+to improve reliability and explainability for regulated insurance workflows.
 
-PolicyAssist AI supports:
-- policy clarification
-- claims guidance
-- low-risk operational assistance
-- customer profile updates
-- policy-related workflows
-- safe refusal handling
-
-This project was developed as part of an Industry Capstone focused on designing, building, evaluating, and justifying a production-style AI agent for real-world operational workflows.
+The project aligns with the Customer Support — AI Support Resolution Agent scenario requirements from the capstone project specification. :contentReference[oaicite:1]{index=1}
 
 ---
 
-# Problem Statement
+# 2. Features
 
-Insurance customer support teams spend significant time handling repetitive customer requests related to:
-- policy coverage clarification
-- claims guidance
-- deductible explanations
-- waiting periods
-- customer profile updates
-- driver and vehicle additions
-- operational support workflows
-- policy documentation requests
-
-Traditional support systems often:
-- rely on manual policy searches
-- provide inconsistent responses
-- increase operational workload
-- delay customer resolution
-- require multiple escalations
-
-Customers frequently struggle to:
-- understand policy wording
-- interpret exclusions and waiting periods
-- determine operational eligibility
-- understand claim procedures
-- identify which requests are permitted
-
-PolicyAssist AI aims to improve support efficiency and customer experience through safe, explainable, retrieval-grounded, and operationally controlled assistance while enforcing strict guardrails for high-risk actions.
+- Multi-agent orchestration
+- Retrieval-Augmented Generation (RAG)
+- ChromaDB vector retrieval
+- Streamlit web interface
+- CLI interface
+- Safety review workflows
+- Restricted operation blocking
+- Multi-turn authentication handling
+- Evaluation harness
+- Retrieval comparison testing
+- Runtime logging
+- Feedback tracking
+- Conversation memory management
+- Adaptive workflow handling
+- Prompt comparison analysis
+- Retrieval-grounded reasoning
 
 ---
 
-# Key Objectives
+# 3. Architecture Overview
 
-- Improve insurance customer support efficiency
-- Reduce repetitive support workload
-- Provide grounded policy explanations
-- Enable safe low-risk operational assistance
-- Prevent unsafe or unauthorized operations
-- Reduce hallucinated insurance information
-- Demonstrate enterprise-style multi-agent architecture
-- Implement explainable AI safety workflows
+PolicyAssist AI uses a modular multi-agent architecture consisting of:
 
----
-
-# Core Features
-
-## Insurance Support Assistance
-- Policy coverage explanation
-- Claims guidance
-- Deductible clarification
-- Waiting period explanation
-- Exclusion interpretation
-- FAQ handling
-
----
-
-## Retrieval-Augmented Generation (RAG)
-- Semantic document retrieval
-- Policy document grounding
-- FAQ retrieval
-- Claims handbook retrieval
-- Context-aware response generation
-
----
-
-## Controlled Operational Assistance
-- Email updates
-- Phone number updates
-- Address updates
-- Add driver requests
-- Add vehicle requests
-- Policy document retrieval
-
----
-
-## Tool Usage
-- Policy lookup tool
-- Claim status tool
-- Customer profile tool
-- Add vehicle tool
-- Add driver tool
-- Escalation tool
-
----
-
-## Multi-Agent Workflow
 - Intent Router Agent
 - Policy Information Agent
 - Claim Support Agent
+- Customer Policy Agent
 - Policy Update Agent
-- General Query Agent
 - Safety Review Agent
+- Retrieval Layer (ChromaDB)
+- Streamlit User Interface
+- Evaluation Harness
+
+The architecture separates:
+- orchestration
+- retrieval
+- reasoning
+- moderation
+
+to improve:
+- maintainability
+- explainability
+- workflow reliability
+- safety enforcement
+
+The system architecture evolved incrementally across all capstone phases:
+- baseline agent
+- prompt engineering
+- retrieval integration
+- tool usage
+- memory and planning
+- adaptive workflows
+- deployment readiness
+- evaluation engineering
 
 ---
 
-## Memory & Context Handling
-- Multi-turn conversations
-- Session memory
-- Context retention
-- Follow-up query handling
-
----
-
-## Adaptive Behaviour
-- Feedback-aware response improvement
-- Adjustable explanation styles
-- Behaviour refinement using user interactions
-
----
-
-## Safety-First Design
-- Restricted operation refusal
-- Escalation workflows
-- Hallucination reduction
-- Safety review validation
-- Privacy-safe logging
-
----
-
-# Supported Operations
-
-PolicyAssist AI supports approved low-risk customer operations.
-
-## Allowed Operations
-
-| Operation | Status |
-|---|---|
-| Policy coverage explanation | ✅ Supported |
-| Claims guidance | ✅ Supported |
-| Claim status lookup | ✅ Supported |
-| Update email address | ✅ Supported |
-| Update phone number | ✅ Supported |
-| Update mailing address | ✅ Supported |
-| Add new vehicle | ✅ Supported |
-| Add new driver | ✅ Supported |
-| Download policy documents | ✅ Supported |
-| FAQ assistance | ✅ Supported |
-
----
-
-# Restricted Operations
-
-The system enforces strict restrictions on high-risk operations.
-
-## Restricted Operations
-
-| Operation | Status |
-|---|---|
-| Claim approval or rejection | ❌ Restricted |
-| Reduce insurance premium | ❌ Restricted |
-| Modify coverage limits | ❌ Restricted |
-| Backdate policy | ❌ Restricted |
-| Change policy effective date | ❌ Restricted |
-| Waive deductibles | ❌ Restricted |
-| Cancel policy | ❌ Restricted |
-| Legal or financial guarantees | ❌ Restricted |
-
----
-
-# Safety Constraints
-
-PolicyAssist AI follows a strict safety-first operational design.
-
-The system:
-- explains policies safely
-- supports approved low-risk operations
-- validates unsafe requests
-- escalates ambiguous or high-risk cases
-- prevents unauthorized modifications
-- avoids hallucinated policy information
-
-The system does NOT:
-- approve claims
-- perform high-risk policy modifications
-- make financial decisions
-- guarantee claim outcomes
-- provide legal advice
-
-Example refusal:
-
-> “I’m unable to assist with this request because it involves restricted or unauthorized operations. Please contact an authorized insurance representative or support specialist for further assistance.”
-
----
-
-# Technology Stack
+# 4. Tech Stack
 
 | Component | Technology |
 |---|---|
-| Programming Language | Python |
-| AI Framework | LangChain |
-| LLM Provider | OpenAI API |
+| LLM Provider | OpenAI GPT |
+| Framework | LangChain |
 | Vector Database | ChromaDB |
-| Embeddings | OpenAI Embeddings |
 | Frontend | Streamlit |
-| Environment Management | uv |
+| Embeddings | OpenAI Embeddings |
+| Backend Language | Python |
+| Evaluation | Custom Evaluation Harness |
 | Logging | Python Logging |
-| Document Processing | LangChain Document Loaders |
+| Memory Handling | Session-based conversation memory |
 
 ---
 
-# Multi-Agent Architecture
-
-PolicyAssist AI follows a lightweight orchestrated multi-agent workflow.
-
-## Agent Responsibilities
-
-| Agent | Responsibility |
-|---|---|
-| Intent Router Agent | Detects user intent and routes workflows |
-| Policy Information Agent | Handles policy explanations using RAG |
-| Claim Support Agent | Handles claims guidance and claims workflows |
-| Policy Update Agent | Handles approved low-risk operational requests |
-| General Query Agent | Handles greetings and unsupported queries |
-| Safety Review Agent | Validates outputs and enforces safety rules |
-
----
-
-# Multi-Agent Workflow
-
-```text
-Customer Query
-      ↓
-Intent Router Agent
-      ↓
-──────────────────────────────────────────────
-│                │                │
-↓                ↓                ↓
-Policy Info      Claim            Policy
-Agent            Support          Update
-                 Agent            Agent
-│
-└────────────────────┬───────────────────────┘
-                     ↓
-            General Query Agent
-                     ↓
-            Safety Review Agent
-                     ↓
-             Final Safe Response
-```
-
----
-
-# Project Structure
+# 5. Project Structure
 
 ```text
 policyassist-ai/
 │
-├── app/
-│   ├── main.py
-│   ├── config.py
-│   │
-│   ├── agents/
-│   │   ├── intent_router_agent.py
-│   │   ├── policy_information_agent.py
-│   │   ├── claim_support_agent.py
-│   │   ├── policy_update_agent.py
-|   |   |__customer_policy_agent.py 
-│   │   ├── general_query_agent.py
-│   │   └── safety_review_agent.py
-│   │
-│   ├── tools/
-|   |   |__ utils.py (Holds common functions like retrive policy info or update policy info)
-│   │   ├── policy_lookup_tool.py
-│   │   ├── update_email_tool.py
-│   │   ├── update_phone_tool.py
-│   │
-│   ├── prompts/
-│   ├── retriever/
-│   ├── memory/
-│   ├── safety/
-│   ├── evaluation/
-│   ├── logs/
-│   └── utils/
+├── .env_example                    # Example environment configuration template
+├── .gitignore                      # Git ignored files and folders
+├── .python-version                 # Python runtime version
+├── .venv/                          # Local virtual environment
 │
-├── data/
-│   ├── policies/
-│   ├── faqs/
-│   ├── claims_docs/
-│   ├── customer_profiles/
-│   └── embeddings/
+├── app/                            # Core application source code
+│   ├── build_vector_db.py          # Builds ChromaDB vector database from policy documents
+│   ├── config.py                   # Centralized application configuration
+│   ├── main.py                     # CLI application entry point
+│   │
+│   ├── agents/                     # Multi-agent orchestration and workflow logic
+│   │   ├── claim_support_agent.py          # Claim guidance agent
+│   │   ├── customer_policy_agent.py        # Customer-specific policy query agent
+│   │   ├── general_query_agent.py          # General insurance query handling
+│   │   ├── intent_router_agent.py          # Intent detection and workflow orchestration
+│   │   ├── policy_information_agent.py     # Policy information explanation agent
+│   │   ├── policy_update_agent.py          # Policy update workflow agent
+│   │   └── safety_review_agent.py          # Safety moderation and escalation agent
+│   │
+│   ├── evaluation/                 # Evaluation harness and testing workflows
+│   │   ├── evaluation_results.json                 # Evaluation output metrics
+│   │   ├── evaluation_test_cases.py                # Evaluation test scenarios
+│   │   ├── retrieval_comparison_results.json       # RAG vs non-RAG comparison results
+│   │   ├── run_evaluation.py                      # Main evaluation runner
+│   │   └── run_retrieval_comparison.py            # Retrieval comparison evaluation runner
+│   │
+│   ├── feedback/                   # User feedback capture and storage
+│   │   ├── feedback_log.json       # Stored user feedback records
+│   │   └── feedback_utils.py       # Feedback utility helpers
+│   │
+│   ├── llm/                        # LLM integration layer
+│   │   └── llm_client.py           # OpenAI LLM client wrapper
+│   │
+│   ├── logs/                       # Application logging utilities
+│   │   └── logger.py               # Centralized logging configuration
+│   │
+│   ├── memory/                     # Conversation memory management
+│   │   └── conversation_memory.py  # Session memory and reset handling
+│   │
+│   ├── prompts/                    # Prompt templates for all agents
+│   │   ├── claim_prompts.py        # Claim workflow prompts
+│   │   ├── general_prompts.py      # General assistant prompts
+│   │   ├── policy_prompts.py       # Policy information prompts
+│   │   ├── router_prompts.py       # Routing and orchestration prompts
+│   │   └── safety_prompts.py       # Safety review and moderation prompts
+│   │
+│   ├── retriever/                  # Retrieval-Augmented Generation (RAG) pipeline
+│   │   ├── document_loader.py      # Policy document ingestion
+│   │   ├── retriever.py            # Retrieval orchestration
+│   │   ├── text_splitter.py        # Text chunking utilities
+│   │   └── vector_store.py         # ChromaDB vector storage integration
+│   │
+│   ├── tools/                      # Operational workflow tools
+│   │   ├── policy_lookup_tool.py   # Customer policy lookup tool
+│   │   ├── update_email_tool.py    # Email update simulation tool
+│   │   ├── update_phone_tool.py    # Phone update simulation tool
+│   │   └── utils.py                # Shared tool helper functions
+│   │
+│   └── ui/                         # User interface layer
+│       └── streamlit_app.py        # Streamlit web application
 │
-├── docs/
-│   ├── phase1/
-│   │   └── problem_framing.md
+├── data/                           # Policy and customer data storage
+│   ├── customer_profiles/          # Customer policy datasets
+│   │   └── customer_policies.json  # Sample customer policy records
 │   │
-│   ├── phase2/
-│   │   ├── baseline_agent.md
-│   │   └── screenshots/
+│   ├── embeddings/                 # Generated vector database storage
+│   │   └── chroma.sqlite3          # ChromaDB SQLite persistence
 │   │
-│   ├── phase3/
-│   │   ├── prompt_comparison.md
-│   │   └── screenshots/
+│   ├── policies/                   # Insurance policy reference documents
+│   │   ├── claim_process_info.txt          # Claim workflow information
+│   │   ├── coverage_info.txt               # Policy coverage information
+│   │   └── policy_update_process.txt       # Policy update process information
 │   │
-│   ├── phase4/
-│   │   ├── screenshots/
-│   │   └── rag_implementation.md
-│   │
-│   ├── phase5/
-│   │   ├── screenshots/
-│   │   └── tool_usage.md
-│   │
-│   ├── phase6/
-│   │   ├── screenshots/
-│   │   └── conversation_examples.md
-│   │
-│   ├── phase7/
-│   │   ├── screenshots/
-│   │   └── adaptive_behaviour.md
-│   │
-│   ├── phase8/
-│   │   ├── screenshots/
-│   │   └── deployment_readiness.md
-│   │
-│   └── phase9/
-│       ├── screenshots/
-│       ├── evaluation_engineering_review.md
+│   └── policy/                     # Additional vector database storage
+│       └── embeddings/
+│           └── chroma.sqlite3
 │
-├── tests/
-├── logs/
+├── docs/                           # Phase-wise project documentation
+│   ├── phase1/                     # Problem framing and system design
+│   ├── phase2/                     # Baseline agent implementation
+│   ├── phase3/                     # Prompt engineering experiments
+│   ├── phase4/                     # RAG implementation
+│   ├── phase5/                     # Tool integration
+│   ├── phase6/                     # Memory and planning workflows
+│   ├── phase7/                     # Adaptive behaviour implementation
+│   ├── phase8/                     # Deployment readiness and monitoring
+│   └── phase9/                     # Evaluation and engineering review
 │
-├── FINAL_DEMO_SCRIPT.md
-├── PROMPT_COMPARISON_ANALYSIS.md
-├── ENGINEERING_PRODUCT_JUSTIFICATION.md
-├── .env
-├── pyproject.toml
-├── uv.lock
-├── README.md
-└── requirements.txt
+├── logs/                           # Runtime-generated application logs
+│
+├── screenshots/                    # Screenshots used for evaluation and submission evidence
+│
+├── ENGINEERING_AND_PRODUCT_JUSTIFICATION.md     # Engineering decisions and tradeoff analysis
+├── FINAL_DEMO_SCRIPT.md                    # Demo scenarios and evaluator workflows
+├── PROMPT_COMPARISON_ANALYSIS.md           # Prompt evolution and comparison analysis
+├── pyproject.toml                          # Python project configuration
+├── README.md                               # Project overview and evaluator guide
+└── requirements.txt                        # Python dependency requirements
 ```
 
 ---
 
-# Folder Responsibilities
+# 6. Setup Instructions
 
-## `agents/`
-Contains modular multi-agent workflows:
-- routing
-- policy information handling
-- claims support
-- operational assistance
-- safety validation
-
----
-
-## `tools/`
-Contains operational and retrieval tools:
-- policy lookup
-- claim status lookup
-- customer updates
-- escalation workflows
-
----
-
-## `retriever/`
-Handles:
-- embeddings
-- semantic retrieval
-- vector search
-- document chunking
-
----
-
-## `memory/`
-Manages:
-- session history
-- conversation context
-- follow-up memory
-
----
-
-## `safety/`
-Implements:
-- refusal logic
-- escalation rules
-- hallucination prevention
-- operational validation
-
----
-
-## `evaluation/`
-Contains:
-- benchmark tests
-- prompt comparisons
-- failure analysis
-- consistency evaluation
-
----
-
-## `data/`
-Stores:
-- policy documents
-- FAQs
-- claims documentation
-- customer datasets
-- embeddings
-
----
-
-## `docs/`
-Contains:
-- phase artifacts
-- engineering documentation
-- screenshots
-- evaluation reports
-- deployment evidence
-
----
-
-# Documentation Structure
-
-| Folder | Purpose |
-|---|---|
-| `phase1/` | Problem framing and business analysis |
-| `phase2/` | Baseline rule-based agent |
-| `phase3/` | LLM integration and prompt engineering |
-| `phase4/` | RAG and semantic retrieval |
-| `phase5/` | Tool usage and operational workflows |
-| `phase6/` | Memory and planning |
-| `phase7/` | Adaptive behaviour |
-| `phase8/` | Deployment readiness |
-| `phase9/` | Evaluation and engineering review |
-
----
-
-# Final Submission Artifacts
-This repository includes the core phase documentation plus final capstone artifacts:
-- [`FINAL_DEMO_SCRIPT.md`](FINAL_DEMO_SCRIPT.md)
-- [`PROMPT_COMPARISON_ANALYSIS.md`](PROMPT_COMPARISON_ANALYSIS.md)
-- [`ENGINEERING_PRODUCT_JUSTIFICATION.md`](ENGINEERING_PRODUCT_JUSTIFICATION.md)
-- [`docs/phase1/problem_framing_and_system_design.md`](docs/phase1/problem_framing_and_system_design.md)
-- [`docs/phase3/prompt_comparison.md`](docs/phase3/prompt_comparison.md)
-- [`docs/phase9/evaluation_engineering_review.md`](docs/phase9/evaluation_engineering_review.md)
-- [`app/evaluation/evaluation_results.json`](app/evaluation/evaluation_results.json)
-
----
-
-# Setting Up the Project Using uv
-
-## 1. Install uv
-
-Verify installation:
-
-```bash
-uv --version
-```
-
----
-
-## 2. Clone Repository
+## Clone Repository
 
 ```bash
 git clone <repository-url>
 cd policyassist-ai
 ```
 
----
-
-## 3. Create Virtual Environment
+## Install Dependencies
 
 ```bash
-uv venv
+pip install -r requirements.txt
 ```
 
----
+## Configure Environment Variables
 
-## 4. Activate Environment
+Update `.env`:
 
-### Windows
-```bash
-.venv\Scripts\activate
+```env
+OPENAI_API_KEY=
+OPENAI_MODEL=
 ```
 
-### Linux/macOS
-```bash
-source .venv/bin/activate
-```
-
----
-
-## 5. Install Dependencies
+## Build Retrieval Database
 
 ```bash
-uv sync
+python app/build_vector_db.py
 ```
 
----
-
-## 6. Configure Environment Variables
-
-Create `.env` file with:
-- OpenAI API key
-- model configuration
-- embedding model
-- logging configuration
-
----
-
-## 7. Run Application
-
-CLI version:
+## Run CLI Application
 
 ```bash
 python app/main.py
 ```
 
-Streamlit version:
+## Run Streamlit UI
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run app/ui/streamlit_app.py
 ```
 
 ---
 
-# How the System Works
+# 7. Evaluation & Testing
 
-## Step 1 — Customer Query
-The user submits a support question or operational request.
+## Run Evaluation Harness
 
----
+```bash
+python app/evaluation/run_evaluation.py
+```
 
-## Step 2 — Intent Routing
-The Intent Router Agent classifies:
-- policy support queries
-- claims queries
-- operational requests
-- restricted requests
-- general questions
+## Run Retrieval Comparison
 
----
+```bash
+python app/evaluation/run_retrieval_comparison.py
+```
 
-## Step 3 — Agent Selection
-The query is routed to the appropriate domain-specific agent.
+## Evaluation Output Files
 
----
+- `app/evaluation/evaluation_results.json`
+- `app/evaluation/retrieval_comparison_results.json`
 
-## Step 4 — Retrieval & Tool Usage
-The selected agent:
-- retrieves policy information
-- uses operational tools if required
-- gathers contextual information
+The evaluation framework measures:
+- response quality
+- latency
+- consistency
+- retrieval grounding
+- runtime failure handling
+- workflow safety
+- orchestration reliability
 
----
-
-## Step 5 — Response Generation
-The system generates grounded responses using:
-- retrieved documents
-- tool outputs
-- conversation memory
-- prompt strategies
+The evaluation stage aligns with the capstone evaluation requirements for:
+- quality metrics
+- failure analysis
+- safety review
+- engineering improvement planning :contentReference[oaicite:2]{index=2}
 
 ---
 
-## Step 6 — Safety Review
-The Safety Review Agent validates:
-- restricted operations
-- hallucination risks
-- escalation requirements
-- safety compliance
+# 8. Logs & Monitoring
+
+## Runtime Logs
+
+```text
+logs/policyassist.log
+```
+
+The logs include:
+- routing decisions
+- safety review results
+- runtime latency
+- orchestration traces
+- evaluation activity
+- runtime failure tracking
+
+The deployment and monitoring implementation aligns with the capstone deployment readiness requirements. :contentReference[oaicite:3]{index=3}
 
 ---
 
-## Step 7 — Final Safe Response
-The validated response is returned to the customer.
+
+# 9. Phase Documentation
+
+| Stage | Description | Documentation |
+|---|---|---|
+| Phase 1 | Understand the Problem & Define Success | <a href="docs/phase1/problem_framing_and_system_design.md" target="_blank">View</a> |
+| Phase 2 | Build a Basic Working Multi Agent | <a href="docs/phase2/baseline_agent.md" target="_blank">View</a> |
+| Phase 3 | LLM Integration, Prompt Engineering & Comparisons | <a href="docs/phase3/prompt_comparison.md" target="_blank">View</a> |
+| Phase 4 | Retrieval-Augmented Generation (RAG) Integration | <a href="docs/phase4/rag_implementation.md" target="_blank">View</a> |
+| Phase 5 | Tool Integration & Workflow Orchestration | <a href="docs/phase5/tool_usage.md" target="_blank">View</a> |
+| Phase 6 | Planning, Memory & Context | <a href="docs/phase6/conversation_examples.md" target="_blank">View</a> |
+| Phase 7 | Adaptive Behaviour | <a href="docs/phase7/adaptive_behaviour.md" target="_blank">View</a> |
+| Phase 8 | Streamlit UI & Deployment Improvements | <a href="docs/phase8/deployment_readiness.md" target="_blank">View</a> |
+| Phase 9 | Evaluation & Engineering Review | <a href="docs/phase9/evaluation_engineering_review.md" target="_blank">View</a> |
+---
+
+
+# 10. Final Submission Documents
+
+| Document | Purpose |
+|---|---|
+| [PROMPT_COMPARISON_ANALYSIS.md](PROMPT_COMPARISON_ANALYSIS.md) | Prompt evolution, safety improvements, and RAG comparison |
+| [FINAL_DEMO_SCRIPT.md](FINAL_DEMO_SCRIPT.md) | Forced interaction demo scenarios and screenshots |
+| [ENGINEERING_AND_PRODUCT_JUSTIFICATION.md](ENGINEERING_AND_PRODUCT_JUSTIFICATION.md) | Engineering decisions, tradeoffs, and architecture justification |
+| [docs/phase1/problem_framing.md](docs/phase1/problem_framing.md) | Problem framing and workflow definition |
+| [docs/phase9/evaluation_engineering_review.md](docs/phase9/evaluation_engineering_review.md) | Evaluation metrics, failure analysis, and improvement roadmap |
+
+These documents collectively satisfy the final capstone submission requirements. :contentReference[oaicite:4]{index=4}
 
 ---
 
-# Sample User Interactions
+# 11. Safety Features
 
-## Example 1 — Policy Coverage Query
+PolicyAssist AI includes multiple safety-focused engineering controls:
 
-### User Input
-> “Does my policy cover cataract surgery?”
+- Restricted operation blocking
+- Layered safety review
+- Escalation handling
+- Retrieval-grounded responses
+- Explicit uncertainty communication
+- Proactive router-level restriction handling
+- Authentication-aware workflows
+- Runtime safety logging
+- Controlled operational workflows
 
-### Agent Response
-> “Based on the retrieved policy section, cataract surgery is covered after the 24-month waiting period under surgical treatment benefits.”
+Restricted operations include:
+- claim approval requests
+- reimbursement guarantees
+- deductible waivers
+- unauthorized policy modifications
+- unsafe operational actions
 
----
+The system was intentionally designed to:
+- avoid hallucinated policies
+- avoid unsafe approvals
+- avoid unauthorized actions
+- escalate sensitive workflows appropriately
 
-## Example 2 — Claim Support Query
-
-### User Input
-> “What documents are required for reimbursement claims?”
-
-### Agent Response
-> “Hospital bills, discharge summaries, identity proof, and physician reports are typically required for reimbursement claims.”
-
----
-
-## Example 3 — Allowed Operational Request
-
-### User Input
-> “Update my email address.”
-
-### Agent Response
-> “Your request to update the email address has been submitted successfully.”
-
----
-
-## Example 4 — Restricted Request
-
-### User Input
-> “Reduce my insurance premium.”
-
-### Agent Response
-> “I’m unable to assist with this request because it involves restricted or unauthorized operations.”
+These safeguards align with the Customer Support safety requirements defined in the capstone project specification. :contentReference[oaicite:5]{index=5}
 
 ---
 
-# Prompt Engineering
+# 12. Known Limitations
 
-The project evaluates multiple prompt strategies using:
-- structured prompt comparisons
-- safety-focused prompts
-- retrieval-grounded prompts
-- evaluation datasets
-- before vs after analysis
-
----
-
-# Evaluation Metrics
-
-The system is evaluated using:
-- retrieval accuracy
-- hallucination rate
-- response consistency
-- escalation correctness
-- refusal compliance
-- tool routing accuracy
-- latency measurements
+- Retrieval quality depends on available policy documents
+- RAG responses may become conservative when context is insufficient
+- Keyword-based evaluation is less robust than semantic scoring
+- Local deployment architecture is not optimized for large-scale production traffic
+- Streamlit provides limited frontend customization compared to enterprise frontend frameworks
+- ChromaDB local storage is not designed for distributed production scaling
 
 ---
 
-# Failure Analysis
+# 13. Future Improvements
 
-The project includes:
-- root cause analysis
-- debugging evidence
-- retrieval failure analysis
-- hallucination mitigation
-- before vs after improvements
-
----
-
-# Deployment Readiness
-
-The system includes:
-- modular architecture
-- reproducible setup
-- structured logging
-- latency monitoring
-- graceful failure handling
-- environment-based configuration
+- Semantic evaluation scoring
+- Improved retrieval ranking
+- Async orchestration
+- Advanced memory personalization
+- Enterprise authentication integration
+- Improved PII masking
+- Observability dashboards
+- Cloud-native deployment architecture
+- Multilingual support
+- Enterprise vector database integration
 
 ---
 
-# Known Limitations
+# 14. Conclusion
 
-- Responses depend on retrieval quality
-- Operations are simulated for demonstration purposes
-- Limited to provided policy documents
-- Requires accurate retrieval sources
-- Long conversations may require memory optimization
+PolicyAssist AI demonstrates a safety-first, retrieval-grounded, multi-agent insurance support architecture designed for:
+- explainability
+- workflow reliability
+- operational safety
+- evaluation-driven engineering
 
----
+The project combines:
+- LangChain orchestration
+- Retrieval-Augmented Generation (RAG)
+- layered moderation
+- conversational workflow management
+- evaluation tooling
 
-# Future Improvements
+to create a production-oriented insurance support assistant suitable for regulated workflow environments.
 
-- Multi-language support
-- Voice-enabled workflows
-- Real insurance backend integration
-- Human-in-the-loop approvals
-- Advanced authorization systems
-- Fine-tuned insurance-domain models
+The project demonstrates:
+- retrieval integration
+- tool usage
+- memory workflows
+- adaptive behaviour
+- evaluation engineering
+- safety enforcement
+- deployment readiness
 
----
-
-# Capstone Deliverables
-
-This project includes:
-- Working AI Agent
-- [`docs/phase1/problem_framing_and_system_design.md`](docs/phase1/problem_framing_and_system_design.md)
-- [`FINAL_DEMO_SCRIPT.md`](FINAL_DEMO_SCRIPT.md)
-- [`PROMPT_COMPARISON_ANALYSIS.md`](PROMPT_COMPARISON_ANALYSIS.md)
-- [`ENGINEERING_PRODUCT_JUSTIFICATION.md`](ENGINEERING_PRODUCT_JUSTIFICATION.md)
-- [`docs/phase3/prompt_comparison.md`](docs/phase3/prompt_comparison.md)
-- [`docs/phase9/evaluation_engineering_review.md`](docs/phase9/evaluation_engineering_review.md)
-- [`app/evaluation/evaluation_results.json`](app/evaluation/evaluation_results.json)
-- Safety Enforcement Demonstration
-
----
-
-# Disclaimer
-
-PolicyAssist AI is an educational capstone project designed to demonstrate enterprise AI agent engineering workflows for insurance customer support and controlled operational assistance.
-
-The system does not provide legal, financial, or official insurance advice.
-
----
+as required by the Industry Capstone Project evaluation criteria. :contentReference[oaicite:6]{index=6}

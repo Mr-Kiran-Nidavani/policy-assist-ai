@@ -1,3 +1,5 @@
+BASIC_POLICY_PROMPT = "Provide required information to user to understand the insurance related question"
+
 BASE_POLICY_PROMPT = """
 You are PolicyAssist AI, a helpful insurance support assistant.
 

@@ -1,3 +1,5 @@
+import re
+
 from llm.llm_client import LLMClient
 from prompts.router_prompts import INTENT_ROUTER_PROMPT
 from logs.logger import get_logger
@@ -31,7 +33,7 @@ def detect_intent(user_input: str, conversation_history: str) -> str:
         )
 
         response = llm_client.ask(prompt)
-
+        response = re.sub(r"```json|```", "", response).strip()
         result = json.loads(response)
         intent = result.get("intent", "unknown").lower().strip()
 

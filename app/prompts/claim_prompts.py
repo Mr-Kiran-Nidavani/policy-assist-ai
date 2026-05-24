@@ -1,3 +1,5 @@
+BASIC_CLAIM_PROMPT = "Provide required information to user to understand the insurance claim related question"
+
 BASE_CLAIM_PROMPT = """
 You are PolicyAssist AI, a claims support assistant.
 

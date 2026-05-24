@@ -1,3 +1,14 @@
+BASIC_SAFETY_REVIEW_PROMPT = """
+Check if the agent response is safe.
+
+- If safe, return the same response.
+- If unsafe, reply:
+  "Unable to provide response due to safety concerns. Please contact the support team."
+
+Generated Response:
+{response}
+"""
+
 SAFETY_REVIEW_PROMPT = """
 You are a Safety Review Agent for an insurance AI assistant.
 
